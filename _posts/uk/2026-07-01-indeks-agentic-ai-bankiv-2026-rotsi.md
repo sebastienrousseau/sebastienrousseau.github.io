@@ -449,9 +449,7 @@ OSWorld на рівні 66,3% — це стеля надійності. Три �
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [Індекс автономного казначейства 2026: агенти, програмована ліквідність і токенізовані депозити — Sebastien Rousseau](https://sebastienrousseau.com/uk/2026-06-07-indeks-avtonomnoho-kaznacheystva-2026-ahenty-prohramovana/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, що пише про прикладний AI, міграцію ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Востаннє переглянуто <time datetime="2026-07-01">2026-07-01</time>.</p>

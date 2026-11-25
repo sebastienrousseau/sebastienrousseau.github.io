@@ -1,7 +1,18 @@
 {
-  "_comment": "Which locales search engines may index. Every active locale stays published and reachable through the language switcher; a locale not listed in 'indexed' gets <meta name=\"robots\" content=\"noindex, follow\"> on every page, is left out of every sitemap, and is removed from every hreflang cluster. Read by scripts/lib/_locale_indexing.py, the only consumer. English only since v0.0.45: the 11 Sep 2026 site-wide demotion followed ~1,600 machine-translated pages and ~1,200 URL renames in late August, and keeping ten machine-translated locales indexable (v0.0.30) did not recover it. French is indexed again since v0.0.47 on the author's decision (ADR-0015, amendment of 22 Nov 2026); every other locale stays out until its translations are human-reviewed. 'en' must always be listed.",
+  "_comment": "Which locales search engines may index. Every active locale stays published and reachable through the language switcher; a locale not listed in 'indexed' gets <meta name=\"robots\" content=\"noindex, follow\"> on every page, is left out of every sitemap, and is removed from every hreflang cluster. Read by scripts/lib/_locale_indexing.py, the only consumer. History: all locales until v0.0.30 (4 Nov 2026), ten from v0.0.30, English only from v0.0.45 (21 Nov), English and French from v0.0.47 (22 Nov). Since 25 Nov 2026 (ADR-0015, amendment of that date): English plus the twelve locales with at least 10 Google clicks between 11 June and 10 September 2026, the three months before the demotion. 'en' must always be listed.",
   "indexed": [
     "en",
-    "fr"
+    "zh-hant",
+    "fr",
+    "ru",
+    "ko",
+    "es",
+    "zh-hans",
+    "ja",
+    "vi",
+    "it",
+    "fa",
+    "cs",
+    "de"
   ]
 }

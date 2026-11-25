@@ -104,15 +104,15 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">
-<img alt="Blue light lines crossing in a network over a dark reflective floor" src="https://cloudcdn.pro/stocks/images/johann-juraver-qyFaXDPecSQ.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-11-25-shor-rsa-2048-cat-qubits/index.html" title="Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits">
+<img alt="Violet and blue fibre-optic strands glowing against a dark background" src="https://cloudcdn.pro/stocks/images/jeferson-tomaz-buRbhjYpyoI.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Super-Agents · Ai Agents · Agent Architecture</span>
-<h3><a href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">Super-agents: why one session per task stops scaling</a></h3>
-<p class="newsroom-meta"><time datetime="2026-11-24">November 24, 2026</time> · Sebastien Rousseau</p>
-<p>A single task is limited by model capability, but multi-tasking is limited by human attention, and the fix is an architecture rather than a better model.</p>
-<p><a class="pill ghost" href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">Read the full story</a></p>
+<span class="newsroom-eyebrow">Quantum Computing · Shor'S Algorithm · Cat Qubits</span>
+<h3><a href="/2026-11-25-shor-rsa-2048-cat-qubits/index.html" title="Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits">Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-25">November 25, 2026</time> · Sebastien Rousseau</p>
+<p>An end-to-end resource estimate for factoring RSA-2048 on superconducting cat qubits puts the machine at about 611,000 cat qubits and 1.25 hours when space is traded for time. Its no-bit-flip assumption corresponds to a bit-flip time of about 100 years; relaxing that to about one hour with an extra code layer raises th</p>
+<p><a class="pill ghost" href="/2026-11-25-shor-rsa-2048-cat-qubits/index.html" title="Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits">Read the full story</a></p>
 </div>
 </article>
 
@@ -122,24 +122,24 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonai.co/" title="Banking On AI on Medium" aria-label="Banking On AI on Medium" rel="noopener">
-<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Blue light lines crossing in a network over a dark reflective floor" src="https://cloudcdn.pro/stocks/images/johann-juraver-qyFaXDPecSQ.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonai.co/" rel="noopener">Banking On AI</a></h3>
-<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 26 articles on Medium</p>
+<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 28 articles on Medium</p>
 <p class="newsroom-excerpt">Agentic AI, model risk and AI governance for banks and payments. Every story there links back to its original here.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonquantum.com/" title="Banking On Quantum on Medium" aria-label="Banking On Quantum on Medium" rel="noopener">
-<img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Two parallel black and white bands curving together" src="https://cloudcdn.pro/stocks/images/alvaro-pinot-6tWCLnsCFfM.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonquantum.com/" rel="noopener">Banking On Quantum</a></h3>
-<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 26 articles on Medium</p>
+<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 27 articles on Medium</p>
 <p class="newsroom-excerpt">Post-quantum cryptography, crypto-agility and quantum-safe payments. Every story there links back to its original here.</p>
 </div>
 </article>
@@ -161,6 +161,18 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling" aria-label="Super-agents: why one session per task stops scaling">
+<img alt="Blue light lines crossing in a network over a dark reflective floor" src="https://cloudcdn.pro/stocks/images/johann-juraver-qyFaXDPecSQ.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Super-Agents · Ai Agents · Agent Architecture</span>
+<h3><a href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">Super-agents: why one session per task stops scaling</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-24">November 24, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A single task is limited by model capability, but multi-tasking is limited by human attention, and the fix is an architecture rather than a better model.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-11-23-composite-ml-dsa-rfc-10073/index.html" title="Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm" aria-label="Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm">

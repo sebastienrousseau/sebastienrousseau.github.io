@@ -1,0 +1,258 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. Persian (Farsi), formal register, Western digits. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.54; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are, in Latin script. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "llm",
+    "iso-20022",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "ml-kem",
+    "ml-dsa",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "rust",
+    "mcp"
+  ],
+  "ai": {
+    "name": "هوش مصنوعی",
+    "description": "هوش مصنوعی کاربردی در خدمات مالی: استقرار مدل، حاکمیت، عامل‌های هوش مصنوعی، ابزارهای LLM و زیرساخت هوش مصنوعی که در محیط‌های بانکی اجرا می‌شود.",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "هوش مصنوعی عامل‌محور",
+    "description": "عامل‌های خودمختار هوش مصنوعی در پرداخت‌ها، خزانه‌داری و پشتیبانی عملیات بانکی: رضایت، مسئولیت، ردپای حسابرسی و تعامل‌پذیری پروتکل‌ها.",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "مدل‌های زبانی بزرگ (LLM) در فرایندهای مالی: تنظیم دقیق، RAG، مهندسی پرامپت، LLMهای اجراشده روی دستگاه و اقتصاد هزینه استنتاج.",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "هوش مصنوعی مولد",
+    "description": "مدل‌های مولد برای بانکداری (کد، محتوا، جست‌وجو، شبیه‌سازی) و مهندسی لازم برای به‌کارگیری ایمن آن‌ها در محیط عملیاتی.",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "حاکمیت هوش مصنوعی",
+    "description": "ریسک مدل، انطباق با EU AI Act، چارچوب NIST AI RMF، پاسخ‌گویی در سطح هیئت‌مدیره، تأمین‌کنندگان ثالث هوش مصنوعی و مجموعه ابزارهای انطباق برای هوش مصنوعی در بانک‌ها.",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "مهاجرت پرداخت‌های عمده و خرد به ISO 20022: پیام‌های pacs.008، pain.001 و camt، قواعد CBPR+ و زیرساخت پرداخت غنی از داده.",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "پرداخت‌های فرامرزی",
+    "description": "تبادل ارز، بانکداری کارگزاری، مسیریابی میان چند زیرساخت، اهداف نقشه راه G20 و ابعاد هزینه و سرعت در انتقال پول میان کشورها.",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "استیبل‌کوین‌ها",
+    "description": "انتشار، ذخایر، بازخرید، مقررات و نقش استیبل‌کوین‌ها به‌عنوان دارایی تسویه در کنار سپرده‌های بانکی.",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "سپرده‌های توکنی‌شده",
+    "description": "توکن‌های سپرده صادرشده توسط بانک‌ها، تسویه اتمی، ترازنامه برنامه‌پذیر و چارچوب سیاستی پول توکنی‌شده بانک‌های تجاری.",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "پرداخت‌های آنی",
+    "description": "RTP، FedNow، SEPA Instant و Faster Payments در بریتانیا: سازوکار زیرساخت‌های آنی، نقدینگی، تقلب و قیمت‌گذاری.",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "پرداخت‌های حساب‌به‌حساب",
+    "description": "زیرساخت‌های پرداخت حساب‌به‌حساب، آغاز پرداخت در بانکداری باز و موارد کاربرد پرداخت‌های عامل‌محور که بر این زیرساخت‌ها تکیه دارند.",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "بانکداری باز",
+    "description": "PSD2، PSD3، CMA9 و FDX: رابط‌های برنامه‌نویسی بانکداری باز، آغاز پرداخت و بستر انتقال‌پذیری داده.",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "پیام‌رسانی، GPI، اعتبارسنجی پیش از پرداخت و نقش در حال تحول SWIFT در جهانی با زیرساخت‌های متعدد.",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus: رهنمودهای کاربرد ISO 20022 از سوی SWIFT برای بانکداری کارگزاری.",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "پرداخت‌های عمده",
+    "description": "پرداخت‌های بین‌بانکی، کلان و زیرساخت‌های بازار: بخش عمده اقتصاد زیرساخت بانکی.",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "پیام انتقال اعتبار مشتری در قلب ISO 20022 برای پرداخت‌های فرامرزی: طرح‌واره، اعتبارسنجی، خودکارسازی و هماهنگ‌سازی.",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "پیام آغاز پرداخت مشتری: کارخانه‌های پرداخت شرکتی، اعتبارسنجی و کنار گذاشتن MT101.",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "خودکارسازی پرداخت",
+    "description": "ایجاد و اعتبارسنجی فایل‌های پرداخت، مدیریت استثناها و جنبه مهندسی عملیات پرداخت.",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "نقدینگی برنامه‌پذیر",
+    "description": "خزانه‌داری بلادرنگ، هماهنگ‌سازی نقدینگی درون‌روزی، ترازنامه برنامه‌پذیر و مجموعه فناوری خزانه‌داری عامل‌محور.",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "پرداخت‌ها",
+    "description": "پوشش گسترده نظام‌های پرداخت، زیرساخت‌ها و اقتصاد انتقال پول: نقطه ورود عمومی محتوا، بالاتر از برچسب‌های ویژه هر زیرساخت.",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "خزانه‌داری",
+    "description": "عملیات خزانه‌داری شرکت‌ها و بانک‌ها: مدیریت نقدینگی، پیش‌بینی وجه نقد، پوشش ریسک ارزی و مدل عملیاتی پشتیبان خزانه‌داری بلادرنگ. رویکرد خزانه‌داری عامل‌محور و خودمختار ذیل نقدینگی برنامه‌پذیر قرار دارد.",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "دارایی‌های دیجیتال",
+    "description": "دارایی‌های توکنی‌شده، امانت‌داری، زیرساخت تسویه و پذیرش نهادی زیرساخت‌های دارایی دیجیتال در کنار مالیه سنتی.",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "مالیه غیرمتمرکز",
+    "description": "پروتکل‌های DeFi، ریسک قراردادهای هوشمند، نقدینگی روی زنجیره و جایی که بانک‌ها با مجموعه فناوری DeFi یکپارچه می‌شوند (یا آگاهانه نمی‌شوند).",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "رمزنگاری پساکوانتومی",
+    "description": "استانداردهای پساکوانتومی NIST، تهدید «اکنون ذخیره کن، بعداً رمزگشایی کن»، دست‌دهی‌های ترکیبی و مهاجرت رمزنگاری بانکی به اجزای پایه مبتنی بر مشبکه.",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "بلاک‌چین",
+    "description": "فناوری دفتر کل توزیع‌شده در زیرساخت مالی: اجماع، اعتبارسنج‌ها، اجرای قراردادهای هوشمند و جایگاه این فناوری پایه در بانکداری.",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203: سازوکار استانداردشده کپسوله‌سازی کلید پساکوانتومی (پیش‌تر CRYSTALS-Kyber).",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204: الگوریتم استانداردشده امضای دیجیتال پساکوانتومی (پیش‌تر CRYSTALS-Dilithium).",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "چابکی رمزنگاری",
+    "description": "فهرست‌برداری از دارایی‌های رمزنگاری، تعیین مسیر مهاجرت و پیاده‌سازی مرزهای رمزنگاری جایگزین‌پذیر در کد عملیاتی.",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "رمزنگاری",
+    "description": "رمزنگاری کاربردی در بانکداری: توابع درهم‌ساز، امضاها، سازوکارهای کپسوله‌سازی کلید، مدیریت کلید و اجزای پایه رمزنگاری که زیرساخت‌های پرداخت را ایمن می‌کنند.",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "رایانش کوانتومی",
+    "description": "پیشرفت سخت‌افزار، الگوریتم‌های کوانتومی، زمان باقی‌مانده تا تهدید و نقاط تلاقی رایانش کوانتومی با بارهای کاری بانکی.",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "اکنون ذخیره کن، بعداً رمزگشایی کن",
+    "description": "مدل تهدید HNDL: مهاجمانی که امروز ترافیک رمزشده را ضبط می‌کنند تا پس از دسترس‌پذیر شدن سخت‌افزار کوانتومی آن را رمزگشایی کنند.",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "بانکداری ابرزاد",
+    "description": "Kubernetes، سرویس‌مش، تاب‌آوری چندمنطقه‌ای و الگوهای معماری ابرزاد که بانک‌ها ذیل DORA به کار می‌گیرند.",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "ابر حاکمیتی",
+    "description": "اقامت داده، ابر مستقر در منطقه نظارتی و بده‌بستان‌های معماری در اجرای بارهای کاری بانکی درون مرزهای حاکمیتی.",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "مهندسی پلتفرم",
+    "description": "پلتفرم‌های داخلی توسعه‌دهندگان، مسیرهای طلایی و مسیرهای هموار: اینکه سازمان‌های فناوری بانکی چگونه بهره‌وری مهندسی را محقق می‌کنند.",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "تاب‌آوری عملیاتی",
+    "description": "خدمات کسب‌وکار مهم، آستانه‌های تحمل اثر، سناریوهای شدید اما محتمل و برنامه تاب‌آوری عملیاتی که بانک‌ها باید اجرا کنند.",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "امنیت سایبری",
+    "description": "امنیت عملیاتی در بانکداری: تهدیدها، کنترل‌ها، واکنش به رخداد و انتظارات نظارتی در زمینه تاب‌آوری.",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "رایانش لبه",
+    "description": "کارگرهای لبه، مقابله با تقلب در لبه و CDN به‌عنوان پلتفرم: نقش رایانش لبه در بارهای کاری مالی.",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act: ثبت اطلاعات، ریسک اشخاص ثالث ارائه‌دهنده خدمات فناوری اطلاعات و ارتباطات، آزمون نفوذ مبتنی بر تهدید و برنامه تاب‌آوری عملیاتی که بانک‌ها باید اجرا کنند.",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "رهنمودهای اجرایی، انتظارات نظارتی، طبقه‌بندی سامانه‌های پرخطر و بار ارزیابی انطباق که این قانون بر بانک‌ها تحمیل می‌کند.",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "استانداردهای NIST مرتبط با بانکداری (FIPS 203/204، AI RMF، مجموعه‌های SP 800/1800) و الگوهای پذیرش آن‌ها از سوی ناظران.",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "ریسک اشخاص ثالث",
+    "description": "ریسک اشخاص ثالث ارائه‌دهنده خدمات فناوری اطلاعات و ارتباطات ذیل DORA، رهنمودهای برون‌سپاری EBA و انتظارات نظارتی درباره تمرکز بر تأمین‌کنندگان حیاتی.",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "متن‌باز",
+    "description": "نرم‌افزار متن‌باز در بانکداری تحت نظارت: ریسک زنجیره تأمین، گواهی‌ها، سیاست مشارکت و پروژه‌های متن‌بازی که بانک‌ها به آن‌ها متکی‌اند.",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "Rust در زیرساخت بانکی: ایمنی حافظه، کارایی و بوم‌سازگان crateهای مرتبط با بارهای کاری مالی.",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol: اینکه کلاینت‌های هوش مصنوعی چگونه محتوای بانکی را به‌صورت منابع ساختاریافته کشف و مصرف می‌کنند.",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "راهبرد فناوری",
+    "description": "دغدغه‌های مدیران ارشد فناوری و فناوری اطلاعات بانک‌ها: ساخت یا خرید، توسعه داخلی یا مشارکت، طراحی سازمانی و دستور کار راهبردی فناوری.",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "نوآوری",
+    "description": "پوشش تحولات راهبردی فناوری در بانکداری: آنچه در راه است، چه کسانی آن را به کار می‌گیرند و چه چیزی را تغییر می‌دهد.",
+    "reviewed": false
+  },
+  "research": {
+    "name": "پژوهش",
+    "description": "تحلیل‌های اصیل، شاخص‌ها و معیارهای مقایسه: کار داده‌ای که پشتوانه دیدگاه محتوایی است.",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "بانکداری",
+    "description": "صنعت بانکداری به‌عنوان موضوع اصلی محتوا: چه چیزی در حال تغییر است، چرا، و چه معنایی برای فناوری، پرداخت‌ها، ریسک و مدل عملیاتی دارد.",
+    "reviewed": false
+  }
+}

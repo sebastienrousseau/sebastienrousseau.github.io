@@ -449,9 +449,7 @@ Nein. Der FSB stellt ausdrücklich fest, dass die 12 Sound Practices keine verbi
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [Autonomous Treasury Index 2026: Agentisches Treasury, programmierbare Liquidität, tokenisierte Einlagen und Echtzeit-Cash-Steuerung — Sebastien Rousseau](https://sebastienrousseau.com/de/2026-06-07-autonomous-treasury-index-2026-agentisches-programmierbare/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking Technologist; schreibt über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleister und den strukturellen Umbau des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Zuletzt geprüft <time datetime="2026-07-01">2026-07-01</time>.</p>

@@ -516,6 +516,18 @@ _CLOUDCDN_TAG_RE = re.compile(
 )
 
 
+# The site icons are the SR monogram in assets/img/, copied to the site root
+# by build.sh. The layouts point apple-touch-icon at the CDN's generic
+# "v1/icons" image (the generator's logo), so it is replaced here.
+APPLE_TOUCH_TAG = '<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />'
+_APPLE_TOUCH_RE = re.compile(r'<link\b[^>]*\brel=["\']?apple-touch-icon["\']?[^>]*>', re.IGNORECASE)
+MANIFEST_ICONS = (
+    {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/favicon.ico", "sizes": "16x16 32x32 48x48", "type": "image/x-icon", "purpose": "any"},
+)
+
+
 def add_cloudcdn_cors(html: str) -> str:
     """Ensure CloudCDN <img>/<link> tags use CORS mode and local /favicon.ico."""
 
@@ -529,31 +541,23 @@ def add_cloudcdn_cors(html: str) -> str:
         'href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico"',
         'href="/favicon.ico"',
     )
+    html = _APPLE_TOUCH_RE.sub(APPLE_TOUCH_TAG, html)
     return _CLOUDCDN_TAG_RE.sub(_patch, html)
 
 
 def normalise_manifest_icons(public: Path) -> int:
-    """Point cross-origin CloudCDN manifest icons at the same-origin /favicon.ico."""
+    """Give every manifest the same-origin SR icon set (192, 512 and the .ico)."""
     changed = 0
     for manifest_path in sorted(public.rglob("manifest.json")):
         try:
             data = json.loads(manifest_path.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             continue
-        icons = data.get("icons")
-        if not isinstance(icons, list):
+        if not isinstance(data.get("icons"), list) or data["icons"] == list(MANIFEST_ICONS):
             continue
-        updated = False
-        for icon in icons:
-            if isinstance(icon, dict) and str(icon.get("src", "")).startswith(_CDN_HOST + "/"):
-                icon["src"] = "/favicon.ico"
-                icon["sizes"] = "32x32"
-                icon["type"] = "image/x-icon"
-                icon["purpose"] = "any"
-                updated = True
-        if updated:
-            manifest_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
-            changed += 1
+        data["icons"] = [dict(icon) for icon in MANIFEST_ICONS]
+        manifest_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+        changed += 1
     return changed
 
 

@@ -449,9 +449,7 @@ Hayır. FSB, 12 Sağlam Uygulamanın bağlayıcı standartlar olmadığını aç
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [2026'da Otonom Hazine Endeksi: Ajan Tabanlı Hazine, Programlanabilir Likidite, Tokenize Mevduatlar ve Gerçek Zamanlı Nakit Kontrolü — Sebastien Rousseau](https://sebastienrousseau.com/tr/2026-06-07-2026-da-otonom-hazine-endeksi-ajan/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group genelinde 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-07-01">2026-07-01</time>.</p>

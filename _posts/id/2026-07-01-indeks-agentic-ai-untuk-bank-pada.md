@@ -449,9 +449,7 @@ Tidak. FSB secara eksplisit menyatakan ke-12 Sound Practices bukanlah standar ya
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [Indeks Treasury Otonom 2026: Treasury Agentik, Likuiditas Terprogram, Simpanan Tertokenisasi, dan Kontrol Kas Real-Time — Sebastien Rousseau](https://sebastienrousseau.com/id/2026-06-07-indeks-treasury-otonom-2026-agentik-likuiditas/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk layanan keuangan, dan transformasi struktural pembayaran wholesale.</span><span class="author-credentials">20+ tahun di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Terakhir ditinjau <time datetime="2026-07-01">2026-07-01</time>.</p>

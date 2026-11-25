@@ -449,9 +449,7 @@ Evident AI Index 運用公開資料，就人才、創新、領導力與透明度
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [2026 自主財務指數:代理型司庫、可程式化流動性、代幣化存款與即時現金管控 — Sebastien Rousseau](https://sebastienrousseau.com/zh-hant/2026-06-07-zizhu-caiwu-zhishu-2026-tw/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用 AI、ISO 20022 遷移、金融服務後量子密碼學，以及大額支付結構性轉型的文章。</span><span class="author-credentials">逾 20 年資歷，橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA 與 Virgin Group。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱 <time datetime="2026-07-01">2026-07-01</time>。</p>

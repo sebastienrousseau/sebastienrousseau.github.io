@@ -140,7 +140,7 @@ export function tryRenamedUrlRedirect(url, map) {
 //     ``-static-site-generator`` equivalent.
 export function trySlugRedirects(url) {
   const path = url.pathname;
-  // 2023-10-09 article rename — strip the literal ``shokunin-`` token
+  // 2023-10-09 article rename: strip the literal ``shokunin-`` token
   // that follows the date in every locale's filename.
   const ARTICLE_RE = /^(\/(?:[a-z]{2}(?:-[a-z]+)?\/)?)2023-10-09-shokunin-/;
   if (ARTICLE_RE.test(path)) {
@@ -228,9 +228,8 @@ export async function tryRetiredPdf(url, env) {
 // each 200 is also kept in caches.default for EDGE_HTML_STALE, keyed by path
 // alone (a query string never changes a static page). A copy younger than
 // EDGE_HTML_TTL is served as is; an older one is served at once and
-// refreshed in the background, so freshness is the same as before and only
-// the first visitor after a deploy can see the previous version. Only GET
-// 200s are stored; a failed refresh keeps the copy.
+// refreshed in the background. Only GET 200s are stored; a failed refresh
+// keeps the copy.
 export const EDGE_HTML_STALE = 7 * 24 * 60 * 60;
 export const EDGE_STORED_AT = 'x-edge-stored-at';
 // The copy lives under its own path, never the page URL: caches.default and
@@ -240,51 +239,154 @@ export const EDGE_STORED_AT = 'x-edge-stored-at';
 // never saw a deploy.
 export const EDGE_COPY_PREFIX = '/__edge-copy';
 
+// Deploy-aware copies. SWR alone let the first visitor per cache node after
+// a deploy see the previous build, and caches.default is per node, so after
+// every deploy some visitors somewhere got the old page. Each deploy now
+// writes its commit to /build-id.txt (ci.yml, "Prepare CNAME"), every copy
+// records the build it was fetched for, and a copy from another build is
+// treated as a miss: the page is fetched again before it is served. The
+// refetch adds ?__build=<id> so the zone cache, which keys on the query
+// string, cannot hand back the old build's page (GitHub Pages ignores the
+// query). The id costs one extra lookup, cached for BUILD_ID_TTL per node
+// and per isolate. Without a readable id (a local build, origin down) the
+// Worker behaves as before.
+export const EDGE_BUILD = 'x-edge-build';
+export const BUILD_ID_PATH = '/build-id.txt';
+export const BUILD_ID_TTL = 30;
+const BUILD_ID_RE = /^[0-9a-f]{7,64}$/;
+const _buildCache = { id: '', at: -Infinity };
+
+export function _resetBuildIdCache() {
+  _buildCache.id = '';
+  _buildCache.at = -Infinity;
+}
+
+async function readBuildId(origin) {
+  try {
+    const res = await fetch(`${origin}${BUILD_ID_PATH}`, {
+      cf: { cacheEverything: true, cacheTtl: BUILD_ID_TTL },
+    });
+    if (res.status !== 200) return '';
+    const id = (await res.text()).trim();
+    return BUILD_ID_RE.test(id) ? id : '';
+  } catch {
+    return '';
+  }
+}
+
+/** The deployed build's id, '' when unknown; re-read every BUILD_ID_TTL. */
+export async function currentBuildId(origin) {
+  if (Date.now() - _buildCache.at < BUILD_ID_TTL * 1000) return _buildCache.id;
+  _buildCache.id = await readBuildId(origin);
+  _buildCache.at = Date.now();
+  return _buildCache.id;
+}
+
 function pageKey(url) {
   return new Request(`${url.origin}${EDGE_COPY_PREFIX}${url.pathname}`, { method: 'GET' });
 }
 
-function originKey(url) {
-  return new Request(`${url.origin}${url.pathname}`, { method: 'GET' });
+/** The origin URL for a page, carrying the build id when one is known. */
+function originUrl(url, build) {
+  return build ? `${url.origin}${url.pathname}?__build=${build}` : `${url.origin}${url.pathname}`;
 }
 
-async function storePage(cache, key, res) {
+async function storePage(cache, key, res, build) {
   const headers = new Headers(res.headers);
   headers.set('Cache-Control', `public, max-age=${EDGE_HTML_STALE}`);
   headers.set(EDGE_STORED_AT, String(Date.now()));
+  if (build) headers.set(EDGE_BUILD, build);
   // adr: ADR-0015: Cache API (caches.default) page copy, not a KV write
   await cache.put(key, new Response(res.body, { status: 200, headers }));
 }
 
-async function revalidate(cache, key, url) {
-  const res = await fetch(originKey(url), { cf: EDGE_HTML_CACHE });
-  if (res.status === 200) await storePage(cache, key, res);
+async function revalidate(cache, key, url, build) {
+  const res = await fetch(new Request(originUrl(url, build), { method: 'GET' }), { cf: EDGE_HTML_CACHE });
+  if (res.status === 200) await storePage(cache, key, res, build);
 }
 
 function servedCopy(hit, method) {
   const headers = new Headers(hit.headers);
   headers.delete(EDGE_STORED_AT);
+  headers.delete(EDGE_BUILD);
   return new Response(method === 'HEAD' ? null : hit.body, { status: hit.status, headers });
+}
+
+/** A copy is current unless the deployed build is known and differs. */
+function isCurrentBuild(hit, build) {
+  return !build || hit.headers.get(EDGE_BUILD) === build;
+}
+
+function serveHit(hit, request, url, ctx, cache, key, build) {
+  const age = (Date.now() - Number(hit.headers.get(EDGE_STORED_AT))) / 1000;
+  if (!(age < EDGE_HTML_TTL)) ctx.waitUntil(revalidate(cache, key, url, build).catch(() => {}));
+  return servedCopy(hit, request.method);
+}
+
+/** Origin fetch for a miss; a copy from an older build is the fallback. */
+async function fetchFresh(request, url, build, fallback) {
+  const target = build ? new Request(originUrl(url, build), request) : request;
+  try {
+    const res = await fetch(target, { cf: EDGE_HTML_CACHE });
+    return res.status === 200 || !fallback ? res : null;
+  } catch (err) {
+    if (!fallback) throw err;
+    return null;
+  }
 }
 
 async function fetchPageSwr(request, url, ctx, cache) {
   const key = pageKey(url);
-  const hit = await cache.match(key);
-  if (hit) {
-    const age = (Date.now() - Number(hit.headers.get(EDGE_STORED_AT))) / 1000;
-    if (!(age < EDGE_HTML_TTL)) ctx.waitUntil(revalidate(cache, key, url).catch(() => {}));
-    return servedCopy(hit, request.method);
-  }
-  const res = await fetch(request, { cf: EDGE_HTML_CACHE });
+  const [hit, build] = await Promise.all([cache.match(key), currentBuildId(url.origin)]);
+  if (hit && isCurrentBuild(hit, build)) return serveHit(hit, request, url, ctx, cache, key, build);
+  const res = await fetchFresh(request, url, build, hit);
+  if (!res) return servedCopy(hit, request.method);
   if (res.status === 200 && request.method === 'GET') {
-    ctx.waitUntil(storePage(cache, key, res.clone()));
+    ctx.waitUntil(storePage(cache, key, res.clone(), build));
   }
   return res;
 }
 
-/** Fetch from origin, serving pages from the edge copy where one exists. */
-export function fetchOrigin(request, url, ctx, cache = globalThis.caches?.default) {
-  if (!isEdgeCacheable(request, url.pathname)) return fetch(request);
+// Not-found pages. GitHub Pages answers a missing page with its own
+// generic "Page not found · GitHub Pages" document, and serves the site's
+// not-found pages at /404/ and /<lang>/404/ with status 200, which Search
+// Console files as Soft 404. A missing page now gets the site's not-found
+// page in its locale (English when the locale has none) with status 404,
+// and /404/ itself answers 404.
+const NOT_FOUND_RE = /^\/(?:[a-z]{2,3}(?:-[a-z]{2,4})?\/)?404\/(?:index\.html)?$/;
+const LOCALE_SEGMENT_RE = /^\/([a-z]{2,3}(?:-[a-z]{2,4})?)\//;
+
+/** True for the site's own not-found page paths, in any locale. */
+export function isNotFoundPage(pathname) {
+  return NOT_FOUND_RE.test(pathname);
+}
+
+function asNotFound(res, method) {
+  return new Response(method === 'HEAD' ? null : res.body, { status: 404, headers: res.headers });
+}
+
+function fetchPage(request, url, ctx, cache) {
   if (cache && typeof ctx?.waitUntil === 'function') return fetchPageSwr(request, url, ctx, cache);
   return fetch(request, { cf: EDGE_HTML_CACHE });
+}
+
+/** The not-found page for `url`'s locale, else English, as a 404; null when neither loads. */
+async function notFoundPage(request, url, ctx, cache) {
+  const m = LOCALE_SEGMENT_RE.exec(url.pathname);
+  const paths = m ? [`/${m[1]}/404/`, '/404/'] : ['/404/'];
+  for (const path of paths) {
+    const target = new URL(path, url.origin);
+    const res = await fetchPage(new Request(target, { method: 'GET' }), target, ctx, cache);
+    if (res.status === 200) return asNotFound(res, request.method);
+  }
+  return null;
+}
+
+/** Fetch from origin, serving pages from the edge copy where one exists. */
+export async function fetchOrigin(request, url, ctx, cache = globalThis.caches?.default) {
+  if (!isEdgeCacheable(request, url.pathname)) return fetch(request);
+  const res = await fetchPage(request, url, ctx, cache);
+  if (isNotFoundPage(url.pathname)) return res.status === 200 ? asNotFound(res, request.method) : res;
+  if (res.status !== 404) return res;
+  return (await notFoundPage(request, url, ctx, cache)) || res;
 }

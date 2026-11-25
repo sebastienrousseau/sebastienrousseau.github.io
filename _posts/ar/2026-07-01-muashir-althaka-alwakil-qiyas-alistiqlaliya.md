@@ -449,9 +449,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [مؤشر الخزانة المستقلة 2026: الخزانة العميلة والسيولة القابلة للبرمجة والودائع المرمَّزة — Sebastien Rousseau](https://sebastienrousseau.com/ar/2026-06-07-muashir-alkhazana-almustaqilla-2026/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، والتشفير ما بعد الكمّي للخدمات المالية، والتحوّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عامًا عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-07-01">2026-07-01</time>.</p>
