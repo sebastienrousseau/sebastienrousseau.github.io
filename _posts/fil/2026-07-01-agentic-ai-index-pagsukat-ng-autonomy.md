@@ -449,9 +449,7 @@ Hindi. Hayagang isinasaad ng FSB na ang 12 Sound Practices ay hindi mga nagtatal
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
-
-
+35. [Indeks ng Autonomous Treasury 2026: Agentic Treasury, Programmable Liquidity, Tokenized Deposits, at Real-Time Cash Control — Sebastien Rousseau](https://sebastienrousseau.com/fil/2026-06-07-indeks-ng-autonomous-treasury-2026/)
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ng Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at sa structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri noong <time datetime="2026-07-01">2026-07-01</time>.</p>
