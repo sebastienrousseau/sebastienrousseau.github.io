@@ -131,8 +131,10 @@ def localize_en_dates(html: str) -> str:
 # ---------------------------------------------------------------------------
 
 # Static pages we mirror under /fr/. Keys are the EN slugs. Built once
-# from the FR registry at import — the EN slug set is identical across
-# languages, so the compiled regexes are language-independent.
+# from the FR registry at import. FR translates every static page, but
+# a noindex locale may lack the indexed-only ones (``indexed_only_pages``
+# in _data/seo/locale-indexing.json), so the rewriters below check the
+# current language's own map before pointing a link into its tree.
 _STATIC_FR_PAGES = tuple(st.STATIC_SLUG_FR.keys())
 _STATIC_LINK_RE = re.compile(
     r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/('
@@ -158,7 +160,9 @@ def rewrite_static_links(html: str) -> str:
 
     def repl_top_level(m: re.Match[str]) -> str:
         en_slug = m.group(3)
-        fr_slug_str = st.STATIC_SLUG_FR.get(en_slug, en_slug)
+        if en_slug not in st.STATIC_SLUG_FR:
+            return m.group(0)  # not translated in this language: keep the EN page
+        fr_slug_str = st.STATIC_SLUG_FR[en_slug]
         tail = m.group(4) or "/"
         if not tail.startswith("/"):  # defensive: group(4) always starts with "/"
             tail = "/" + tail  # pragma: no cover
