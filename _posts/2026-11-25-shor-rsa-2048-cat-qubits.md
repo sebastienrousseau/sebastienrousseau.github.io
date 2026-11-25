@@ -110,21 +110,22 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits
 
-**An end-to-end resource estimate for factoring RSA-2048 on superconducting cat qubits puts the machine at about 611,000 cat qubits and 1.25 hours when space is traded for time. Its no-bit-flip assumption corresponds to a bit-flip time of about 100 years; relaxing that to about one hour with an extra code layer raises the estimated cost to about 45,000 cat qubits.**
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> A compiled, end-to-end estimate of Shor's algorithm on superconducting cat qubits gives about 611,000 cat qubits and 1.25 hours for RSA-2048. An intermediate benchmark, FFDLP-512, needs about 6,700 cat qubits and 21 minutes. Relaxing the bit-flip requirement from about 100 years to about one hour, using a distance-3 bit-flip code as an extra concatenation layer, is estimated to raise the cost of RSA-2048 to about 45,000 cat qubits.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026 paper led by Alice & Bob compiles Shor's algorithm on cat qubits: RSA-2048 needs about 23,000 qubits over 3.14 days, or 611,000 qubits for 1.25 hours.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Full compilation.</strong> RSA-2048 is the configuration the authors compile in full, at about 23,000 cat qubits and 3.14 days, on two architectures: repetition cat codes and LDPC cat codes.</li>
-  <li><strong>Space for time.</strong> Trading space for time, RSA-2048 runs in 1.25 hours on about 611,000 cat qubits.</li>
-  <li><strong>A new benchmark.</strong> FFDLP-512 is proposed as an intermediate target at about 6,700 cat qubits and 21 minutes.</li>
-  <li><strong>Bit-flip budget.</strong> The no-bit-flip assumption corresponds to about 100 years; an extra concatenation layer relaxes it to about one hour, at an estimated cost of about 45,000 cat qubits.</li>
-  <li><strong>Hardware lever.</strong> The cat qubit's biased noise is what permits simpler error correction with a lower logical-to-physical qubit ratio.</li>
+  <li><strong>Why Shor's algorithm still sets the benchmark.</strong> The paper is "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days" by Axel Pappalardo, Dahmun Goudarzi and eight co-authors, most of them at Alice & Bob in Paris, published in 2026 as…</li>
+  <li><strong>Comparing machines requires agreeing on metrics.</strong> Resource estimates are only useful if two of them can be compared, and that requires agreement on what to count.</li>
+  <li><strong>What makes a cat qubit different.</strong> The qubit technology considered is the dissipative cat qubit, which belongs to the family of superconducting qubits.</li>
+  <li><strong>From algorithm to physical qubits.</strong> The estimate is built through layers of abstraction.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a>, <a href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</a>.</p>
 </aside>
 <!-- lead-end -->
+
+**An end-to-end resource estimate for factoring RSA-2048 on superconducting cat qubits puts the machine at about 611,000 cat qubits and 1.25 hours when space is traded for time. Its no-bit-flip assumption corresponds to a bit-flip time of about 100 years; relaxing that to about one hour with an extra code layer raises the estimated cost to about 45,000 cat qubits.**
 
 > **Executive Summary**
 >
@@ -242,3 +243,16 @@ The noise model is summarised by a single parameter, pZ, the phase-flip probabil
 - Ruiz, D. et al., (2025). [LDPC-cat codes for low-overhead quantum computing in 2D ⧉](https://arxiv.org/abs/2401.09541 "LDPC-cat codes"). Nature Communications.
 - Shanahan, P. and Ruiz, D., (2026). [Elevator Codes: Concatenation for resource-efficient quantum memory under biased noise ⧉](https://arxiv.org/abs/2601.10786 "Elevator codes"). arXiv.
 - Shor, P. W., (1997). [Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer ⧉](https://arxiv.org/abs/quant-ph/9508027 "Shor's algorithm"). SIAM Journal on Computing.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.</span><span class="author-credentials">More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-11-25">2026-11-25</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope" class="related-media" aria-label="Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence" tabindex="-1"><img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope">Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

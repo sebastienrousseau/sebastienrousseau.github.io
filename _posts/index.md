@@ -322,24 +322,24 @@ site_software: "Static Site Generator, Rust"
 <!-- medium-publications:start -->
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonai.co/" title="Banking On AI on Medium" aria-label="Banking On AI on Medium" rel="noopener">
-<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Blue light lines crossing in a network over a dark reflective floor" src="https://cloudcdn.pro/stocks/images/johann-juraver-qyFaXDPecSQ.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonai.co/" rel="noopener">Banking On AI</a></h3>
-<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 26 articles on Medium</p>
+<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 28 articles on Medium</p>
 <p class="newsroom-excerpt">Agentic AI, model risk and AI governance for banks and payments. Every story there links back to its original here.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonquantum.com/" title="Banking On Quantum on Medium" aria-label="Banking On Quantum on Medium" rel="noopener">
-<img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Two parallel black and white bands curving together" src="https://cloudcdn.pro/stocks/images/alvaro-pinot-6tWCLnsCFfM.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonquantum.com/" rel="noopener">Banking On Quantum</a></h3>
-<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 26 articles on Medium</p>
+<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 27 articles on Medium</p>
 <p class="newsroom-excerpt">Post-quantum cryptography, crypto-agility and quantum-safe payments. Every story there links back to its original here.</p>
 </div>
 </article>
