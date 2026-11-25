@@ -101,5 +101,90 @@
     "subtitle": "Cảm ơn bạn đã liên hệ!",
     "description": "Cảm ơn bạn đã gửi tin nhắn. Tôi sẽ phản hồi sớm nhất có thể.",
     "keywords": "cảm ơn"
+  },
+  "editorial": {
+    "title": "Tiêu chuẩn biên tập: sebastienrousseau.com",
+    "subtitle": "Nguồn dẫn, đính chính, công bố AI, xung đột lợi ích. Áp dụng cho mọi bài viết trên sebastienrousseau.com.",
+    "description": "Tiêu chuẩn biên tập của sebastienrousseau.com: nguồn dẫn, chính sách đính chính, công bố dùng AI, xung đột lợi ích và trách nhiệm giải trình cho mọi bài viết.",
+    "keywords": "tiêu chuẩn biên tập, chính sách đính chính, công bố AI, xung đột lợi ích, nguồn dẫn, kiểm chứng thông tin, tiêu chuẩn báo chí, IFCN, Google News, trách nhiệm giải trình",
+    "h1": "Tiêu chuẩn biên tập"
+  },
+  "glossary": {
+    "title": "Bảng thuật ngữ: sebastienrousseau.com",
+    "subtitle": "Định nghĩa dựa trên tiêu chuẩn cho mọi thuật ngữ then chốt dùng trên trang. Mỗi mục đều liên kết đến NIST, ISO, BIS, ECB, Federal Reserve hoặc EUR-Lex.",
+    "description": "Bảng thuật ngữ dựa trên tiêu chuẩn của sebastienrousseau.com. Mỗi thuật ngữ có liên kết sameAs đến nguồn gốc: NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex.",
+    "keywords": "bảng thuật ngữ, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, tiền gửi token hóa, RTGS, SWIFT gpi, PSD3, thuật ngữ ngân hàng, thuật ngữ thanh toán, mật mã hậu lượng tử",
+    "h1": "Bảng thuật ngữ"
+  },
+  "search": {
+    "title": "Tìm kiếm: sebastienrousseau.com",
+    "subtitle": "Tìm kiếm toàn văn tức thì, theo ngôn ngữ, chạy trên trình duyệt, trong mọi bài viết, công trình và nghiên cứu tình huống. Nhấn ⌘K hoặc Ctrl-K ở bất kỳ đâu trên trang.",
+    "description": "Tìm trong mọi bài viết, công trình và nghiên cứu tình huống trên sebastienrousseau.com. Tìm kiếm toàn văn tức thì ngay trên trình duyệt, không theo dõi.",
+    "keywords": "tìm kiếm, tìm kiếm trên trang, tìm kiếm toàn văn, bài viết, công trình, nghiên cứu tình huống, ngân hàng, thanh toán, mật mã hậu lượng tử, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite: để tác tử AI thực hiện thanh toán ngân hàng",
+    "description": "Lớp ISO 20022 mở cho tác tử AI: chín máy chủ MCP để tạo, xác thực, đối soát và quyết toán thanh toán ngân hàng từ ngôn ngữ tự nhiên. Apache-2.0, trên PyPI.",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, thanh toán bằng tác tử AI, pain.001, pacs.008, camt.053, đối soát, AP2, x402, thanh toán tự hành, fintech"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite: tài liệu hướng dẫn",
+    "description": "Kết nối ISO 20022 MCP Suite với Claude Code, Claude Desktop hay ứng dụng MCP bất kỳ: một lệnh hoặc một khối JSON, yêu cầu đầu tiên và máy chủ cho từng việc.",
+    "keywords": "tài liệu ISO 20022 MCP, cài đặt Claude MCP, claude mcp add, cấu hình MCP Claude Desktop, pain.001 MCP, pacs.008 MCP, camt.053 MCP, MCP đối soát, tài liệu thanh toán bằng tác tử",
+    "h1": "ISO 20022 MCP Suite: tài liệu hướng dẫn.",
+    "hero_sub": "Thêm bộ công cụ vào Claude Code, Claude Desktop hoặc bất kỳ ứng dụng MCP nào chỉ trong một bước, rồi tạo thông điệp ISO 20022 đã xác thực đầu tiên từ một yêu cầu bằng ngôn ngữ thông thường.",
+    "hero_alt": "Toàn cảnh khu tài chính rực sáng về đêm nhìn từ trên cao"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite: quy trình mẫu",
+    "description": "Quy trình mẫu ISO 20022 MCP Suite: chuyển đổi MT103 cũ, đối soát sao kê, hủy khoản thanh toán sai, biến ủy quyền AP2 thành thông điệp ngân hàng hợp lệ.",
+    "keywords": "quy trình mẫu ISO 20022 MCP, MT103 sang pacs.008, đối soát camt.053 pain.001, hủy thanh toán camt.056, AP2 pain.001, quy trình thanh toán bằng tác tử",
+    "h1": "ISO 20022 MCP Suite: quy trình mẫu.",
+    "hero_sub": "Năm quy trình từ đầu đến cuối mà tác tử chạy hoàn toàn qua bộ công cụ: từ một MT103 cũ đến một lệnh chuyển tiền đã xác thực, từ sao kê ngân hàng đến sổ cái đã đối soát.",
+    "hero_alt": "Toàn cảnh khu tài chính rực sáng về đêm nhìn từ trên cao"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite: tham chiếu công cụ",
+    "description": "Tham chiếu ISO 20022 MCP Suite: mọi máy chủ và công cụ, từ gateway, máy chủ thông điệp đến reconcile, camt-exceptions, bankstatementparser và cầu nối AP2/x402.",
+    "keywords": "công cụ ISO 20022 MCP, tham chiếu công cụ MCP, công cụ pain001, công cụ pacs008, công cụ camt053, công cụ reconcile-mcp, công cụ ap2-iso20022, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite: tham chiếu công cụ.",
+    "hero_sub": "Mọi máy chủ trong bộ công cụ và các công cụ mà nó cung cấp. Chín máy chủ, một quy ước nhất quán: đầu vào JSON, đầu ra JSON đã xác thực hoặc XML đã kiểm tra theo XSD.",
+    "hero_alt": "Toàn cảnh khu tài chính rực sáng về đêm nhìn từ trên cao"
+  },
+  "projects-developer-platform": {
+    "title": "Nền tảng cho nhà phát triển.",
+    "description": "Thư viện Rust mã nguồn mở: noyalib (YAML), trình tạo trang tĩnh, ghi nhật ký, xử lý ngày giờ và khởi tạo dự án. Phát hành kèm SBOM và chữ ký Sigstore.",
+    "keywords": "thư viện Rust, noyalib, trình tạo trang tĩnh, YAML, serde, SBOM, nguồn gốc phần mềm, nền tảng nhà phát triển, chuỗi cung ứng",
+    "h1": "Nền tảng cho đội ngũ kỹ sư của bạn.",
+    "hero_sub": "Các thư viện đã được kiểm toán và ký số đứng sau trang này. Sẵn sàng để bạn xây dựng tiếp.",
+    "hero_alt": "Những đường nét kiến trúc gọn gàng trong ánh sáng dịu, tượng trưng cho nền tảng đáng tin cậy dành cho nhà phát triển."
+  },
+  "projects-payments": {
+    "title": "Thanh toán ISO 20022, từ đầu đến cuối.",
+    "description": "Thư viện ISO 20022 mã nguồn mở cho pain.001, pacs.008, camt.053 và acmt.001, kèm phân tích sao kê. Dành cho ngân hàng, đơn vị thanh toán và bộ phận ngân quỹ.",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, phân tích sao kê ngân hàng, CBPR+, SEPA, bộ công cụ thanh toán",
+    "h1": "Thanh toán theo chuẩn toàn cầu.",
+    "hero_sub": "Toàn bộ vòng đời ISO 20022, bằng mã nguồn mở. Được xây dựng để phù hợp với lộ trình của bạn, chứ không phải ngược lại.",
+    "hero_alt": "Toàn cảnh các nút giao thông đô thị về đêm nhìn từ trên cao, tượng trưng cho hạ tầng thanh toán xuyên biên giới."
+  },
+  "projects-post-quantum": {
+    "title": "Bảo mật hậu lượng tử cho hệ thống tài chính.",
+    "description": "Thư viện Rust mã nguồn mở cho mật mã hậu lượng tử: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hàm băm và các thành phần liên quan cho hệ thống tài chính.",
+    "keywords": "mật mã hậu lượng tử, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, thu thập trước giải mã sau, bảo mật tài chính",
+    "h1": "Bảo mật vượt qua thời đại RSA.",
+    "hero_sub": "Bảo mật an toàn lượng tử, áp dụng ngay hôm nay. Xây dựng trên các tiêu chuẩn NIST, sẵn sàng cho môi trường vận hành thực tế.",
+    "hero_alt": "Trường ánh sáng xanh trừu tượng, tượng trưng cho mật mã hậu lượng tử trong hệ thống tài chính."
+  },
+  "resources-pacs008-checklist": {
+    "title": "Danh sách kiểm tra chuyển đổi địa chỉ có cấu trúc ISO 20022 pacs.008: PDF miễn phí",
+    "subtitle": "Danh sách 23 điểm kiểm tra địa chỉ có cấu trúc trước hạn chót SWIFT CBPR+ tháng 11/2026.",
+    "description": "PDF miễn phí: 23 điểm kiểm tra địa chỉ có cấu trúc cho hạn chót pacs.008 tháng 11/2026, theo hướng dẫn của EPAA, SWIFT và CBPR+. Để lại email để nhận liên kết.",
+    "keywords": "ISO 20022, pacs.008, địa chỉ có cấu trúc, CBPR+, SWIFT, danh sách kiểm tra chuyển đổi, hạn chót tháng 11/2026, thanh toán bán buôn"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "Danh sách kiểm tra mức sẵn sàng an toàn lượng tử cho doanh nghiệp thanh toán: PDF miễn phí",
+    "subtitle": "20 bước từ nhận thức đến hành động, dựa trên báo cáo về mức sẵn sàng an toàn lượng tử tháng 11/2026 của EPAA.",
+    "description": "PDF miễn phí: 20 bước đánh giá ban đầu độ sẵn sàng an toàn lượng tử, dựa trên sách trắng tháng 11/2026 của EPAA. Chỉ định người phụ trách, lần theo luồng thanh toán.",
+    "keywords": "thanh toán an toàn lượng tử, mật mã hậu lượng tử, kiểm kê mật mã, EPAA, HKMA, MAS, danh sách kiểm tra mức sẵn sàng, thanh toán"
   }
 }

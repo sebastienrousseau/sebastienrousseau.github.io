@@ -41,6 +41,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import _lang_registry  # type: ignore[import-not-found]
+import _locale_indexing  # type: ignore[import-not-found]
 
 ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
@@ -102,7 +103,10 @@ def check_language(lang: _lang_registry.Language) -> list[str]:
     )
 
     # 3. Every required static-page slug has a counterpart
-    missing_static = set(REQUIRED_STATIC_SLUGS) - set(static_map)
+    required_static = set(REQUIRED_STATIC_SLUGS)
+    if _locale_indexing.is_indexed(lang.code):
+        required_static |= _locale_indexing.indexed_only_pages()
+    missing_static = required_static - set(static_map)
     problems.extend(
         f"[{lang.code}] missing static-page slug: {slug}" for slug in sorted(missing_static)
     )

@@ -20,7 +20,19 @@
     "speaking": "speaking",
     "suite": "sada",
     "research": "vyzkum",
-    "library": "knihovna"
+    "library": "knihovna",
+    "editorial": "redakcni-standardy",
+    "glossary": "glosar",
+    "search": "hledat",
+    "iso20022-mcp": "iso20022-mcp-sada",
+    "iso20022-mcp-docs": "iso20022-mcp-dokumentace",
+    "iso20022-mcp-recipes": "iso20022-mcp-postupy",
+    "iso20022-mcp-reference": "iso20022-mcp-reference-nastroju",
+    "projects-developer-platform": "projekty-vyvojarska-platforma",
+    "projects-payments": "projekty-platby-iso20022",
+    "projects-post-quantum": "projekty-postkvantova-bezpecnost",
+    "resources-pacs008-checklist": "kontrolni-seznam-pacs008-strukturovane-adresy",
+    "resources-quantum-safe-readiness-checklist": "kontrolni-seznam-kvantove-pripravenosti"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-ohlednuti-za-rokem",

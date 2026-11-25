@@ -101,5 +101,90 @@
     "subtitle": "Vielen Dank für Ihre Nachricht!",
     "description": "Danke für Ihre Nachricht. Ich melde mich in Kürze bei Ihnen.",
     "keywords": "Danke"
+  },
+  "editorial": {
+    "title": "Redaktionelle Standards: sebastienrousseau.com",
+    "subtitle": "Quellen, Korrekturen, KI-Offenlegung, Interessenkonflikte. Verbindlich für jeden Artikel auf sebastienrousseau.com.",
+    "description": "Redaktionelle Standards von sebastienrousseau.com: Quellen, Korrekturen, Offenlegung von KI-Einsatz und Interessenkonflikten, Verantwortlichkeit. Gilt für jeden Artikel.",
+    "keywords": "redaktionelle Standards, Korrekturrichtlinie, KI-Offenlegung, Interessenkonflikt, Quellen, Faktenprüfung, journalistische Standards, IFCN, Google News, Verantwortlichkeit",
+    "h1": "Redaktionelle Standards"
+  },
+  "glossary": {
+    "title": "Glossar: sebastienrousseau.com",
+    "subtitle": "An Standards verankerte Definitionen aller tragenden Begriffe der Website. NIST, ISO, BIS, EZB, Federal Reserve und EUR-Lex bei jedem Eintrag verlinkt.",
+    "description": "Glossar von sebastienrousseau.com. Jeder Begriff verweist per sameAs auf die maßgebliche Quelle eines Normungsgremiums oder einer Zentralbank (NIST, ISO, BIS, EZB).",
+    "keywords": "Glossar, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, tokenisierte Einlagen, RTGS, SWIFT gpi, PSD3, Bankbegriffe, Zahlungsverkehrsbegriffe, Post-Quanten-Kryptografie",
+    "h1": "Glossar"
+  },
+  "search": {
+    "title": "Suche: sebastienrousseau.com",
+    "subtitle": "Sofortige, clientseitige Volltextsuche je Sprache über alle Artikel, Publikationen und Fallstudien. Drücken Sie ⌘K oder Strg-K überall auf der Website.",
+    "description": "Alle Artikel, Publikationen und Fallstudien auf sebastienrousseau.com durchsuchen. Sofortige, clientseitige Volltextsuche je Sprache, ohne Tracking, ohne Backend.",
+    "keywords": "Suche, Website-Suche, Volltextsuche, Artikel, Publikationen, Fallstudien, Banking, Zahlungsverkehr, Post-Quanten-Kryptografie, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite: KI-Agenten führen Bankzahlungen aus",
+    "description": "Die offene ISO-20022-Schicht für KI-Agenten: neun herstellerneutrale MCP-Server erzeugen, validieren und stimmen Bankzahlungen aus natürlicher Sprache ab. Apache-2.0.",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, Zahlungen durch KI-Agenten, pain.001, pacs.008, camt.053, Abstimmung, AP2, x402, agentische Zahlungen, Fintech"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite: Dokumentation",
+    "description": "ISO 20022 MCP Suite mit Claude Code, Claude Desktop oder einem MCP-Client verbinden: ein Befehl oder JSON-Block, erste Prompts, der passende Server je Aufgabe.",
+    "keywords": "ISO 20022 MCP Dokumentation, Claude MCP Einrichtung, claude mcp add, Claude Desktop MCP Konfiguration, pain.001 MCP, pacs.008 MCP, camt.053 MCP, Abstimmung MCP, Dokumentation Agentenzahlungen",
+    "h1": "ISO 20022 MCP Suite: Dokumentation.",
+    "hero_sub": "Fügen Sie die Suite in einem Schritt zu Claude Code, Claude Desktop oder einem beliebigen MCP-Client hinzu und erzeugen Sie dann aus einem Prompt in Alltagssprache Ihre erste validierte ISO-20022-Nachricht.",
+    "hero_alt": "Luftaufnahme eines beleuchteten Finanzviertels bei Nacht"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite: Rezepte",
+    "description": "Rezepte für die ISO 20022 MCP Suite: MT103 migrieren, Kontoauszug abstimmen, Fehlzahlung stornieren und ein AP2-Mandat in eine gültige Bankennachricht überführen.",
+    "keywords": "ISO 20022 MCP Rezepte, MT103 zu pacs.008, camt.053 mit pain.001 abstimmen, camt.056 Stornierung, AP2 pain.001, Rezept Agentenzahlung",
+    "h1": "ISO 20022 MCP Suite: Rezepte.",
+    "hero_sub": "Fünf durchgängige Abläufe, die ein Agent vollständig über die Suite ausführt: von einer alten MT103 zu einer validierten Überweisung, von einem Kontoauszug zu einem abgestimmten Hauptbuch.",
+    "hero_alt": "Luftaufnahme eines beleuchteten Finanzviertels bei Nacht"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite: Tool-Referenz",
+    "description": "Tool-Referenz der ISO 20022 MCP Suite: jeder Server und seine Tools, vom Gateway bis zu reconcile, camt-exceptions, bankstatementparser und der AP2/x402-Brücke.",
+    "keywords": "ISO 20022 MCP Tools, MCP Tool-Referenz, pain001 Tools, pacs008 Tools, camt053 Tools, reconcile-mcp Tools, ap2-iso20022 Tools, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite: Tool-Referenz.",
+    "hero_sub": "Jeder Server der Suite und die Tools, die er bereitstellt. Neun Server, ein einheitlicher Vertrag: JSON rein, validiertes JSON oder gegen das XSD geprüftes XML raus.",
+    "hero_alt": "Luftaufnahme eines beleuchteten Finanzviertels bei Nacht"
+  },
+  "projects-developer-platform": {
+    "title": "Grundlagen für Entwicklerplattformen.",
+    "description": "Open-Source-Bibliotheken in Rust: noyalib (YAML), Static Site Generator, Logging, Datumsfunktionen und Scaffolding. Mit SBOMs und Sigstore-Signaturen veröffentlicht.",
+    "keywords": "Rust-Bibliotheken, noyalib, Static Site Generator, YAML, serde, SBOM, Herkunftsnachweis, Entwicklerplattform, Lieferkette",
+    "h1": "Grundlagen für Ihre Entwickler.",
+    "hero_sub": "Die geprüften, signierten Bibliotheken hinter dieser Website. Bauen Sie darauf auf.",
+    "hero_alt": "Klare Architekturlinien in weichem Licht als Sinnbild für verlässliche Entwicklergrundlagen."
+  },
+  "projects-payments": {
+    "title": "ISO-20022-Zahlungen, durchgängig.",
+    "description": "Open-Source-Bibliotheken für ISO 20022: pain.001, pacs.008, camt.053, acmt.001 und Kontoauszugsparser. Für Banken, Zahlungsdienstleister und Treasury-Abteilungen.",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, Kontoauszugsparser, CBPR+, SEPA, Werkzeuge für den Zahlungsverkehr",
+    "h1": "Zahlungen im globalen Standard.",
+    "hero_sub": "Der gesamte ISO-20022-Lebenszyklus als Open Source. Gebaut für Ihren Zeitplan, nicht umgekehrt.",
+    "hero_alt": "Luftaufnahme städtischer Verkehrsknoten bei Nacht als Sinnbild für grenzüberschreitende Zahlungswege."
+  },
+  "projects-post-quantum": {
+    "title": "Post-Quanten-Sicherheit für Finanzsysteme.",
+    "description": "Open-Source-Bibliotheken in Rust für Post-Quanten-Kryptografie: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), Hashing und verwandte Primitive für Finanzsysteme.",
+    "keywords": "Post-Quanten-Kryptografie, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, harvest now decrypt later, Sicherheit im Finanzwesen",
+    "h1": "Sicherheit nach der RSA-Ära.",
+    "hero_sub": "Quantensichere Sicherheit, schon heute angewandt. Auf Basis der NIST-Standards, bereit für den Produktivbetrieb.",
+    "hero_alt": "Abstraktes blaues Lichtfeld als Sinnbild für Post-Quanten-Kryptografie in Finanzsystemen."
+  },
+  "resources-pacs008-checklist": {
+    "title": "ISO 20022 pacs.008: Checkliste zur Migration strukturierter Adressen, kostenloses PDF",
+    "subtitle": "Checkliste mit 23 Punkten zu strukturierten Adressen vor der SWIFT-CBPR+-Frist im November 2026.",
+    "description": "Kostenloses PDF: 23-Punkte-Checkliste zu strukturierten Adressen für die pacs.008-Frist im November 2026, auf Basis von EPAA, SWIFT und CBPR+. Link per E-Mail.",
+    "keywords": "ISO 20022, pacs.008, strukturierte Adresse, CBPR+, SWIFT, Migrationscheckliste, Frist November 2026, Großbetragszahlungen"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "Checkliste Quantensicherheit für Zahlungsdienstleister, kostenloses PDF",
+    "subtitle": "20 Schritte vom Bewusstsein zum Handeln, auf Basis des EPAA-Papiers zur Quantensicherheit vom November 2026.",
+    "description": "Kostenloses PDF: 20 Schritte zur ersten Bewertung der Quantensicherheit, auf Basis des EPAA-White-Papers vom November 2026. Verantwortliche benennen, Zahlungsfluss prüfen.",
+    "keywords": "quantensichere Zahlungen, Post-Quanten-Kryptografie, kryptografisches Inventar, EPAA, HKMA, MAS, Bereitschafts-Checkliste, Zahlungsverkehr"
   }
 }

@@ -62,6 +62,23 @@ def test_policy_rejects_unknown_locale_or_missing_english(
         li.indexed_codes.cache_clear()
 
 
+def test_indexed_only_pages_are_real_en_static_pages() -> None:
+    pages = li.indexed_only_pages()
+    assert {"glossary", "editorial", "iso20022-mcp-reference"} <= pages
+    root = Path(__file__).resolve().parents[2]
+    for slug in pages:
+        assert (root / "_posts" / f"{slug}.md").is_file(), slug
+
+
+def test_indexed_only_pages_default_to_none(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    policy = tmp_path / "policy.json"
+    policy.write_text(json.dumps({"indexed": ["en"]}), encoding="utf-8")
+    monkeypatch.setattr(li, "POLICY", policy)
+    assert li.indexed_only_pages() == frozenset()
+
+
 # -- Locale indexing ----------------------------------------------------------
 
 _SSG = '<meta name="robots" content="max-snippet:-1, max-image-preview:large">'

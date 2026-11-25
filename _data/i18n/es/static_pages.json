@@ -101,5 +101,90 @@
     "subtitle": "Artículos sobre IA, criptografía postcuántica, ISO 20022 y el futuro de los pagos.",
     "description": "Explore los análisis por temática: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.",
     "keywords": "temas, temáticas, IA, pagos, ISO 20022, criptografía postcuántica"
+  },
+  "editorial": {
+    "title": "Normas editoriales: sebastienrousseau.com",
+    "subtitle": "Fuentes, correcciones, uso de IA, conflictos de intereses. Vigentes para cada artículo de sebastienrousseau.com.",
+    "description": "Normas editoriales de sebastienrousseau.com: fuentes, política de correcciones, uso de IA, conflictos de intereses y rendición de cuentas en cada artículo.",
+    "keywords": "normas editoriales, política de correcciones, divulgación de IA, conflicto de intereses, fuentes, verificación de datos, normas periodísticas, IFCN, Google News, rendición de cuentas",
+    "h1": "Normas editoriales"
+  },
+  "glossary": {
+    "title": "Glosario: sebastienrousseau.com",
+    "subtitle": "Definiciones ancladas en normas de cada término esencial del sitio. Cada entrada enlaza a NIST, ISO, BIS, ECB, Federal Reserve o EUR-Lex.",
+    "description": "Glosario de sebastienrousseau.com anclado en normas: cada término enlaza con su fuente canónica (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex) mediante sameAs.",
+    "keywords": "glosario, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, depósitos tokenizados, RTGS, SWIFT gpi, PSD3, términos bancarios, términos de pagos, criptografía poscuántica",
+    "h1": "Glosario"
+  },
+  "search": {
+    "title": "Buscar: sebastienrousseau.com",
+    "subtitle": "Búsqueda de texto completo instantánea, en el navegador y adaptada a cada idioma, en todos los artículos, publicaciones y casos de estudio. Pulse ⌘K o Ctrl-K en cualquier página del sitio.",
+    "description": "Busque en todos los artículos, publicaciones y casos de estudio de sebastienrousseau.com. Texto completo, instantáneo y en su idioma, sin rastreo ni servidor.",
+    "keywords": "buscar, búsqueda en el sitio, búsqueda de texto completo, artículos, publicaciones, casos de estudio, banca, pagos, criptografía poscuántica, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite: pagos bancarios para agentes de IA",
+    "description": "La capa ISO 20022 abierta para agentes de IA: nueve servidores MCP para generar, validar, conciliar y liquidar pagos en lenguaje natural. Apache-2.0, en PyPI.",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, pagos con agentes de IA, pain.001, pacs.008, camt.053, conciliación, AP2, x402, pagos agénticos, fintech"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite: documentación",
+    "description": "Conecte la ISO 20022 MCP Suite a Claude Code, Claude Desktop o cualquier cliente MCP con un comando o un bloque JSON, primeras instrucciones y qué servidor usar.",
+    "keywords": "documentación ISO 20022 MCP, configuración MCP en Claude, claude mcp add, configuración MCP de Claude Desktop, pain.001 MCP, pacs.008 MCP, camt.053 MCP, conciliación MCP, documentación de pagos con agentes",
+    "h1": "ISO 20022 MCP Suite: documentación.",
+    "hero_sub": "Añada la suite a Claude Code, Claude Desktop o cualquier cliente MCP en un solo paso y genere su primer mensaje ISO 20022 validado a partir de una instrucción en lenguaje corriente.",
+    "hero_alt": "Vista aérea de un distrito financiero iluminado de noche"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite: recetas",
+    "description": "Recetas de la ISO 20022 MCP Suite: migrar un MT103, conciliar un extracto, cancelar un pago erróneo y convertir un mandato AP2 en un mensaje bancario válido.",
+    "keywords": "recetas ISO 20022 MCP, MT103 a pacs.008, conciliar camt.053 con pain.001, cancelación camt.056, AP2 a pain.001, receta de pago con agentes",
+    "h1": "ISO 20022 MCP Suite: recetas.",
+    "hero_sub": "Cinco flujos de extremo a extremo que un agente ejecuta íntegramente con la suite: de un MT103 heredado a una transferencia validada, de un extracto bancario a un libro conciliado.",
+    "hero_alt": "Vista aérea de un distrito financiero iluminado de noche"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite: referencia de herramientas",
+    "description": "Referencia de herramientas de la ISO 20022 MCP Suite: cada servidor y sus herramientas, de la pasarela a reconcile, camt-exceptions y el puente AP2/x402.",
+    "keywords": "herramientas ISO 20022 MCP, referencia de herramientas MCP, herramientas pain001, herramientas pacs008, herramientas camt053, herramientas reconcile-mcp, herramientas ap2-iso20022, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite: referencia de herramientas.",
+    "hero_sub": "Cada servidor de la suite y las herramientas que expone. Nueve servidores, un contrato coherente: entra JSON, sale JSON validado o XML comprobado contra XSD.",
+    "hero_alt": "Vista aérea de un distrito financiero iluminado de noche"
+  },
+  "projects-developer-platform": {
+    "title": "Bases para la plataforma de desarrollo.",
+    "description": "Bibliotecas Rust de código abierto: noyalib (YAML), el generador de sitios estáticos, registro, fechas y andamiaje. Publicadas con SBOM y firmas Sigstore.",
+    "keywords": "bibliotecas Rust, noyalib, generador de sitios estáticos, YAML, serde, SBOM, procedencia, plataforma de desarrollo, cadena de suministro",
+    "h1": "Bases para sus ingenieros.",
+    "hero_sub": "Las bibliotecas auditadas y firmadas que sustentan este sitio. Listas para que construya sobre ellas.",
+    "hero_alt": "Líneas arquitectónicas limpias bajo una luz suave, que representan bases fiables para los desarrolladores."
+  },
+  "projects-payments": {
+    "title": "Pagos ISO 20022, de extremo a extremo.",
+    "description": "Bibliotecas ISO 20022 de código abierto para pain.001, pacs.008, camt.053 y acmt.001, con análisis de extractos. Para bancos, proveedores de pago y tesorerías.",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, analizador de extractos bancarios, CBPR+, SEPA, herramientas de pagos",
+    "h1": "Pagos en el estándar mundial.",
+    "hero_sub": "Todo el ciclo de vida de ISO 20022, en código abierto. Diseñado para adaptarse a sus plazos, y no al revés.",
+    "hero_alt": "Vista aérea de enlaces viarios urbanos de noche, que representan los circuitos de pagos transfronterizos."
+  },
+  "projects-post-quantum": {
+    "title": "Seguridad poscuántica para sistemas financieros.",
+    "description": "Bibliotecas Rust de código abierto para criptografía poscuántica: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hash y primitivas afines para sistemas financieros.",
+    "keywords": "criptografía poscuántica, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, recolectar ahora y descifrar después, seguridad financiera",
+    "h1": "Seguridad más allá de la era RSA.",
+    "hero_sub": "Seguridad resistente a la computación cuántica, aplicada hoy. Basada en las normas del NIST y lista para producción.",
+    "hero_alt": "Campo abstracto de luz azul, que representa la criptografía poscuántica para sistemas financieros."
+  },
+  "resources-pacs008-checklist": {
+    "title": "Lista de verificación ISO 20022 pacs.008 de direcciones estructuradas - PDF gratuito",
+    "subtitle": "Lista de 23 puntos sobre direcciones estructuradas antes del plazo de SWIFT CBPR+ de noviembre de 2026.",
+    "description": "PDF gratuito: lista de 23 puntos para migrar a direcciones estructuradas antes del plazo pacs.008 de noviembre de 2026, según EPAA, SWIFT y CBPR+. Pida el enlace.",
+    "keywords": "ISO 20022, pacs.008, dirección estructurada, CBPR+, SWIFT, lista de verificación de migración, plazo de noviembre de 2026, pagos mayoristas"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "Lista de preparación quantum-safe para empresas de pagos - PDF gratuito",
+    "subtitle": "20 pasos de la concienciación a la acción, basados en el informe de preparación quantum-safe de la EPAA de noviembre de 2026.",
+    "description": "PDF gratuito: 20 pasos para una primera evaluación de preparación quantum-safe, basados en el libro blanco de la EPAA de noviembre de 2026. Asigne un responsable.",
+    "keywords": "pagos quantum-safe, criptografía poscuántica, inventario criptográfico, EPAA, HKMA, MAS, lista de preparación, pagos"
   }
 }

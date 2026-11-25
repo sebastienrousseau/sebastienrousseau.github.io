@@ -101,5 +101,90 @@
     "subtitle": "关于人工智能、后量子密码学、ISO 20022 与支付未来的文章。",
     "description": "按主题探索分析：应用人工智能、ISO 20022 支付、后量子密码学以及批发支付转型。",
     "keywords": "主题, 议题, 人工智能, 支付, ISO 20022, 后量子密码学"
+  },
+  "editorial": {
+    "title": "编辑标准 · sebastienrousseau.com",
+    "subtitle": "信息来源、更正、AI 披露、利益冲突。适用于 sebastienrousseau.com 上的每一篇文章。",
+    "description": "sebastienrousseau.com 的编辑标准：信息来源、更正政策、AI 辅助披露、利益冲突披露与问责机制。适用于本站发布的每一篇文章。",
+    "keywords": "编辑标准, 更正政策, AI 披露, 利益冲突, 信息来源, 事实核查, 新闻标准, IFCN, Google News, 问责",
+    "h1": "编辑标准 · sebastienrousseau.com"
+  },
+  "glossary": {
+    "title": "术语表 · sebastienrousseau.com",
+    "subtitle": "本站使用的每个关键术语的定义，均以标准为依据。每个条目都链接到 NIST、ISO、BIS、ECB、美联储或 EUR-Lex。",
+    "description": "sebastienrousseau.com 以标准为依据的术语表。每个术语都通过 sameAs 链接到权威标准机构或中央银行来源（NIST、ISO、BIS、ECB、美联储、EUR-Lex）。",
+    "keywords": "术语表, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, 代币化存款, RTGS, SWIFT gpi, PSD3, 银行术语, 支付术语, 后量子密码",
+    "h1": "术语表 · sebastienrousseau.com"
+  },
+  "search": {
+    "title": "搜索 · sebastienrousseau.com",
+    "subtitle": "即时、在浏览器端运行、支持多语言的全文搜索，覆盖所有文章、论文和案例研究。在本站任意页面按 ⌘K 或 Ctrl-K 即可使用。",
+    "description": "搜索 sebastienrousseau.com 上的所有文章、论文和案例研究。即时、在浏览器端运行、支持多语言的全文搜索，无跟踪，无后端。",
+    "keywords": "搜索, 站内搜索, 全文搜索, 文章, 论文, 案例研究, 银行, 支付, 后量子密码, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite：让 AI 代理完成银行支付",
+    "description": "面向 AI 代理的开放 ISO 20022 层。九个厂商中立的 MCP 服务器，通过自然语言生成、校验、对账和结算银行支付。Apache-2.0 许可，已发布在 PyPI 和 MCP 注册中心。",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, AI 代理支付, pain.001, pacs.008, camt.053, 对账, AP2, x402, 代理式支付, 金融科技"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite：文档",
+    "description": "将 ISO 20022 MCP Suite 接入 Claude Code、Claude Desktop 或任意 MCP 客户端：一条命令或一段 JSON，可直接尝试的首批提示，以及每项任务适用的服务器。",
+    "keywords": "ISO 20022 MCP 文档, Claude MCP 配置, claude mcp add, Claude Desktop MCP 配置, pain.001 MCP, pacs.008 MCP, camt.053 MCP, 对账 MCP, 代理支付文档",
+    "h1": "ISO 20022 MCP Suite：文档。",
+    "hero_sub": "一步将套件添加到 Claude Code、Claude Desktop 或任意 MCP 客户端，然后用一句自然语言提示生成您的第一条经过校验的 ISO 20022 报文。",
+    "hero_alt": "夜幕下灯火通明的金融区鸟瞰图"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite：实践方案",
+    "description": "ISO 20022 MCP Suite 的端到端实践方案：迁移旧式 MT103、对账单对账、撤销并处理错误支付，以及将 AP2 代理授权转换为可上线传输的银行报文。",
+    "keywords": "ISO 20022 MCP 实践方案, MT103 转 pacs.008, camt.053 与 pain.001 对账, camt.056 撤销, AP2 pain.001, 代理支付方案",
+    "h1": "ISO 20022 MCP Suite：实践方案。",
+    "hero_sub": "五个完全通过套件由代理端到端运行的流程：从旧式 MT103 到经过校验的汇款，从银行对账单到完成对账的账簿。",
+    "hero_alt": "夜幕下灯火通明的金融区鸟瞰图"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite：工具参考",
+    "description": "ISO 20022 MCP Suite 工具参考：每个服务器及其提供的工具，从网关和报文服务器，到 reconcile、camt-exceptions、bankstatementparser 以及 AP2/x402 桥接。",
+    "keywords": "ISO 20022 MCP 工具, MCP 工具参考, pain001 工具, pacs008 工具, camt053 工具, reconcile-mcp 工具, ap2-iso20022 工具, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite：工具参考。",
+    "hero_sub": "套件中的每个服务器及其提供的工具。九个服务器，一个统一契约：输入 JSON，输出经过校验的 JSON 或经 XSD 检查的 XML。",
+    "hero_alt": "夜幕下灯火通明的金融区鸟瞰图"
+  },
+  "projects-developer-platform": {
+    "title": "开发者平台基础。",
+    "description": "开源 Rust 库：noyalib（YAML）、静态站点生成器、日志、日期处理和脚手架。发布时附带 SBOM 和 Sigstore 签名。",
+    "keywords": "Rust 库, noyalib, 静态站点生成器, YAML, serde, SBOM, 来源证明, 开发者平台, 供应链",
+    "h1": "为您的工程师打好基础。",
+    "hero_sub": "本站背后经过审计和签名的库，供您在其上构建。",
+    "hero_alt": "柔和光线下简洁的建筑线条，象征可靠的开发者基础。"
+  },
+  "projects-payments": {
+    "title": "端到端的 ISO 20022 支付。",
+    "description": "面向 pain.001、pacs.008、camt.053 和 acmt.001 的开源 ISO 20022 库，并支持银行对账单解析。适用于银行、支付服务提供商和企业司库。",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, 银行对账单解析器, CBPR+, SEPA, 支付工具链",
+    "h1": "采用全球标准的支付。",
+    "hero_sub": "完整的 ISO 20022 生命周期，全部开源。按您的时间表推进，而不是让您去迁就它。",
+    "hero_alt": "夜间城市立交桥鸟瞰图，象征跨境支付通道。"
+  },
+  "projects-post-quantum": {
+    "title": "面向金融系统的后量子安全。",
+    "description": "用于后量子密码的开源 Rust 库：ML-KEM（CRYSTALS-Kyber，NIST FIPS 203）、哈希及其他面向金融系统的相关原语。",
+    "keywords": "后量子密码, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, 先存储后解密, 金融安全",
+    "h1": "超越 RSA 时代的安全。",
+    "hero_sub": "抗量子安全，今天即可落地。基于 NIST 标准构建，可用于生产环境。",
+    "hero_alt": "抽象的蓝色光场，象征面向金融系统的后量子密码。"
+  },
+  "resources-pacs008-checklist": {
+    "title": "ISO 20022 pacs.008 结构化地址迁移检查清单：免费 PDF",
+    "subtitle": "在 2026 年 11 月 SWIFT CBPR+ 截止日期之前完成的 23 项结构化地址检查清单。",
+    "description": "免费 PDF：针对 2026 年 11 月 pacs.008 截止日期的 23 项结构化地址迁移检查清单，依据 EPAA、SWIFT 和 CBPR+ 指引编制。留下您的电子邮件，我会将链接发送给您。",
+    "keywords": "ISO 20022, pacs.008, 结构化地址, CBPR+, SWIFT, 迁移检查清单, 2026 年 11 月截止日期, 批发支付"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "支付机构抗量子就绪检查清单：免费 PDF",
+    "subtitle": "从认知到行动的 20 个步骤，依据 EPAA 2026 年 11 月抗量子就绪白皮书编制。",
+    "description": "免费 PDF：一份包含 20 个步骤的抗量子就绪初步评估检查清单，依据 EPAA 2026 年 11 月白皮书编制。指定负责人，追踪一条支付流程，梳理所发现的问题。",
+    "keywords": "抗量子支付, 后量子密码, 密码资产清单, EPAA, HKMA, MAS, 就绪检查清单, 支付"
   }
 }

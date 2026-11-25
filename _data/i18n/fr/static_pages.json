@@ -101,5 +101,90 @@
     "subtitle": "Merci de m'avoir contacté !",
     "description": "Merci de votre message. Je reviendrai vers vous très bientôt.",
     "keywords": "merci"
+  },
+  "editorial": {
+    "title": "Normes éditoriales : sebastienrousseau.com",
+    "subtitle": "Sources, corrections, usage de l'IA, conflits d'intérêts. Applicables à chaque article de sebastienrousseau.com.",
+    "description": "Normes éditoriales de sebastienrousseau.com : sources, politique de corrections, usage de l'IA, conflits d'intérêts et responsabilité, pour chaque article.",
+    "keywords": "normes éditoriales, politique de corrections, déclaration d'usage de l'IA, conflit d'intérêts, sources, vérification des faits, déontologie journalistique, IFCN, Google News, responsabilité",
+    "h1": "Normes éditoriales"
+  },
+  "glossary": {
+    "title": "Glossaire : sebastienrousseau.com",
+    "subtitle": "Définitions ancrées dans les normes de chaque terme structurant du site. NIST, ISO, BIS, ECB, Federal Reserve et EUR-Lex cités à chaque entrée.",
+    "description": "Glossaire de sebastienrousseau.com ancré dans les normes : chaque terme renvoie à sa source de référence (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex).",
+    "keywords": "glossaire, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, dépôts tokenisés, RTGS, SWIFT gpi, PSD3, termes bancaires, termes de paiement, cryptographie post-quantique",
+    "h1": "Glossaire"
+  },
+  "search": {
+    "title": "Recherche : sebastienrousseau.com",
+    "subtitle": "Recherche plein texte instantanée, côté client et adaptée à chaque langue, dans tous les articles, publications et études de cas. Appuyez sur ⌘K ou Ctrl-K partout sur le site.",
+    "description": "Recherchez dans tous les articles, publications et études de cas de sebastienrousseau.com. Recherche plein texte instantanée, côté client, sans suivi ni serveur.",
+    "keywords": "recherche, recherche sur le site, recherche plein texte, articles, publications, études de cas, banque, paiements, cryptographie post-quantique, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "Suite ISO 20022 MCP : des paiements bancaires par agents d'IA",
+    "description": "La couche ISO 20022 ouverte pour les agents d'IA : neuf serveurs MCP pour générer, valider, rapprocher et régler des paiements bancaires. Apache-2.0, sur PyPI.",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, paiements par agents d'IA, pain.001, pacs.008, camt.053, rapprochement, AP2, x402, paiements agentiques, fintech"
+  },
+  "iso20022-mcp-docs": {
+    "title": "Suite ISO 20022 MCP : documentation",
+    "description": "Connectez la suite ISO 20022 MCP à Claude Code, Claude Desktop ou tout client MCP en une commande ou un bloc JSON, avec les premières instructions à essayer.",
+    "keywords": "documentation ISO 20022 MCP, configuration MCP Claude, claude mcp add, configuration MCP Claude Desktop, pain.001 MCP, pacs.008 MCP, camt.053 MCP, rapprochement MCP, documentation paiements par agents",
+    "h1": "Suite ISO 20022 MCP : documentation.",
+    "hero_sub": "Ajoutez la suite à Claude Code, Claude Desktop ou tout client MCP en une étape, puis produisez votre premier message ISO 20022 validé à partir d'une instruction en langage courant.",
+    "hero_alt": "Vue aérienne d'un quartier financier illuminé de nuit"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "Suite ISO 20022 MCP : recettes",
+    "description": "Recettes de bout en bout pour la suite ISO 20022 MCP : migrer un MT103, rapprocher un relevé, annuler un paiement, convertir un mandat AP2 en message bancaire.",
+    "keywords": "recettes ISO 20022 MCP, MT103 vers pacs.008, rapprochement camt.053 pain.001, annulation camt.056, AP2 pain.001, recette de paiement par agent",
+    "h1": "Suite ISO 20022 MCP : recettes.",
+    "hero_sub": "Cinq flux de bout en bout qu'un agent exécute entièrement via la suite : d'un MT103 historique à un virement validé, d'un relevé bancaire à un grand livre rapproché.",
+    "hero_alt": "Vue aérienne d'un quartier financier illuminé de nuit"
+  },
+  "iso20022-mcp-reference": {
+    "title": "Suite ISO 20022 MCP : référence des outils",
+    "description": "Référence des outils de la suite ISO 20022 MCP : chaque serveur et ses outils, de la passerelle à reconcile, camt-exceptions, bankstatementparser et AP2/x402.",
+    "keywords": "outils ISO 20022 MCP, référence des outils MCP, outils pain001, outils pacs008, outils camt053, outils reconcile-mcp, outils ap2-iso20022, generate_message, validate_records",
+    "h1": "Suite ISO 20022 MCP : référence des outils.",
+    "hero_sub": "Chaque serveur de la suite et les outils qu'il expose. Neuf serveurs, un contrat cohérent : du JSON en entrée, du JSON validé ou du XML contrôlé par XSD en sortie.",
+    "hero_alt": "Vue aérienne d'un quartier financier illuminé de nuit"
+  },
+  "projects-developer-platform": {
+    "title": "Les fondations de la plateforme développeurs.",
+    "description": "Bibliothèques Rust open source : noyalib (YAML), générateur de sites statiques, journalisation, dates et échafaudage. Publiées avec SBOM et signatures Sigstore.",
+    "keywords": "bibliothèques Rust, noyalib, générateur de sites statiques, YAML, serde, SBOM, provenance, plateforme développeurs, chaîne d'approvisionnement logicielle",
+    "h1": "Des fondations pour vos ingénieurs.",
+    "hero_sub": "Les bibliothèques auditées et signées qui font tourner ce site. À vous de bâtir dessus.",
+    "hero_alt": "Lignes architecturales épurées dans une lumière douce, symbole de fondations fiables pour les développeurs."
+  },
+  "projects-payments": {
+    "title": "Les paiements ISO 20022 de bout en bout.",
+    "description": "Bibliothèques ISO 20022 open source pour pain.001, pacs.008, camt.053 et acmt.001, avec analyse des relevés bancaires. Pour banques, prestataires et trésoreries.",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, analyseur de relevés bancaires, CBPR+, SEPA, outils de paiement",
+    "h1": "Les paiements selon la norme mondiale.",
+    "hero_sub": "Tout le cycle de vie ISO 20022, en open source. Conçu pour s'adapter à votre calendrier, et non l'inverse.",
+    "hero_alt": "Vue aérienne d'échangeurs urbains de nuit, symbole des infrastructures de paiement transfrontalier."
+  },
+  "projects-post-quantum": {
+    "title": "La sécurité post-quantique pour les systèmes financiers.",
+    "description": "Bibliothèques Rust open source de cryptographie post-quantique : ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hachage et primitives associées pour la finance.",
+    "keywords": "cryptographie post-quantique, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, collecter maintenant déchiffrer plus tard, sécurité financière",
+    "h1": "La sécurité après l'ère RSA.",
+    "hero_sub": "Une sécurité résistante au quantique, appliquée dès aujourd'hui. Fondée sur les normes du NIST, prête pour la production.",
+    "hero_alt": "Champ lumineux bleu abstrait, symbole de la cryptographie post-quantique pour les systèmes financiers."
+  },
+  "resources-pacs008-checklist": {
+    "title": "Liste de contrôle de migration des adresses structurées ISO 20022 pacs.008 : PDF gratuit",
+    "subtitle": "23 points de contrôle sur l'adresse structurée avant l'échéance SWIFT CBPR+ de novembre 2026.",
+    "description": "PDF gratuit : 23 points de contrôle pour migrer vers l'adresse structurée avant l'échéance pacs.008 de novembre 2026. Fondé sur l'EPAA, SWIFT et CBPR+.",
+    "keywords": "ISO 20022, pacs.008, adresse structurée, CBPR+, SWIFT, liste de contrôle de migration, échéance de novembre 2026, paiements de gros montant"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "Liste de contrôle de préparation quantique pour les acteurs du paiement : PDF gratuit",
+    "subtitle": "20 étapes de la prise de conscience à l'action, d'après le livre blanc de l'EPAA de novembre 2026 sur la préparation quantique.",
+    "description": "PDF gratuit : 20 étapes de première évaluation de la préparation quantique, d'après le livre blanc de l'EPAA de novembre 2026. Nommez un responsable, tracez un flux.",
+    "keywords": "paiements résistants au quantique, cryptographie post-quantique, inventaire cryptographique, EPAA, HKMA, MAS, liste de contrôle de préparation, paiements"
   }
 }
