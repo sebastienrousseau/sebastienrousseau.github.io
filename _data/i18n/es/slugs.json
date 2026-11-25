@@ -20,7 +20,19 @@
     "speaking": "speaking",
     "suite": "suite",
     "research": "investigacion",
-    "library": "biblioteca"
+    "library": "biblioteca",
+    "editorial": "normas-editoriales",
+    "glossary": "glosario",
+    "search": "buscar",
+    "iso20022-mcp": "iso20022-mcp",
+    "iso20022-mcp-docs": "iso20022-mcp-documentacion",
+    "iso20022-mcp-recipes": "iso20022-mcp-recetas",
+    "iso20022-mcp-reference": "iso20022-mcp-referencia",
+    "projects-developer-platform": "proyectos-plataforma-desarrollo",
+    "projects-payments": "proyectos-pagos",
+    "projects-post-quantum": "proyectos-poscuantico",
+    "resources-pacs008-checklist": "recursos-lista-verificacion-pacs008",
+    "resources-quantum-safe-readiness-checklist": "recursos-preparacion-quantum-safe"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-el-ano-en-revision",

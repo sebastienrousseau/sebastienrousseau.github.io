@@ -20,7 +20,19 @@
     "speaking": "speaking",
     "suite": "paket",
     "research": "issledovaniya",
-    "library": "biblioteka"
+    "library": "biblioteka",
+    "editorial": "redaktsionnye-standarty",
+    "glossary": "glossarii",
+    "search": "poisk",
+    "iso20022-mcp": "iso20022-mcp-paket",
+    "iso20022-mcp-docs": "iso20022-mcp-dokumentatsiya",
+    "iso20022-mcp-recipes": "iso20022-mcp-stsenarii",
+    "iso20022-mcp-reference": "iso20022-mcp-spravochnik",
+    "projects-developer-platform": "proekty-platforma-razrabotchika",
+    "projects-payments": "proekty-platezhi",
+    "projects-post-quantum": "proekty-postkvantovaya-kriptografiya",
+    "resources-pacs008-checklist": "chek-list-pacs008",
+    "resources-quantum-safe-readiness-checklist": "chek-list-kvantovoi-gotovnosti"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-itogi-goda",

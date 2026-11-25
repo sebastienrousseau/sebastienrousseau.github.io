@@ -101,5 +101,90 @@
     "subtitle": "AI, 포스트 양자 암호, ISO 20022, 결제의 미래에 관한 기사.",
     "description": "주제별로 분석을 탐색하십시오: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 도매 결제 변혁.",
     "keywords": "주제, 테마, AI, 결제, ISO 20022, 포스트 양자 암호"
+  },
+  "editorial": {
+    "title": "편집 기준: sebastienrousseau.com",
+    "subtitle": "출처, 정정, AI 활용 공개, 이해충돌. sebastienrousseau.com의 모든 글에 적용됩니다.",
+    "description": "sebastienrousseau.com의 편집 기준: 출처, 정정 정책, AI 활용 공개, 이해충돌 공개, 책임성. 사이트에 게재되는 모든 글에 적용되는 운영 정책입니다.",
+    "keywords": "편집 기준, 정정 정책, AI 활용 공개, 이해충돌, 출처, 팩트체크, 저널리즘 기준, IFCN, Google News, 책임성",
+    "h1": "편집 기준"
+  },
+  "glossary": {
+    "title": "용어집: sebastienrousseau.com",
+    "subtitle": "사이트 전반에서 쓰이는 모든 핵심 용어를 표준에 근거해 정의합니다. 각 항목에 NIST, ISO, BIS, ECB, 연방준비제도, EUR-Lex 링크가 있습니다.",
+    "description": "표준에 근거한 sebastienrousseau.com 용어집. 모든 용어는 표준 기구나 중앙은행의 공식 출처(NIST, ISO, BIS, ECB, 연방준비제도, EUR-Lex)로 연결되는 sameAs 링크를 갖습니다.",
+    "keywords": "용어집, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, 토큰화 예금, RTGS, SWIFT gpi, PSD3, 은행 용어, 결제 용어, 양자내성암호",
+    "h1": "용어집"
+  },
+  "search": {
+    "title": "검색: sebastienrousseau.com",
+    "subtitle": "모든 글, 논문, 사례 연구를 브라우저에서 즉시 언어별로 전문 검색합니다. 사이트 어디서나 ⌘K 또는 Ctrl-K를 누르세요.",
+    "description": "sebastienrousseau.com의 모든 글, 논문, 사례 연구를 검색합니다. 브라우저에서 즉시 실행되는 언어별 전문 검색으로, 추적도 백엔드도 없습니다.",
+    "keywords": "검색, 사이트 검색, 전문 검색, 글, 논문, 사례 연구, 은행, 결제, 양자내성암호, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite: AI 에이전트가 은행 결제를 처리하도록",
+    "description": "AI 에이전트를 위한 개방형 ISO 20022 계층. 벤더 중립적인 MCP 서버 9개로 자연어에서 은행 결제를 생성, 검증, 대사, 결제합니다. Apache-2.0, PyPI와 MCP 레지스트리에 등록.",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, AI 에이전트 결제, pain.001, pacs.008, camt.053, 대사, AP2, x402, 에이전트 결제, 핀테크"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite: 문서",
+    "description": "ISO 20022 MCP Suite를 Claude Code, Claude Desktop 또는 모든 MCP 클라이언트에 연결하세요. 명령어 하나 또는 JSON 블록 하나, 처음 써 볼 프롬프트, 작업별로 맞는 서버를 안내합니다.",
+    "keywords": "ISO 20022 MCP 문서, Claude MCP 설정, claude mcp add, Claude Desktop MCP 구성, pain.001 MCP, pacs.008 MCP, camt.053 MCP, 대사 MCP, 에이전트 결제 문서",
+    "h1": "ISO 20022 MCP Suite: 문서.",
+    "hero_sub": "Claude Code, Claude Desktop 또는 모든 MCP 클라이언트에 한 번에 Suite를 추가하고, 평이한 문장의 프롬프트로 첫 번째 검증된 ISO 20022 메시지를 만드세요.",
+    "hero_alt": "불이 켜진 금융 지구의 야경 항공 사진"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite: 레시피",
+    "description": "ISO 20022 MCP Suite의 처음부터 끝까지 레시피: 레거시 MT103 전환, 거래내역서 대사, 잘못된 결제의 취소와 해결, AP2 에이전트 위임을 전송 가능한 은행 메시지로 바꾸기.",
+    "keywords": "ISO 20022 MCP 레시피, MT103에서 pacs.008로, camt.053 pain.001 대사, camt.056 취소, AP2 pain.001, 에이전트 결제 레시피",
+    "h1": "ISO 20022 MCP Suite: 레시피.",
+    "hero_sub": "에이전트가 Suite만으로 처음부터 끝까지 실행하는 다섯 가지 흐름: 레거시 MT103에서 검증된 송금까지, 은행 거래내역서에서 대사된 원장까지.",
+    "hero_alt": "불이 켜진 금융 지구의 야경 항공 사진"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite: 도구 레퍼런스",
+    "description": "ISO 20022 MCP Suite 도구 레퍼런스: 게이트웨이와 메시지 서버부터 reconcile, camt-exceptions, bankstatementparser, AP2/x402 브리지까지 모든 서버와 그 도구를 정리했습니다.",
+    "keywords": "ISO 20022 MCP 도구, MCP 도구 레퍼런스, pain001 도구, pacs008 도구, camt053 도구, reconcile-mcp 도구, ap2-iso20022 도구, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite: 도구 레퍼런스.",
+    "hero_sub": "Suite의 모든 서버와 각 서버가 제공하는 도구. 서버 9개, 하나의 일관된 계약: JSON을 받아 검증된 JSON 또는 XSD 검사를 거친 XML을 반환합니다.",
+    "hero_alt": "불이 켜진 금융 지구의 야경 항공 사진"
+  },
+  "projects-developer-platform": {
+    "title": "개발자 플랫폼의 기반.",
+    "description": "오픈소스 Rust 라이브러리: noyalib(YAML), 정적 사이트 생성기, 로깅, 날짜, 스캐폴딩. SBOM과 Sigstore 서명을 함께 배포합니다.",
+    "keywords": "Rust 라이브러리, noyalib, 정적 사이트 생성기, YAML, serde, SBOM, 출처 증명, 개발자 플랫폼, 공급망",
+    "h1": "엔지니어를 위한 기반.",
+    "hero_sub": "이 사이트를 떠받치는, 감사를 거치고 서명된 라이브러리. 여러분의 개발 기반으로 쓰세요.",
+    "hero_alt": "부드러운 빛 속의 깔끔한 건축 라인으로, 신뢰할 수 있는 개발자 기반을 상징합니다."
+  },
+  "projects-payments": {
+    "title": "처음부터 끝까지 ISO 20022 결제.",
+    "description": "pain.001, pacs.008, camt.053, acmt.001을 위한 오픈소스 ISO 20022 라이브러리와 은행 거래내역서 파싱. 은행, 결제 사업자, 재무 부서를 위해 만들었습니다.",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, 은행 거래내역서 파서, CBPR+, SEPA, 결제 도구 모음",
+    "h1": "글로벌 표준으로 하는 결제.",
+    "hero_sub": "ISO 20022 수명 주기 전체를 오픈소스로. 일정을 도구에 맞추지 않고, 도구가 여러분의 일정에 맞춥니다.",
+    "hero_alt": "밤의 도시 교차로를 내려다본 항공 사진으로, 국경 간 결제망을 상징합니다."
+  },
+  "projects-post-quantum": {
+    "title": "금융 시스템을 위한 양자내성 보안.",
+    "description": "양자내성암호를 위한 오픈소스 Rust 라이브러리: ML-KEM(CRYSTALS-Kyber, NIST FIPS 203), 해싱, 금융 시스템을 위한 관련 기본 요소.",
+    "keywords": "양자내성암호, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, 선수집 후해독, 금융 보안",
+    "h1": "RSA 시대 이후의 보안.",
+    "hero_sub": "지금 적용하는 양자 안전 보안. NIST 표준을 기반으로, 실서비스에 바로 쓸 수 있습니다.",
+    "hero_alt": "추상적인 푸른 빛의 장으로, 금융 시스템을 위한 양자내성암호를 상징합니다."
+  },
+  "resources-pacs008-checklist": {
+    "title": "ISO 20022 pacs.008 구조화 주소 전환 체크리스트: 무료 PDF",
+    "subtitle": "2026년 11월 SWIFT CBPR+ 기한 전에 점검할 23개 항목의 구조화 주소 체크리스트.",
+    "description": "무료 PDF: 2026년 11월 pacs.008 기한에 맞춘 23개 항목의 구조화 주소 전환 체크리스트. EPAA, SWIFT, CBPR+ 지침을 바탕으로 만들었습니다. 이메일을 남기시면 링크를 보내 드립니다.",
+    "keywords": "ISO 20022, pacs.008, 구조화 주소, CBPR+, SWIFT, 전환 체크리스트, 2026년 11월 기한, 거액 결제"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "결제 기업을 위한 양자 안전 준비 체크리스트: 무료 PDF",
+    "subtitle": "인식에서 실행까지 20단계. EPAA의 2026년 11월 양자 안전 준비도 백서를 바탕으로 했습니다.",
+    "description": "무료 PDF: EPAA의 2026년 11월 백서를 바탕으로 한 양자 안전 준비도 1차 평가용 20단계 체크리스트. 책임자를 정하고, 결제 흐름 하나를 추적하고, 발견한 내용을 분류하세요.",
+    "keywords": "양자 안전 결제, 양자내성암호, 암호 자산 목록, EPAA, HKMA, MAS, 준비도 체크리스트, 결제"
   }
 }

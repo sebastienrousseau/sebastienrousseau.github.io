@@ -101,5 +101,90 @@
     "subtitle": "Články o AI, postkvantové kryptografii, ISO 20022 a budoucnosti plateb.",
     "description": "Prozkoumejte analýzy podle tématu: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.",
     "keywords": "témata, AI, platby, ISO 20022, postkvantová kryptografie"
+  },
+  "editorial": {
+    "title": "Redakční standardy: sebastienrousseau.com",
+    "subtitle": "Zdroje, opravy, zveřejnění využití AI, střet zájmů. Platí pro každý článek na sebastienrousseau.com.",
+    "description": "Redakční standardy sebastienrousseau.com: zdroje, zásady oprav, zveřejnění využití AI a střetu zájmů a odpovědnost. Platí pro každý publikovaný článek na webu.",
+    "keywords": "redakční standardy, zásady oprav, zveřejnění AI, střet zájmů, zdroje, ověřování faktů, novinářské standardy, IFCN, Google News, odpovědnost",
+    "h1": "Redakční standardy"
+  },
+  "glossary": {
+    "title": "Glosář: sebastienrousseau.com",
+    "subtitle": "Definice všech klíčových pojmů používaných na webu, ukotvené ve standardech. U každého hesla odkaz na NIST, ISO, BIS, ECB, Federal Reserve nebo EUR-Lex.",
+    "description": "Glosář sebastienrousseau.com ukotvený ve standardech. Každý pojem má odkaz sameAs na kanonický zdroj (NIST, ISO, BIS, ECB, Federal Reserve či EUR-Lex).",
+    "keywords": "glosář, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, tokenizované vklady, RTGS, SWIFT gpi, PSD3, bankovní pojmy, platební pojmy, postkvantová kryptografie",
+    "h1": "Glosář"
+  },
+  "search": {
+    "title": "Hledat: sebastienrousseau.com",
+    "subtitle": "Okamžité fulltextové hledání v prohlížeči napříč všemi články, publikacemi a případovými studiemi, s ohledem na jazyk. Kdekoli na webu stiskněte ⌘K nebo Ctrl-K.",
+    "description": "Hledejte ve všech článcích, publikacích a případových studiích na sebastienrousseau.com. Okamžité fulltextové hledání v prohlížeči, bez sledování a bez serveru.",
+    "keywords": "hledání, vyhledávání na webu, fulltextové hledání, články, publikace, případové studie, bankovnictví, platby, postkvantová kryptografie, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite: bankovní platby pro agenty AI",
+    "description": "Otevřená vrstva ISO 20022 pro agenty AI. Devět serverů MCP nezávislých na dodavateli generuje, validuje, páruje a vypořádává platby. Apache-2.0, na PyPI.",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, platby agentů AI, pain.001, pacs.008, camt.053, párování plateb, AP2, x402, agentní platby, fintech"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite: dokumentace",
+    "description": "Připojte ISO 20022 MCP Suite ke Claude Code, Claude Desktop či jinému klientovi MCP: jeden příkaz nebo blok JSON, první zadání a vhodný server pro každý úkol.",
+    "keywords": "dokumentace ISO 20022 MCP, nastavení Claude MCP, claude mcp add, konfigurace MCP v Claude Desktop, pain.001 MCP, pacs.008 MCP, camt.053 MCP, párování MCP, dokumentace plateb agentů",
+    "h1": "ISO 20022 MCP Suite: dokumentace.",
+    "hero_sub": "Přidejte sadu do Claude Code, Claude Desktop nebo libovolného klienta MCP jedním krokem a pak z běžného zadání vytvořte svou první validovanou zprávu ISO 20022.",
+    "hero_alt": "Letecký pohled na osvětlenou finanční čtvrť v noci"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite: postupy",
+    "description": "Postupy pro ISO 20022 MCP Suite: migrace starší MT103, spárování výpisu, zrušení chybné platby a převod mandátu agenta AP2 na bankovní zprávu platnou pro síť.",
+    "keywords": "postupy ISO 20022 MCP, MT103 na pacs.008, párování camt.053 pain.001, zrušení camt.056, AP2 pain.001, postup platby agenta",
+    "h1": "ISO 20022 MCP Suite: postupy.",
+    "hero_sub": "Pět postupů od začátku do konce, které agent provede výhradně přes sadu: od starší MT103 k validovanému převodu, od bankovního výpisu ke spárované účetní knize.",
+    "hero_alt": "Letecký pohled na osvětlenou finanční čtvrť v noci"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite: reference nástrojů",
+    "description": "Reference nástrojů ISO 20022 MCP Suite: každý server a jeho nástroje, od brány a serverů zpráv po reconcile, camt-exceptions, bankstatementparser i most AP2/x402",
+    "keywords": "nástroje ISO 20022 MCP, reference nástrojů MCP, nástroje pain001, nástroje pacs008, nástroje camt053, nástroje reconcile-mcp, nástroje ap2-iso20022, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite: reference nástrojů.",
+    "hero_sub": "Každý server sady a nástroje, které zpřístupňuje. Devět serverů, jeden konzistentní kontrakt: na vstupu JSON, na výstupu validovaný JSON nebo XML zkontrolované podle XSD.",
+    "hero_alt": "Letecký pohled na osvětlenou finanční čtvrť v noci"
+  },
+  "projects-developer-platform": {
+    "title": "Základy vývojářské platformy.",
+    "description": "Open-source knihovny v Rustu: noyalib (YAML), generátor statických webů, logování, data a čas a scaffolding. Publikované včetně SBOM a podpisů Sigstore.",
+    "keywords": "knihovny v Rustu, noyalib, generátor statických webů, YAML, serde, SBOM, původ, vývojářská platforma, dodavatelský řetězec",
+    "h1": "Základy pro vaše inženýry.",
+    "hero_sub": "Auditované a podepsané knihovny, na kterých tento web stojí. Můžete na nich stavět i vy.",
+    "hero_alt": "Čisté architektonické linie v měkkém světle, symbol spolehlivých základů pro vývojáře."
+  },
+  "projects-payments": {
+    "title": "Platby ISO 20022 od začátku do konce.",
+    "description": "Open-source knihovny ISO 20022 pro pain.001, pacs.008, camt.053 a acmt.001 se zpracováním bankovních výpisů. Pro banky, poskytovatele plateb a treasury.",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, parser bankovních výpisů, CBPR+, SEPA, platební nástroje",
+    "h1": "Platby v globálním standardu.",
+    "hero_sub": "Celý životní cyklus ISO 20022 jako open source. Postaveno tak, aby se přizpůsobilo vašemu harmonogramu, ne naopak.",
+    "hero_alt": "Letecký pohled na městské křižovatky v noci, symbol přeshraničních platebních systémů."
+  },
+  "projects-post-quantum": {
+    "title": "Postkvantová bezpečnost pro finanční systémy.",
+    "description": "Open-source knihovny v Rustu pro postkvantovou kryptografii: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hashování a související primitiva pro finanční systémy.",
+    "keywords": "postkvantová kryptografie, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, harvest now decrypt later, finanční bezpečnost",
+    "h1": "Bezpečnost po éře RSA.",
+    "hero_sub": "Kvantově odolná bezpečnost, použitelná už dnes. Postavená na standardech NIST, připravená pro produkci.",
+    "hero_alt": "Abstraktní pole modrého světla, symbol postkvantové kryptografie pro finanční systémy."
+  },
+  "resources-pacs008-checklist": {
+    "title": "ISO 20022 pacs.008: kontrolní seznam migrace na strukturované adresy, PDF zdarma",
+    "subtitle": "23bodový kontrolní seznam pro strukturované adresy před termínem SWIFT CBPR+ v listopadu 2026.",
+    "description": "PDF zdarma: 23bodový kontrolní seznam migrace na strukturované adresy pro termín pacs.008 v listopadu 2026. Podle EPAA, SWIFT a CBPR+. Zadejte e-mail.",
+    "keywords": "ISO 20022, pacs.008, strukturovaná adresa, CBPR+, SWIFT, kontrolní seznam migrace, termín listopad 2026, velkoobchodní platby"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "Kontrolní seznam kvantové připravenosti pro platební firmy, PDF zdarma",
+    "subtitle": "20 kroků od povědomí k činům, podle studie EPAA o kvantově odolné připravenosti z listopadu 2026.",
+    "description": "PDF zdarma: 20krokový kontrolní seznam pro první posouzení kvantové připravenosti podle bílé knihy EPAA z listopadu 2026. Určete vlastníka a sledujte tok.",
+    "keywords": "kvantově odolné platby, postkvantová kryptografie, kryptografická inventura, EPAA, HKMA, MAS, kontrolní seznam připravenosti, platby"
   }
 }

@@ -56,3 +56,12 @@ def noindex_hreflangs() -> frozenset[str]:
     for code in noindex_codes():
         out.update({code.lower(), _lr.get(code).bcp47.lower()})
     return frozenset(out)
+
+
+def indexed_only_pages() -> frozenset[str]:
+    """EN static-page slugs translated for the indexed locales only.
+
+    Every indexed locale carries a translation of each; a noindex locale
+    may omit them (its readers get the English page)."""
+    payload = json.loads(POLICY.read_text(encoding="utf-8"))
+    return frozenset(payload.get("indexed_only_pages", ()))

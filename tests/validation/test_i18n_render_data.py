@@ -47,6 +47,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import _lang_registry  # type: ignore[import-not-found]
+import _locale_indexing  # type: ignore[import-not-found]
 
 ROOT = Path(__file__).resolve().parents[2]
 I18N_DIR = ROOT / "_data" / "i18n"
@@ -108,8 +109,12 @@ def check_bodies(code: str, fr_keys: set[str]) -> list[str]:
     except _lang_registry.LanguageError as e:
         return [str(e)]
     keys = set(bodies)
+    required = fr_keys
+    if not _locale_indexing.is_indexed(code):
+        # A noindex locale may leave the indexed-only pages untranslated.
+        required = fr_keys - _locale_indexing.indexed_only_pages()
     problems: list[str] = [
-        f"[{code}/static_bodies] missing key: {missing!r}" for missing in sorted(fr_keys - keys)
+        f"[{code}/static_bodies] missing key: {missing!r}" for missing in sorted(required - keys)
     ]
     problems.extend(
         f"[{code}/static_bodies] extra key (not in FR ref): {extra!r}"

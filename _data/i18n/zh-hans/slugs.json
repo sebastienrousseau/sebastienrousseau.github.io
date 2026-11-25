@@ -20,7 +20,19 @@
     "speaking": "speaking",
     "suite": "taojian",
     "research": "yanjiu",
-    "library": "tushuguan"
+    "library": "tushuguan",
+    "editorial": "bianji-biaozhun",
+    "glossary": "shuyu-biao",
+    "search": "sousuo",
+    "iso20022-mcp": "iso20022-mcp-taojian",
+    "iso20022-mcp-docs": "iso20022-mcp-wendang",
+    "iso20022-mcp-recipes": "iso20022-mcp-shijian-fangan",
+    "iso20022-mcp-reference": "iso20022-mcp-gongju-cankao",
+    "projects-developer-platform": "xiangmu-kaifazhe-pingtai",
+    "projects-payments": "xiangmu-zhifu",
+    "projects-post-quantum": "xiangmu-hou-liangzi-anquan",
+    "resources-pacs008-checklist": "pacs008-jiegouhua-dizhi-jiancha-qingdan",
+    "resources-quantum-safe-readiness-checklist": "kang-liangzi-jiuxu-jiancha-qingdan"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitebi-niandu-huigu",

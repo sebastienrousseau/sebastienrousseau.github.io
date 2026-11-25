@@ -101,5 +101,90 @@
     "subtitle": "AI、ポスト量子暗号、ISO 20022、決済の未来に関する記事。",
     "description": "テーマ別に分析を閲覧:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の変革。",
     "keywords": "トピック, テーマ, AI, 決済, ISO 20022, ポスト量子暗号"
+  },
+  "editorial": {
+    "title": "編集基準：sebastienrousseau.com",
+    "subtitle": "出典、訂正、AI利用の開示、利益相反。sebastienrousseau.com のすべての記事に適用されます。",
+    "description": "sebastienrousseau.com の編集基準。出典の扱い、訂正方針、AI利用の開示、利益相反の開示、説明責任について定め、サイト上のすべての記事に適用します。",
+    "keywords": "編集基準, 訂正方針, AI利用の開示, 利益相反, 出典, ファクトチェック, ジャーナリズム基準, IFCN, Google News, 説明責任",
+    "h1": "編集基準"
+  },
+  "glossary": {
+    "title": "用語集：sebastienrousseau.com",
+    "subtitle": "サイト全体で使う重要な用語を、標準に基づいて定義しています。各項目にNIST、ISO、BIS、ECB、連邦準備制度、EUR-Lexへのリンクがあります。",
+    "description": "sebastienrousseau.com の標準準拠の用語集。各用語に、標準化団体や中央銀行の正規資料（NIST、ISO、BIS、ECB、連邦準備制度、EUR-Lex）への sameAs リンクを付けています。",
+    "keywords": "用語集, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, トークン化預金, RTGS, SWIFT gpi, PSD3, 銀行用語, 決済用語, 耐量子暗号",
+    "h1": "用語集"
+  },
+  "search": {
+    "title": "検索：sebastienrousseau.com",
+    "subtitle": "すべての記事、論文、事例研究を対象とした、ブラウザ内で即座に動作する言語別の全文検索。サイト内のどこでも ⌘K または Ctrl-K で起動できます。",
+    "description": "sebastienrousseau.com のすべての記事、論文、事例研究を検索できます。ブラウザ内で即座に動作する、言語別の全文検索です。トラッキングもバックエンドもありません。",
+    "keywords": "検索, サイト内検索, 全文検索, 記事, 論文, 事例研究, 銀行, 決済, 耐量子暗号, ISO 20022"
+  },
+  "iso20022-mcp": {
+    "title": "ISO 20022 MCP Suite：AIエージェントに銀行決済を任せる",
+    "description": "AIエージェントのためのオープンなISO 20022層。ベンダーに依存しない9つのMCPサーバーで、自然言語から銀行決済を生成、検証、照合、決済します。Apache-2.0、PyPIとMCPレジストリで公開。",
+    "keywords": "ISO 20022 MCP, Model Context Protocol, AIエージェント決済, pain.001, pacs.008, camt.053, 照合, AP2, x402, エージェント型決済, フィンテック"
+  },
+  "iso20022-mcp-docs": {
+    "title": "ISO 20022 MCP Suite：ドキュメント",
+    "description": "ISO 20022 MCP SuiteをClaude Code、Claude Desktop、任意のMCPクライアントに接続する方法。コマンド1つかJSONブロック1つで設定し、最初に試すプロンプトと用途別のサーバーを紹介します。",
+    "keywords": "ISO 20022 MCP ドキュメント, Claude MCP 設定, claude mcp add, Claude Desktop MCP 構成, pain.001 MCP, pacs.008 MCP, camt.053 MCP, 照合 MCP, エージェント決済 ドキュメント",
+    "h1": "ISO 20022 MCP Suite：ドキュメント。",
+    "hero_sub": "Claude Code、Claude Desktop、任意のMCPクライアントにスイートを1ステップで追加し、平易な言葉のプロンプトから最初の検証済みISO 20022メッセージを作成します。",
+    "hero_alt": "夜景に輝く金融街の空撮"
+  },
+  "iso20022-mcp-recipes": {
+    "title": "ISO 20022 MCP Suite：レシピ",
+    "description": "ISO 20022 MCP Suiteのエンドツーエンドのレシピ。従来のMT103の移行、取引明細の照合、誤った支払いの取消と解決、AP2エージェントのマンデートを送信可能な銀行メッセージに変換する方法を紹介します。",
+    "keywords": "ISO 20022 MCP レシピ, MT103 から pacs.008, camt.053 pain.001 照合, camt.056 取消, AP2 pain.001, エージェント決済 レシピ",
+    "h1": "ISO 20022 MCP Suite：レシピ。",
+    "hero_sub": "エージェントがスイートだけで実行する5つのエンドツーエンドのフロー。従来のMT103から検証済みの送金へ、銀行の取引明細から照合済みの元帳へ。",
+    "hero_alt": "夜景に輝く金融街の空撮"
+  },
+  "iso20022-mcp-reference": {
+    "title": "ISO 20022 MCP Suite：ツールリファレンス",
+    "description": "ISO 20022 MCP Suiteのツールリファレンス。ゲートウェイやメッセージサーバーから、reconcile、camt-exceptions、bankstatementparser、AP2/x402ブリッジまで、全サーバーと公開ツールを網羅します。",
+    "keywords": "ISO 20022 MCP ツール, MCP ツールリファレンス, pain001 ツール, pacs008 ツール, camt053 ツール, reconcile-mcp ツール, ap2-iso20022 ツール, generate_message, validate_records",
+    "h1": "ISO 20022 MCP Suite：ツールリファレンス。",
+    "hero_sub": "スイートの全サーバーと、それぞれが公開するツール。9つのサーバーが共通の契約に従います：JSONを受け取り、検証済みのJSONまたはXSDで検証済みのXMLを返します。",
+    "hero_alt": "夜景に輝く金融街の空撮"
+  },
+  "projects-developer-platform": {
+    "title": "開発者プラットフォームの基盤。",
+    "description": "オープンソースのRustライブラリ：noyalib（YAML）、静的サイトジェネレーター、ロギング、日付処理、スキャフォールディング。SBOMとSigstore署名付きで公開しています。",
+    "keywords": "Rust ライブラリ, noyalib, 静的サイトジェネレーター, YAML, serde, SBOM, 来歴, 開発者プラットフォーム, サプライチェーン",
+    "h1": "エンジニアのための基盤。",
+    "hero_sub": "このサイトを支える、監査済みで署名付きのライブラリ。自由に活用できます。",
+    "hero_alt": "柔らかな光に浮かぶすっきりとした建築の線。信頼できる開発基盤を表しています。"
+  },
+  "projects-payments": {
+    "title": "ISO 20022決済をエンドツーエンドで。",
+    "description": "pain.001、pacs.008、camt.053、acmt.001に対応したオープンソースのISO 20022ライブラリと、銀行取引明細の解析。銀行、決済事業者、財務部門向けです。",
+    "keywords": "ISO 20022, pain.001, pacs.008, camt.053, acmt.001, 銀行取引明細パーサー, CBPR+, SEPA, 決済ツールチェーン",
+    "h1": "グローバル標準に沿った決済。",
+    "hero_sub": "ISO 20022のライフサイクル全体をオープンソースで。御社のスケジュールに合わせて導入できるよう設計しています。",
+    "hero_alt": "夜のインターチェンジの空撮。クロスボーダー決済網を表しています。"
+  },
+  "projects-post-quantum": {
+    "title": "金融システムのための耐量子セキュリティ。",
+    "description": "耐量子暗号のためのオープンソースRustライブラリ：ML-KEM（CRYSTALS-Kyber、NIST FIPS 203）、ハッシュ、金融システム向けの関連プリミティブ。",
+    "keywords": "耐量子暗号, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, harvest now decrypt later, 金融セキュリティ",
+    "h1": "RSA時代の先を行くセキュリティ。",
+    "hero_sub": "量子安全なセキュリティを今日から。NIST標準に基づき、本番環境に対応しています。",
+    "hero_alt": "青い光が広がる抽象的な画像。金融システムのための耐量子暗号を表しています。"
+  },
+  "resources-pacs008-checklist": {
+    "title": "ISO 20022 pacs.008 構造化住所移行チェックリスト（無料PDF）",
+    "subtitle": "2026年11月のSWIFT CBPR+の期限までに確認すべき、構造化住所の23項目チェックリスト。",
+    "description": "無料PDF：2026年11月のpacs.008の期限に向けた、構造化住所移行の23項目チェックリスト。EPAA、SWIFT、CBPR+のガイダンスに基づいています。メールアドレスをご登録いただければリンクをお送りします。",
+    "keywords": "ISO 20022, pacs.008, 構造化住所, CBPR+, SWIFT, 移行チェックリスト, 2026年11月期限, ホールセール決済"
+  },
+  "resources-quantum-safe-readiness-checklist": {
+    "title": "決済事業者のための量子安全対応チェックリスト（無料PDF）",
+    "subtitle": "認識から行動までの20ステップ。EPAAの2026年11月の量子安全対応に関するホワイトペーパーに基づいています。",
+    "description": "無料PDF：EPAAの2026年11月のホワイトペーパーに基づく、量子安全対応の初期評価のための20ステップのチェックリスト。責任者を決め、決済フローを1つたどり、見つかったものを整理します。",
+    "keywords": "量子安全な決済, 耐量子暗号, 暗号資産インベントリ, EPAA, HKMA, MAS, 対応状況チェックリスト, 決済"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_comment": "Which locales search engines may index. Every active locale stays published and reachable through the language switcher; a locale not listed in 'indexed' gets <meta name=\"robots\" content=\"noindex, follow\"> on every page, is left out of every sitemap, and is removed from every hreflang cluster. Read by scripts/lib/_locale_indexing.py, the only consumer. History: all locales until v0.0.30 (4 Nov 2026), ten from v0.0.30, English only from v0.0.45 (21 Nov), English and French from v0.0.47 (22 Nov). Since 25 Nov 2026 (ADR-0015, amendment of that date): English plus the twelve locales with at least 10 Google clicks between 11 June and 10 September 2026, the three months before the demotion. 'en' must always be listed.",
+  "_comment": "Which locales search engines may index. Every active locale stays published and reachable through the language switcher; a locale not listed in 'indexed' gets <meta name=\"robots\" content=\"noindex, follow\"> on every page, is left out of every sitemap, and is removed from every hreflang cluster. Read by scripts/lib/_locale_indexing.py, the only consumer. History: all locales until v0.0.30 (4 Nov 2026), ten from v0.0.30, English only from v0.0.45 (21 Nov), English and French from v0.0.47 (22 Nov). Since 25 Nov 2026 (ADR-0015, amendment of that date): English plus the twelve locales with at least 10 Google clicks between 11 June and 10 September 2026, the three months before the demotion. 'en' must always be listed. 'indexed_only_pages': static pages translated for the indexed locales only (25 Nov 2026); the noindex locales serve them in English at the English URL.",
   "indexed": [
     "en",
     "zh-hant",
@@ -14,5 +14,19 @@
     "fa",
     "cs",
     "de"
+  ],
+  "indexed_only_pages": [
+    "editorial",
+    "glossary",
+    "search",
+    "iso20022-mcp",
+    "iso20022-mcp-docs",
+    "iso20022-mcp-recipes",
+    "iso20022-mcp-reference",
+    "projects-developer-platform",
+    "projects-payments",
+    "projects-post-quantum",
+    "resources-pacs008-checklist",
+    "resources-quantum-safe-readiness-checklist"
   ]
 }

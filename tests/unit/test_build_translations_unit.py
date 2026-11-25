@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "scripts" / "generators"))
 
 import build_translations as bt
-from build_translations import _article, _chrome, _maps, _run, _search
+from build_translations import _article, _chrome, _maps, _pages, _run, _search
 from build_translations import _state as st
 
 
@@ -752,3 +752,85 @@ def test_parse_frontmatter_is_canonical():
     import _frontmatter
 
     assert bt.parse_frontmatter is _frontmatter.parse_frontmatter
+
+
+# ---------------------------------------------------------------------------
+# Curated bodies and story heroes on static pages
+# ---------------------------------------------------------------------------
+
+
+def test_static_body_swaps_main_without_a_wrap_div():
+    shell = '<main id="main" class="content"><div class="speaking-page">EN</div></main>'
+    out = _pages._replace_static_main_body(shell, "<p>FR</p>")
+    assert out == '<main id="main" class="content"><p>FR</p></main>'
+
+
+def test_static_body_swaps_only_the_wrap_when_present():
+    shell = '<main><div class="wrap">EN</div></main>'
+    assert (
+        _pages._replace_static_main_body(shell, "FR") == '<main><div class="wrap">FR</div></main>'
+    )
+
+
+STORY_HERO = (
+    '<section class="story-hero"><img class="story-hero-img" src="x.webp" alt="EN alt" '
+    'loading="eager"><div class="story-hero-inner"><h1>EN title.</h1>'
+    '<p class="story-hero-sub">EN sub.</p></div></section>'
+)
+
+
+def test_story_hero_is_localised_from_config():
+    cfg = {"h1": "Titre & co.", "hero_sub": "Sous-titre.", "hero_alt": 'Vue "aérienne"'}
+    out = _pages._retitle_story_hero(STORY_HERO, cfg)
+    assert "<h1>Titre &amp; co.</h1>" in out
+    assert '<p class="story-hero-sub">Sous-titre.</p>' in out
+    assert 'alt="Vue &quot;aérienne&quot;"' in out
+    assert "EN" not in out
+
+
+def test_story_hero_without_config_keys_is_unchanged():
+    assert _pages._retitle_story_hero(STORY_HERO, {"title": "T"}) == STORY_HERO
+
+
+def test_curated_body_links_to_en_articles_are_localised(monkeypatch, tmp_path):
+    en = next(iter(st.EN_TO_FR))
+    (tmp_path / "about").mkdir()
+    (tmp_path / "about" / "index.html").write_text(
+        '<html lang="en-GB"><head><title>EN</title></head><body>'
+        '<main><div class="wrap">EN</div></main></body></html>'
+    )
+    monkeypatch.setattr(st, "PUBLIC", tmp_path)
+    monkeypatch.setitem(st.STATIC_BODIES_FR, "about", f'<a href="/{en}/">x</a>')
+    out = bt.render_static_translation("about")
+    assert f'href="/fr/{st.EN_TO_FR[en]}/' in out
+    assert f'href="/{en}/"' not in out
+
+
+def test_legal_page_h1_prefers_the_configured_heading():
+    shell = '<section class="ap-hero"><h1>Glossary</h1></section>'
+    cfg = {"title": "Glossaire : sebastienrousseau.com", "description": "d", "h1": "Glossaire"}
+    out = _pages._retitle_static_shell(shell, "glossary", cfg, "https://x/fr/glossaire/")
+    assert "<h1>Glossaire</h1>" in out
+
+
+APP_TITLE = '<meta name="apple-mobile-web-app-title" content="Search">'
+
+
+@pytest.mark.parametrize(
+    ("cfg", "expected"),
+    [
+        ({"title": "Rechercher : sebastienrousseau.com"}, "Rechercher"),
+        ({"title": "À propos \u2014 Sebastien Rousseau"}, "À propos"),
+        ({"title": "Suite ISO 20022 MCP : documentation", "h1": "Documentation."}, "Documentation"),
+    ],
+)
+def test_app_title_is_the_localised_short_title(cfg, expected):
+    out = _pages._retitle_app_title(APP_TITLE, cfg)
+    assert out == f'<meta name="apple-mobile-web-app-title" content="{expected}">'
+
+
+def test_static_link_to_a_page_this_language_lacks_stays_english(monkeypatch):
+    monkeypatch.delitem(st.STATIC_SLUG_FR, "glossary")
+    out = _chrome.rewrite_static_links('<a href="/glossary/">g</a> <a href="/about/">a</a>')
+    assert 'href="/glossary/"' in out
+    assert f'href="/fr/{st.STATIC_SLUG_FR["about"]}/"' in out

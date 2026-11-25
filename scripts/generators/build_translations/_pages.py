@@ -364,15 +364,44 @@ _STATIC_WRAP_RE = re.compile(
 )
 
 
+_STATIC_MAIN_RE = re.compile(r"(<main\b[^>]*>)([\s\S]*?)(</main>)", re.IGNORECASE)
+
+
 def _replace_static_main_body(html: str, fr_body: str) -> str:
     """Swap the inner content of ``<main><div class="wrap">…</div></main>``
-    for a curated FR body. Falls back unchanged if the structure doesn't
-    match (e.g. layouts that use a different wrapper)."""
+    for a curated FR body. A layout without the wrap div (the
+    /iso20022-mcp/ product page) has its whole ``<main>`` content
+    swapped instead."""
 
     def repl(m: re.Match[str]) -> str:
         return m.group(1) + fr_body + m.group(3)
 
-    return _STATIC_WRAP_RE.sub(repl, html, count=1)
+    if _STATIC_WRAP_RE.search(html):
+        return _STATIC_WRAP_RE.sub(repl, html, count=1)
+    return _STATIC_MAIN_RE.sub(repl, html, count=1)
+
+
+_HERO_FIELDS = (
+    # (config key, pattern whose group 1 and 2 wrap the text to replace)
+    ("h1", r'(<section class="story-hero"[^>]*>[\s\S]*?<h1[^>]*>)[^<]*(</h1>)'),
+    ("hero_sub", r'(<p class="story-hero-sub">)[^<]*(</p>)'),
+    ("hero_alt", r'(<img class="story-hero-img"[^>]*?\salt=")[^"]*(")'),
+)
+
+
+def _retitle_story_hero(shell: str, cfg: dict[str, str]) -> str:
+    """Localise the story-layout hero (H1, subtitle, image alt), which
+    sits outside ``<main>``, from the page's optional config keys."""
+    for key, pattern in _HERO_FIELDS:
+        text = cfg.get(key)
+        if text:
+            value = _html.escape(text, quote=True)
+
+            def repl(m: re.Match[str], v: str = value) -> str:
+                return m.group(1) + v + m.group(2)
+
+            shell = re.sub(pattern, repl, shell, count=1)
+    return shell
 
 
 def _retitle_static_shell(shell: str, slug: str, cfg: dict[str, str], url_fr: str) -> str:
@@ -402,7 +431,7 @@ def _retitle_static_shell(shell: str, slug: str, cfg: dict[str, str], url_fr: st
         count=1,
     )
     if slug in ("privacy", "terms", "editorial", "glossary"):
-        h1_text = re.split(r"\s+[—·-]\s+|,\s+", title, maxsplit=1)[0]
+        h1_text = cfg.get("h1") or re.split(r"\s+[\u2014·-]\s+|,\s+", title, maxsplit=1)[0]
         shell = re.sub(
             r'(<section class="ap-hero"[^>]*>[\s\S]*?<h1[^>]*>)[^<]*(</h1>)',
             rf"\g<1>{_html.escape(h1_text)}\g<2>",
@@ -410,7 +439,20 @@ def _retitle_static_shell(shell: str, slug: str, cfg: dict[str, str], url_fr: st
             count=1,
         )
 
-    return shell
+    return _retitle_app_title(_retitle_story_hero(shell, cfg), cfg)
+
+
+_APP_TITLE_RE = re.compile(r'(<meta name="apple-mobile-web-app-title" content=")[^"]*(")')
+
+
+def _retitle_app_title(shell: str, cfg: dict[str, str]) -> str:
+    """Localise the home-screen app title: the page's heading, else its
+    title up to the first separator (a colon, a spaced dash or a comma)."""
+    short = (
+        cfg.get("h1") or re.split(r"\s+[\u2014·-]\s+|\s*[:：]\s*|,\s+", cfg["title"], maxsplit=1)[0]
+    )
+    value = _html.escape(short.rstrip(".。"), quote=True)
+    return _APP_TITLE_RE.sub(lambda m: m.group(1) + value + m.group(2), shell, count=1)
 
 
 def _localise_generated_bodies(shell: str, slug: str) -> str:
@@ -503,7 +545,9 @@ def render_static_translation(slug: str) -> str | None:
     # for pages without a curated translation.
     fr_body = st.STATIC_BODIES_FR.get(slug)
     if fr_body:
-        shell = _replace_static_main_body(shell, fr_body)
+        # The curated body replaces the already-rewritten EN one, so its
+        # own links to EN articles are rewritten here.
+        shell = _replace_static_main_body(shell, rewrite_en_urls(fr_body))
 
     # EN title + description substitutions FIRST — before chrome runs
     # localize_en_dates() (which would otherwise rewrite "August 2026" →

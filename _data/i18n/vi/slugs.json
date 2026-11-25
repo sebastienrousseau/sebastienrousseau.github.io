@@ -20,7 +20,19 @@
     "speaking": "speaking",
     "suite": "bo-cong-cu",
     "research": "nghien-cuu",
-    "library": "thu-vien"
+    "library": "thu-vien",
+    "editorial": "tieu-chuan-bien-tap",
+    "glossary": "thuat-ngu",
+    "search": "tim-kiem",
+    "iso20022-mcp": "iso20022-mcp-thanh-toan-tac-tu-ai",
+    "iso20022-mcp-docs": "iso20022-mcp-tai-lieu",
+    "iso20022-mcp-recipes": "iso20022-mcp-quy-trinh-mau",
+    "iso20022-mcp-reference": "iso20022-mcp-tham-chieu-cong-cu",
+    "projects-developer-platform": "du-an-nen-tang-nha-phat-trien",
+    "projects-payments": "du-an-thanh-toan",
+    "projects-post-quantum": "du-an-hau-luong-tu",
+    "resources-pacs008-checklist": "danh-sach-kiem-tra-pacs008",
+    "resources-quantum-safe-readiness-checklist": "danh-sach-kiem-tra-san-sang-an-toan-luong-tu"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-nhin-lai-mot-nam",

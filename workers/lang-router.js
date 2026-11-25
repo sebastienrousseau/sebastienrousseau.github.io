@@ -186,6 +186,16 @@ export function withApiSecurityHeaders(response) {
   });
 }
 
+// Icons at fixed, well-known URLs: the name stays the same when the file
+// changes, so they get a one-day cache instead of the immutable year that
+// hashed assets get. A year-long immutable favicon outlived a redesign.
+const FIXED_NAME_ICONS = new Set([
+  '/favicon.ico',
+  '/apple-touch-icon.png',
+  '/icon-192.png',
+  '/icon-512.png',
+]);
+
 /**
  * Return a clone of `response` with the strict security headers applied
  * on top of whatever the origin (or `Response.redirect`) produced. Any
@@ -216,7 +226,9 @@ export function withSecurityHeaders(response, request, extraHeaders) {
   if (req && req.url) {
     const url = new URL(req.url);
     const pathname = url.pathname;
-    if (
+    if (FIXED_NAME_ICONS.has(pathname)) {
+      cacheControl = 'public, max-age=86400';
+    } else if (
       pathname.startsWith('/fonts/') ||
       pathname.startsWith('/_csp/') ||
       /\.[a-f0-9]{4,32}\.(?:js|css)$/i.test(pathname) ||
