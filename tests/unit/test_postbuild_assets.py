@@ -10,6 +10,8 @@ Split out of test_postbuild.py; tests are verbatim copies.
 
 from __future__ import annotations
 
+import json
+
 import postbuild as pb
 
 # ---------------------------------------------------------------------------
@@ -544,10 +546,8 @@ def test_add_cloudcdn_cors_and_manifest_icons(tmp_path):
     )
     out = add_cloudcdn_cors(html)
     assert 'href="/favicon.ico"' in out
-    assert (
-        '<link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" crossorigin="anonymous" />'
-        in out
-    )
+    assert '<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />' in out
+    assert "v1/icons" not in out
     assert (
         '<img src="https://cloudcdn.pro/stocks/images/hero-1200.webp" alt="hero" crossorigin="anonymous">'
         in out
@@ -560,5 +560,11 @@ def test_add_cloudcdn_cors_and_manifest_icons(tmp_path):
         encoding="utf-8",
     )
     assert normalise_manifest_icons(tmp_path) == 1
-    assert '"/favicon.ico"' in manifest.read_text(encoding="utf-8")
+    icons = json.loads(manifest.read_text(encoding="utf-8"))["icons"]
+    assert [i["src"] for i in icons] == ["/icon-192.png", "/icon-512.png", "/favicon.ico"]
+    assert normalise_manifest_icons(tmp_path) == 0
+    (tmp_path / "x").mkdir()
+    (tmp_path / "x" / "manifest.json").write_text('{"name": "no icons"}', encoding="utf-8")
+    (tmp_path / "y").mkdir()
+    (tmp_path / "y" / "manifest.json").write_text("not json", encoding="utf-8")
     assert normalise_manifest_icons(tmp_path) == 0

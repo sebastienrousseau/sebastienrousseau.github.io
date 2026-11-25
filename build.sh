@@ -212,9 +212,10 @@ mkdir -p public/_csp
 for img in assets/img/logo-*.webp assets/img/hero-portrait-*.webp; do
   [[ -f "${img}" ]] && cp -f "${img}" "public/_csp/$(basename "${img}")"
 done
-if [[ -f assets/img/favicon.ico ]]; then
-  cp -f assets/img/favicon.ico public/favicon.ico
-fi
+# Site icons: the SR monogram, served same-origin from the root.
+for icon in favicon.ico apple-touch-icon.png icon-192.png icon-512.png; do
+  [[ -f "assets/img/${icon}" ]] && cp -f "assets/img/${icon}" "public/${icon}"
+done
 
 if [[ -d assets/js/mcp-simulator ]]; then
   mkdir -p public/_csp
