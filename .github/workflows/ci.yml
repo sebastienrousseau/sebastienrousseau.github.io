@@ -914,11 +914,18 @@ jobs:
         with:
           subject-path: public/sbom.cdx.json
 
-      - name: Prepare CNAME and .nojekyll
+      - name: Prepare CNAME, .nojekyll and build-id.txt
+        # build-id.txt names the deployed commit. The edge Worker reads it
+        # (workers/edge-routes.js, currentBuildId) and refetches any page
+        # copy it stored for another build, so no visitor is served the
+        # previous deploy. Written here, after every gate, so the
+        # build-twice reproducibility check never sees it; rollback.yml
+        # redeploys an artifact together with its own id.
         if: github.ref == 'refs/heads/main'
         run: |
           printf 'sebastienrousseau.com\nwww.sebastienrousseau.com\n' > public/CNAME
           touch public/.nojekyll
+          printf '%s\n' "${GITHUB_SHA}" > public/build-id.txt
 
       - name: Configure Pages
         if: github.ref == 'refs/heads/main'

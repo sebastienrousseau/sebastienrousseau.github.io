@@ -31,6 +31,12 @@ import {
   EDGE_HTML_STALE,
   EDGE_COPY_PREFIX,
   EDGE_STORED_AT,
+  EDGE_BUILD,
+  BUILD_ID_PATH,
+  BUILD_ID_TTL,
+  currentBuildId,
+  _resetBuildIdCache,
+  isNotFoundPage,
   fetchOrigin,
 } from './edge-routes.js';
 
@@ -382,7 +388,10 @@ async function withOrigin(responses, fn) {
   const calls = [];
   const prev = globalThis.fetch;
   globalThis.fetch = async (input, init) => {
-    calls.push({ url: typeof input === 'string' ? input : input.url, method: input.method, init });
+    const url = typeof input === 'string' ? input : input.url;
+    // No deployed build id: the pre-build-id behaviour these tests pin.
+    if (url.endsWith(BUILD_ID_PATH)) return new Response('', { status: 404 });
+    calls.push({ url, method: input.method, init });
     const [status, body] = responses.length > 1 ? responses.shift() : responses[0];
     return new Response(body, { status, headers: { 'cache-control': 'max-age=600' } });
   };
@@ -530,4 +539,242 @@ test('handler: uses caches.default when the runtime provides it', async () => {
   } finally {
     delete globalThis.caches;
   }
+});
+
+// ---------------------------------------------------------------------------
+// Deploy-aware copies: a copy from an older build is never served while the
+// deployed build id is known.
+// ---------------------------------------------------------------------------
+
+const BUILD_A = 'a'.repeat(40);
+const BUILD_B = 'b'.repeat(40);
+
+/** Origin with a deployed build and a page body per build; records page fetches. */
+async function withDeploy(state, fn) {
+  const calls = [];
+  const prev = globalThis.fetch;
+  globalThis.fetch = async (input, init) => {
+    const url = typeof input === 'string' ? input : input.url;
+    if (url.endsWith(BUILD_ID_PATH)) {
+      calls.push({ url, init, build: true });
+      if (state.buildThrows) throw new Error('network');
+      return new Response(`${state.build}\n`, { status: state.buildStatus || 200 });
+    }
+    calls.push({ url, method: input.method, init });
+    if (state.pageThrows) throw new Error('network');
+    return new Response(state.pages[state.build], { status: state.pageStatus || 200 });
+  };
+  _resetBuildIdCache();
+  try {
+    await fn(calls);
+  } finally {
+    globalThis.fetch = prev;
+    _resetBuildIdCache();
+  }
+}
+
+test('deploy: a fresh copy from the previous build is not served after a deploy', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  const state = { build: BUILD_A, pages: { [BUILD_A]: 'old', [BUILD_B]: 'new' } };
+  await withDeploy(state, async (calls) => {
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    assert.equal(cache.store.get(COPY).headers.get(EDGE_BUILD), BUILD_A);
+    state.build = BUILD_B;
+    _resetBuildIdCache();
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'new');
+    await ctx.settle();
+    const page = calls.filter((c) => !c.build).at(-1);
+    assert.equal(page.url, `${PAGE}?__build=${BUILD_B}`);
+    assert.deepEqual(page.init, { cf: EDGE_HTML_CACHE });
+    assert.equal(cache.store.get(COPY).headers.get(EDGE_BUILD), BUILD_B);
+    const again = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await again.text(), 'new');
+    assert.equal(again.headers.get(EDGE_BUILD), null);
+    assert.equal(again.headers.get(EDGE_STORED_AT), null);
+  });
+});
+
+test('deploy: a copy stored before build ids existed is refetched once', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  cache.store.set(COPY, new Response('untagged', { status: 200, headers: { [EDGE_STORED_AT]: String(Date.now()) } }));
+  await withDeploy({ build: BUILD_A, pages: { [BUILD_A]: 'tagged' } }, async () => {
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'tagged');
+  });
+});
+
+test('deploy: a stale copy of the current build refreshes in the background with the id', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  const headers = { [EDGE_STORED_AT]: '0', [EDGE_BUILD]: BUILD_A };
+  cache.store.set(COPY, new Response('kept', { status: 200, headers }));
+  await withDeploy({ build: BUILD_A, pages: { [BUILD_A]: 'refreshed' } }, async (calls) => {
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'kept');
+    await ctx.settle();
+    assert.equal(calls.filter((c) => !c.build).at(-1).url, `${PAGE}?__build=${BUILD_A}`);
+    assert.equal(await cache.store.get(COPY).clone().text(), 'refreshed');
+  });
+});
+
+test('deploy: when the new build cannot be fetched, the old copy is served, not an error', async () => {
+  const headers = { [EDGE_STORED_AT]: String(Date.now()), [EDGE_BUILD]: BUILD_A };
+  for (const failure of [{ pageStatus: 429 }, { pageThrows: true }]) {
+    const cache = fakeCache();
+    const ctx = fakeCtx();
+    cache.store.set(COPY, new Response('old', { status: 200, headers }));
+    await withDeploy({ build: BUILD_B, pages: { [BUILD_B]: 'x' }, ...failure }, async () => {
+      const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+      assert.equal(res.status, 200);
+      assert.equal(await res.text(), 'old');
+      const head = await fetchOrigin(new Request(PAGE, { method: 'HEAD' }), new URL(PAGE), ctx, cache);
+      assert.equal(await head.text(), '');
+      await ctx.settle();
+      assert.equal(cache.store.get(COPY).headers.get(EDGE_BUILD), BUILD_A);
+    });
+  }
+});
+
+test('deploy: a miss with no copy still reports origin errors as before', async () => {
+  const ctx = fakeCtx();
+  await withDeploy({ build: BUILD_A, pages: { [BUILD_A]: 'down' }, pageStatus: 503 }, async () => {
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, fakeCache());
+    assert.equal(res.status, 503);
+  });
+  await withDeploy({ build: BUILD_A, pages: {}, pageThrows: true }, async () => {
+    await assert.rejects(fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, fakeCache()), /network/);
+  });
+});
+
+test('deploy: a HEAD miss for a new build is fetched with the id and not stored', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  await withDeploy({ build: BUILD_A, pages: { [BUILD_A]: 'p' } }, async (calls) => {
+    const res = await fetchOrigin(new Request(PAGE, { method: 'HEAD' }), new URL(PAGE), ctx, cache);
+    assert.equal(res.status, 200);
+    await ctx.settle();
+    const page = calls.filter((c) => !c.build).at(-1);
+    assert.equal(page.method, 'HEAD');
+    assert.equal(page.url, `${PAGE}?__build=${BUILD_A}`);
+    assert.equal(cache.store.size, 0);
+  });
+});
+
+test('currentBuildId: read once per BUILD_ID_TTL, edge-cached for the same time', async () => {
+  await withDeploy({ build: BUILD_A, pages: {} }, async (calls) => {
+    assert.equal(await currentBuildId('https://sebastienrousseau.com'), BUILD_A);
+    assert.equal(await currentBuildId('https://sebastienrousseau.com'), BUILD_A);
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0].url, `https://sebastienrousseau.com${BUILD_ID_PATH}`);
+    assert.deepEqual(calls[0].init, { cf: { cacheEverything: true, cacheTtl: BUILD_ID_TTL } });
+    const realNow = Date.now;
+    Date.now = () => realNow() + (BUILD_ID_TTL + 1) * 1000;
+    try {
+      assert.equal(await currentBuildId('https://sebastienrousseau.com'), BUILD_A);
+    } finally {
+      Date.now = realNow;
+    }
+    assert.equal(calls.length, 2);
+  });
+});
+
+test('currentBuildId: a missing, malformed or unreachable id is unknown', async () => {
+  for (const state of [{ buildStatus: 404 }, { build: '<html>' }, { buildThrows: true }]) {
+    await withDeploy({ build: BUILD_A, pages: {}, ...state }, async () => {
+      assert.equal(await currentBuildId('https://sebastienrousseau.com'), '');
+    });
+  }
+});
+
+// ---------------------------------------------------------------------------
+// Not-found pages: a missing page gets the site's own not-found page with
+// status 404, and /404/ itself is never a 200 (Search Console: Soft 404).
+// ---------------------------------------------------------------------------
+
+/** Origin serving `pages` (path -> body) and GitHub's generic 404 otherwise. */
+async function withPages(pages, fn) {
+  const calls = [];
+  const prev = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    const url = new URL(typeof input === 'string' ? input : input.url);
+    if (url.pathname.endsWith(BUILD_ID_PATH)) return new Response('', { status: 404 });
+    calls.push(url.pathname);
+    const body = pages[url.pathname];
+    return body === undefined
+      ? new Response('Page not found · GitHub Pages', { status: 404 })
+      : new Response(body, { status: 200, headers: { 'content-type': 'text/html' } });
+  };
+  _resetBuildIdCache();
+  try {
+    await fn(calls);
+  } finally {
+    globalThis.fetch = prev;
+  }
+}
+
+const SITE = 'https://sebastienrousseau.com';
+const go = (path, method = 'GET', ctx, cache) =>
+  fetchOrigin(new Request(`${SITE}${path}`, { method }), new URL(`${SITE}${path}`), ctx, cache);
+
+test('isNotFoundPage: /404/ in any locale, nothing else', () => {
+  for (const p of ['/404/', '/404/index.html', '/de/404/', '/zh-hant/404/', '/pt-br/404/index.html']) {
+    assert.equal(isNotFoundPage(p), true, p);
+  }
+  for (const p of ['/404', '/about/', '/de/404-fehler/', '/2026-04-04-404/', '/x/y/404/']) {
+    assert.equal(isNotFoundPage(p), false, p);
+  }
+});
+
+test('not found: /404/ pages answer 404 with their own body', async () => {
+  await withPages({ '/404/': 'EN 404', '/de/404/': 'DE 404' }, async () => {
+    for (const [path, body] of [['/404/', 'EN 404'], ['/de/404/', 'DE 404']]) {
+      const res = await go(path);
+      assert.equal(res.status, 404);
+      assert.equal(await res.text(), body);
+    }
+    const head = await go('/404/', 'HEAD');
+    assert.equal(head.status, 404);
+    assert.equal(await head.text(), '');
+  });
+});
+
+test('not found: a missing page gets its locale\'s not-found page, else English, as a 404', async () => {
+  await withPages({ '/404/': 'EN 404', '/de/404/': 'DE 404' }, async (calls) => {
+    const de = await go('/de/gibt-es-nicht/');
+    assert.equal(de.status, 404);
+    assert.equal(await de.text(), 'DE 404');
+    const ja = await go('/ja/nai/');
+    assert.equal(await ja.text(), 'EN 404');
+    assert.deepEqual(calls.slice(-3), ['/ja/nai/', '/ja/404/', '/404/']);
+    const en = await go('/missing/', 'HEAD');
+    assert.equal(en.status, 404);
+    assert.equal(await en.text(), '');
+  });
+});
+
+test('not found: with the edge cache, the not-found page is served from its copy', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  await withPages({ '/404/': 'EN 404' }, async (calls) => {
+    await go('/missing/', 'GET', ctx, cache);
+    await ctx.settle();
+    const res = await go('/also-missing/', 'GET', ctx, cache);
+    assert.equal(res.status, 404);
+    assert.equal(await res.text(), 'EN 404');
+    assert.equal(calls.filter((p) => p === '/404/').length, 1);
+  });
+});
+
+test('not found: with no not-found page anywhere, the origin 404 passes through', async () => {
+  await withPages({}, async () => {
+    const res = await go('/missing/');
+    assert.equal(res.status, 404);
+    assert.match(await res.text(), /GitHub Pages/);
+    const nf = await go('/404/');
+    assert.equal(nf.status, 404);
+  });
 });
