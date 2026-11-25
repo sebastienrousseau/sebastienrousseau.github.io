@@ -93,3 +93,36 @@ Consequences above. It adds about 200 machine-translated French pages,
 indexable without a recovery. Watch French impressions and the English trend in Search
 Console after the change; if English falls further, French is the first
 thing to take back out.
+
+## Amendment, 25 November 2026: locales that earned clicks are indexed
+
+The author decided to index again the locales that brought search
+traffic before the demotion, and to keep the rest noindex. Search Console
+page data for 11 June to 10 September 2026 (the three months before
+11 September; the top 1,000 pages, 489 of the period's 492 clicks) gave
+these clicks per locale:
+
+| Locale | Clicks | Locale | Clicks | Locale | Clicks |
+| :--- | ---: | :--- | ---: | :--- | ---: |
+| en | 160 | vi | 14 | id | 5 |
+| zh-hant | 77 | it | 12 | pt-br | 5 |
+| fr | 42 | fa | 11 | sv | 4 |
+| ru | 21 | cs | 10 | pl, ha, tr, ms, uk | 3 each |
+| ko | 18 | de | 10 | yo, bn, ar | 2 each |
+| es | 18 | th | 8 | nl | 1 |
+| zh-hans | 17 | ro | 7 | mr, fil, hu, ta, te, hi | 0 |
+| ja | 16 | he, el | 6 each | | |
+
+The threshold is 10 clicks in those three months. `_data/seo/locale-indexing.json`
+lists English and the twelve locales that met it: zh-hant, fr, ru, ko,
+es, zh-hans, ja, vi, it, fa, cs and de. Together they had 426 of the 489
+clicks (87 %). The other 22 locales, 63 clicks between them, stay
+`noindex, follow`, out of the sitemaps and out of the hreflang clusters.
+Decisions 2 to 6 are unchanged.
+
+This widens decision 1 from two locales to thirteen. On 25 November
+Search Console still reported 5,890 indexed pages, 410 of a 501-URL
+sample in locales that were noindex, so the noindex locales had mostly
+not left the index yet. Watch the English trend after this change; if
+English falls further, the newly indexed locales are the change to take
+back.

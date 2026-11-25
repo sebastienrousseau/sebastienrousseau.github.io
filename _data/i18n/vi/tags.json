@@ -1,0 +1,259 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.54; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "llm",
+    "iso-20022",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "blockchain",
+    "ml-kem",
+    "ml-dsa",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "rust",
+    "mcp"
+  ],
+  "ai": {
+    "name": "Trí tuệ nhân tạo",
+    "description": "AI ứng dụng trong dịch vụ tài chính: triển khai mô hình, quản trị, tác tử AI, công cụ LLM và hạ tầng AI vận hành trong môi trường ngân hàng.",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "AI tác tử",
+    "description": "Tác tử AI tự hành trong thanh toán, ngân quỹ và nghiệp vụ hậu trường ngân hàng: sự đồng ý, trách nhiệm pháp lý, dấu vết kiểm toán và khả năng tương tác giữa các giao thức.",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "Mô hình ngôn ngữ lớn (LLM) trong quy trình tài chính: tinh chỉnh, RAG, kỹ thuật prompt, LLM chạy trên thiết bị và bài toán chi phí suy luận.",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "AI tạo sinh",
+    "description": "Mô hình tạo sinh cho ngân hàng (mã nguồn, nội dung, tìm kiếm, mô phỏng) và công việc kỹ thuật cần thiết để đưa chúng vào vận hành một cách an toàn.",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "Quản trị AI",
+    "description": "Rủi ro mô hình, tuân thủ EU AI Act, NIST AI RMF, trách nhiệm giải trình ở cấp hội đồng quản trị, nhà cung cấp AI bên thứ ba và bộ công cụ tuân thủ cho AI trong ngân hàng.",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "Chuyển đổi thanh toán bán buôn và bán lẻ sang ISO 20022: pacs.008, pain.001, thông điệp camt, CBPR+ và hạ tầng thanh toán giàu dữ liệu.",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "Thanh toán xuyên biên giới",
+    "description": "Ngoại hối, ngân hàng đại lý, định tuyến đa kênh, các mục tiêu trong lộ trình G20 và hai yếu tố chi phí và tốc độ khi chuyển tiền qua biên giới.",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "Stablecoin",
+    "description": "Phát hành, dự trữ, mua lại, quản lý và vai trò của stablecoin như một tài sản thanh toán bù trừ bên cạnh tiền gửi ngân hàng.",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "Tiền gửi token hóa",
+    "description": "Token tiền gửi do ngân hàng phát hành, thanh toán nguyên tử, bảng cân đối kế toán có thể lập trình và khung chính sách đối với tiền của ngân hàng thương mại được token hóa.",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "Thanh toán tức thời",
+    "description": "RTP, FedNow, SEPA Instant, Faster Payments của Vương quốc Anh: cơ chế vận hành kênh thanh toán tức thời, thanh khoản, gian lận và định giá.",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "Thanh toán A2A",
+    "description": "Kênh thanh toán từ tài khoản đến tài khoản, khởi tạo thanh toán qua ngân hàng mở và các trường hợp sử dụng thanh toán bằng tác tử AI vận hành trên đó.",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "Ngân hàng mở",
+    "description": "PSD2, PSD3, CMA9, FDX: API ngân hàng mở, khởi tạo thanh toán và nền tảng cho khả năng di chuyển dữ liệu.",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "Nhắn tin, GPI, xác thực trước thanh toán và vai trò đang thay đổi của SWIFT trong thế giới đa kênh thanh toán.",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus: hướng dẫn sử dụng ISO 20022 của SWIFT cho ngân hàng đại lý.",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "Thanh toán bán buôn",
+    "description": "Thanh toán liên ngân hàng, giá trị lớn và hạ tầng thị trường: mảng bán buôn trong bài toán kinh tế của hạ tầng ngân hàng.",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "Thông điệp chuyển khoản tín dụng khách hàng, trọng tâm của ISO 20022 xuyên biên giới: lược đồ, xác thực, tự động hóa và điều phối.",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "Thông điệp khởi tạo thanh toán của khách hàng: trung tâm thanh toán doanh nghiệp, xác thực và lộ trình chuyển đổi khỏi MT101.",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "Tự động hóa thanh toán",
+    "description": "Tạo tệp thanh toán, xác thực, xử lý ngoại lệ và khía cạnh kỹ thuật của vận hành thanh toán.",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "Thanh khoản có thể lập trình",
+    "description": "Ngân quỹ thời gian thực, điều phối thanh khoản trong ngày, bảng cân đối kế toán có thể lập trình và bộ công cụ ngân quỹ dựa trên tác tử AI.",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "Thanh toán",
+    "description": "Bao quát hệ thống thanh toán, kênh thanh toán và bài toán kinh tế của việc chuyển tiền; là điểm vào biên tập chung, đứng trên các chủ đề chuyên về từng kênh thanh toán.",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "Ngân quỹ",
+    "description": "Hoạt động ngân quỹ của doanh nghiệp và ngân hàng: quản lý thanh khoản, dự báo dòng tiền, phòng ngừa rủi ro ngoại hối và mô hình vận hành đứng sau ngân quỹ thời gian thực. Góc độ ngân quỹ tự hành dựa trên tác tử AI nằm trong chủ đề Thanh khoản có thể lập trình.",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "Tài sản số",
+    "description": "Tài sản token hóa, lưu ký, hạ tầng thanh toán bù trừ và việc các tổ chức áp dụng kênh tài sản số bên cạnh tài chính truyền thống.",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "Tài chính phi tập trung",
+    "description": "Giao thức DeFi, rủi ro hợp đồng thông minh, thanh khoản trên chuỗi và những điểm ngân hàng tích hợp (hoặc chủ động không tích hợp) với hệ sinh thái DeFi.",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "Mật mã hậu lượng tử",
+    "description": "Các tiêu chuẩn hậu lượng tử của NIST, mối đe dọa thu thập trước, giải mã sau, cơ chế bắt tay lai và việc chuyển đổi mật mã ngân hàng sang các thuật toán dựa trên lưới.",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "Blockchain",
+    "description": "Công nghệ sổ cái phân tán trong hạ tầng tài chính: cơ chế đồng thuận, nút xác thực, thực thi hợp đồng thông minh và những nơi công nghệ này xuất hiện trong ngân hàng.",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203: cơ chế đóng gói khóa hậu lượng tử đã được tiêu chuẩn hóa (trước đây là CRYSTALS-Kyber).",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204: thuật toán chữ ký số hậu lượng tử đã được tiêu chuẩn hóa (trước đây là CRYSTALS-Dilithium).",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "Linh hoạt mật mã",
+    "description": "Kiểm kê tài sản mật mã, xác định lộ trình chuyển đổi và xây dựng các ranh giới mật mã có thể thay thế trong mã nguồn vận hành thực tế.",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "Mật mã học",
+    "description": "Mật mã ứng dụng trong ngân hàng: hàm băm, chữ ký, KEM, quản lý khóa và các thành phần mật mã bảo vệ kênh thanh toán.",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "Điện toán lượng tử",
+    "description": "Tiến bộ phần cứng, thuật toán lượng tử, thời gian đến khi trở thành mối đe dọa và những điểm giao giữa điện toán lượng tử với khối lượng công việc ngân hàng.",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "Thu thập trước, giải mã sau",
+    "description": "Mô hình mối đe dọa HNDL: kẻ tấn công thu thập lưu lượng mã hóa ngay hôm nay để giải mã khi phần cứng lượng tử sẵn sàng.",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "Ngân hàng điện toán đám mây gốc",
+    "description": "Kubernetes, service mesh, khả năng chống chịu đa vùng và các mẫu kiến trúc cloud-native mà ngân hàng đang áp dụng theo DORA.",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "Đám mây chủ quyền",
+    "description": "Lưu trú dữ liệu, đám mây theo vùng pháp lý và các đánh đổi về kiến trúc khi vận hành khối lượng công việc ngân hàng trong ranh giới chủ quyền.",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "Kỹ thuật nền tảng",
+    "description": "Nền tảng nội bộ cho nhà phát triển, lộ trình chuẩn, con đường đã được trải sẵn: cách các tổ chức công nghệ ngân hàng nâng cao năng suất kỹ thuật.",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "Khả năng chống chịu hoạt động",
+    "description": "Dịch vụ kinh doanh quan trọng, ngưỡng chịu đựng tác động, kịch bản nghiêm trọng nhưng khả thi và chương trình chống chịu hoạt động mà ngân hàng phải triển khai.",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "An ninh mạng",
+    "description": "An ninh vận hành trong ngân hàng: mối đe dọa, biện pháp kiểm soát, ứng phó sự cố và các yêu cầu pháp lý về khả năng chống chịu.",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "Điện toán biên",
+    "description": "Edge worker, chống gian lận tại biên, CDN như một nền tảng: vai trò của điện toán biên trong khối lượng công việc tài chính.",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act: sổ đăng ký thông tin, rủi ro bên thứ ba về ICT, kiểm thử xâm nhập dựa trên mối đe dọa và chương trình chống chịu hoạt động mà ngân hàng phải triển khai.",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "Hướng dẫn triển khai, kỳ vọng giám sát, phân loại hệ thống rủi ro cao và gánh nặng đánh giá sự phù hợp mà Đạo luật đặt lên ngân hàng.",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "Các tiêu chuẩn NIST liên quan đến ngân hàng (FIPS 203/204, AI RMF, bộ SP 800/1800) và cách cơ quan giám sát áp dụng chúng.",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "Rủi ro bên thứ ba",
+    "description": "Rủi ro bên thứ ba về ICT theo DORA, hướng dẫn thuê ngoài của EBA và kỳ vọng giám sát đối với mức độ tập trung vào nhà cung cấp trọng yếu.",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "Mã nguồn mở",
+    "description": "Phần mềm mã nguồn mở trong ngân hàng chịu quản lý: rủi ro chuỗi cung ứng, chứng thực, chính sách đóng góp và các dự án mã nguồn mở mà ngân hàng phụ thuộc.",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "Rust trong hạ tầng ngân hàng: an toàn bộ nhớ, hiệu năng và hệ sinh thái crate phục vụ khối lượng công việc tài chính.",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol: cách các ứng dụng AI khám phá và sử dụng nội dung ngân hàng dưới dạng tài nguyên có cấu trúc.",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "Chiến lược công nghệ",
+    "description": "Mối quan tâm của CTO và CIO ngân hàng: tự làm hay mua, tự xây dựng hay hợp tác, thiết kế tổ chức và chương trình công nghệ chiến lược.",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "Đổi mới sáng tạo",
+    "description": "Nội dung biên tập về những chuyển dịch công nghệ chiến lược trong ngân hàng: điều gì sắp đến, ai đang triển khai và nó thay đổi điều gì.",
+    "reviewed": false
+  },
+  "research": {
+    "name": "Nghiên cứu",
+    "description": "Phân tích gốc, chỉ số và số liệu đối chuẩn: công việc dữ liệu làm nền cho quan điểm biên tập.",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "Ngân hàng",
+    "description": "Ngành ngân hàng là chủ đề biên tập: điều gì đang thay đổi, vì sao, và ý nghĩa đối với công nghệ, thanh toán, rủi ro và mô hình vận hành.",
+    "reviewed": false
+  }
+}

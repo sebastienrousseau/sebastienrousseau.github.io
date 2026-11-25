@@ -30,11 +30,18 @@ SITE = "https://sebastienrousseau.com"
 # -- Policy -----------------------------------------------------------------
 
 
-def test_policy_keeps_english_and_french() -> None:
-    assert li.indexed_codes() == frozenset({"en", "fr"})
-    assert len(li.noindex_codes()) == 33
-    assert "fr" not in li.noindex_codes()
-    assert {"ar", "pt-br", "yo"} <= set(li.noindex_codes())
+# ADR-0015 as amended on 25 Nov 2026: English plus the twelve locales with
+# at least 10 Google clicks between 11 June and 10 September 2026.
+CLICKED = frozenset(
+    {"zh-hant", "fr", "ru", "ko", "es", "zh-hans", "ja", "vi", "it", "fa", "cs", "de"}
+)
+
+
+def test_policy_keeps_english_and_the_locales_that_earned_clicks() -> None:
+    assert li.indexed_codes() == frozenset({"en"}) | CLICKED
+    assert len(li.noindex_codes()) == 22
+    assert not CLICKED & set(li.noindex_codes())
+    assert {"ar", "pt-br", "yo", "nl"} <= set(li.noindex_codes())
     assert {"pt-br", "pt-BR".lower(), "ar-sa"} <= li.noindex_hreflangs()
 
 

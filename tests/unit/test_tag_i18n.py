@@ -116,10 +116,12 @@ def _en(slug: str) -> tuple[str, str]:
 
 
 def test_indexed_locales_follow_the_policy() -> None:
-    # ADR-0015 as amended on 22 Nov 2026: French is the one translated
-    # locale in the index, so its tag translations are held to the checks
-    # below. Any other locale that returns is checked the same way.
-    assert KEPT == ["fr"]
+    # ADR-0015 as amended on 25 Nov 2026: the twelve locales with at least
+    # 10 Google clicks before the September demotion are indexed, so each
+    # one's tag translations are held to the checks below.
+    assert sorted(KEPT) == sorted(
+        ["zh-hant", "fr", "ru", "ko", "es", "zh-hans", "ja", "vi", "it", "fa", "cs", "de"]
+    )
 
 
 @pytest.mark.parametrize("lang", KEPT)
