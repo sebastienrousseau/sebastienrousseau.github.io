@@ -581,6 +581,18 @@ test('withSecurityHeaders sets immutable Cache-Control for static assets', () =>
   }
 });
 
+test('withSecurityHeaders gives fixed-name icons a one-day cache, not immutable', () => {
+  // These URLs never change when the file does, so a year-long immutable
+  // cache kept the old favicon in browsers after a redesign.
+  for (const path of ['/favicon.ico', '/apple-touch-icon.png', '/icon-192.png', '/icon-512.png']) {
+    const wrapped = withSecurityHeaders(new Response('icon'), new Request(`https://example.com${path}`));
+    assert.equal(wrapped.headers.get('Cache-Control'), 'public, max-age=86400', path);
+  }
+  // A hashed or nested image keeps the immutable cache.
+  const img = withSecurityHeaders(new Response('img'), new Request('https://example.com/assets/img/favicon.ico'));
+  assert.equal(img.headers.get('Cache-Control'), 'public, max-age=31536000, immutable');
+});
+
 test('withSecurityHeaders overrides Cache-Control to private/no-store when Set-Cookie is present', () => {
   const upstream = new Response('cookie-content', {
     headers: { 'Set-Cookie': 'session=xyz' }
