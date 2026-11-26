@@ -504,7 +504,15 @@
     "金融機関": "kinyu kikan",
     "ガバナンス": "governance",
     "上の": "jo no",
-    "中心課題": "chushin kadai"
+    "中心課題": "chushin kadai",
+    "天球": "tenkyu",
+    "ホログラフィー": "holography",
+    "対称性": "taishosei",
+    "ソフト": "soft",
+    "物理": "butsuri",
+    "双対": "sotsui",
+    "理論": "riron",
+    "変える": "kaeru"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -605,7 +613,15 @@
     "金融机构": "jinrong jigou",
     "核心": "hexin",
     "治理": "zhili",
-    "难题": "nanti"
+    "难题": "nanti",
+    "天球": "tianqiu",
+    "全息": "quanxi",
+    "对称性": "duichenxing",
+    "如何": "ruhe",
+    "软": "ruan",
+    "物理": "wuli",
+    "对偶": "duiou",
+    "理论": "lilun"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -704,6 +720,14 @@
     "已成": "yicheng",
     "金融機構": "jinrong jigou",
     "治理": "zhili",
-    "難題": "nanti"
+    "難題": "nanti",
+    "天球": "tianqiu",
+    "全像": "quanxiang",
+    "對稱性": "duichenxing",
+    "如何": "ruhe",
+    "軟": "ruan",
+    "物理": "wuli",
+    "對偶": "duiou",
+    "理論": "lilun"
   }
 }
