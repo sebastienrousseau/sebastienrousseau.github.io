@@ -42,11 +42,9 @@ theme-sync: ## Synchronize _layouts/ from theme repository
 	@python3 "$(THEME_DIR)/tools/flatten.py" --site "$(THEME_DIR)/_layouts" _layouts
 	@git --no-pager diff --stat -- _layouts
 
-# Re-emit generator output (layouts, articles, projects) then rebuild.
-# gen_layouts.py is superseded by `make theme-sync` (ADR-0014).
-regenerate: ## Re-generate layouts, articles, and sitemaps
-	@python3 scripts/generators/gen_layouts.py
-	@perl -i -pe 's|<h4>Sebastien Rousseau</h4>|<h2 class="ap-foot-title">Sebastien Rousseau</h2>|g; s|<h4>Writing</h4>|<h2 class="ap-foot-title">Writing</h2>|g; s|<h4>Work</h4>|<h2 class="ap-foot-title">Work</h2>|g; s|<h4>Reach</h4>|<h2 class="ap-foot-title">Reach</h2>|g' _layouts/*.html
+# Re-emit generator output (articles, projects) then rebuild. _layouts/
+# comes from the theme (`make theme-sync`, ADR-0014), not gen_layouts.py.
+regenerate: ## Re-generate articles and sitemaps
 	@python3 scripts/generators/gen_articles.py
 	@# gen_projects + topic_link rewrite committed files in place; an
 	@# intentional source regeneration passes --dir explicitly (ADR-0003).
