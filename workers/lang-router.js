@@ -341,6 +341,7 @@ import {
   resolveRenamed,
   tryRetiredPdf,
 } from './edge-routes.js';
+import { tryCrawlRedirect } from './crawl-redirects.js';
 export {
   isHtmlPagePath,
   EDGE_HTML_TTL,
@@ -483,6 +484,8 @@ export default {
       const renamed = tryRenamedUrlRedirect(url, await getRedirectMap(env));
       if (renamed) return withSecurityHeaders(renamed, request);
     }
+    const crawl = tryCrawlRedirect(url);
+    if (crawl) return withSecurityHeaders(crawl, request);
     if (!isPageNavigation(url.pathname)) {
       return passThrough(request, url, ctx);
     }

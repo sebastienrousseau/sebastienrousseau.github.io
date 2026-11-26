@@ -682,12 +682,17 @@ test('handler: cookie pref-lang=fr redirects to /fr/', async () => {
 });
 
 test('handler: cookie pref-lang=fr on /papers/ redirects to /fr/papers/', async () => {
-  const req = makeRequest('https://sebastienrousseau.com/papers/index.html', {
+  const req = makeRequest('https://sebastienrousseau.com/papers/', {
     headers: { Cookie: 'pref-lang=fr' },
   });
   const res = await callHandler(req);
   assert.equal(res.headers.get('location'),
-    'https://sebastienrousseau.com/fr/papers/index.html');
+    'https://sebastienrousseau.com/fr/papers/');
+  // The index.html form first becomes the directory URL (crawl-redirects.js).
+  const index = await callHandler(makeRequest('https://sebastienrousseau.com/papers/index.html', {
+    headers: { Cookie: 'pref-lang=fr' },
+  }));
+  assert.equal(index.headers.get('location'), 'https://sebastienrousseau.com/papers/');
 });
 
 test('handler: cookie set to inactive lang is ignored → pass-through', async () => {

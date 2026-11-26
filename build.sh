@@ -588,7 +588,9 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/lang-router.js' \
     --test-coverage-include='workers/edge-routes.js' \
-    workers/test_lang_router.mjs workers/test_edge_routes.mjs
+    --test-coverage-include='workers/crawl-redirects.js' \
+    workers/test_lang_router.mjs workers/test_edge_routes.mjs \
+    workers/test_crawl_redirects.mjs
   # ActivityPub sibling — same 100% line/branch/function coverage gate,
   # tested in isolation so the webfinger / actor / inbox / outbox decision
   # tree stays exhaustively covered as it grows past starter scope.

@@ -439,21 +439,26 @@ def inject_mermaid(html: str) -> str:
     return CSP_TAG_RE.sub(patch_csp, new_html, count=1)
 
 
+# Prerender targets are excluded with CSS selectors rather than
+# ``href_matches`` URL patterns: Googlebot read patterns such as ``/*`` and
+# ``/contact/*`` in the inline JSON as links and reported each as a 404.
+# No string here starts with "/", so nothing in it looks like a URL.
+# Cross-site links are never prerendered, so no same-origin clause is needed.
+_PRERENDER_SKIP = ", ".join(
+    (
+        'a[href*=\\"_csp/\\"]',
+        'a[href$=\\".xml\\"]',
+        'a[href$=\\".json\\"]',
+        'a[href$=\\".txt\\"]',
+        'a[href$=\\".pdf\\"]',
+        'a[href$=\\"sw.js\\"]',
+        'a[href*=\\"contact/\\"]',
+    )
+)
 SPECULATION_RULES_BLOCK = (
     '<script type="speculationrules">'
     '{"prerender":[{'
-    '"where":{"and":['
-    '{"href_matches":"/*"},'
-    '{"not":{"href_matches":"/_csp/*"}},'
-    '{"not":{"href_matches":"/*.xml"}},'
-    '{"not":{"href_matches":"/*.json"}},'
-    '{"not":{"href_matches":"/*.txt"}},'
-    '{"not":{"href_matches":"/*.pdf"}},'
-    '{"not":{"href_matches":"/manifest.json"}},'
-    '{"not":{"href_matches":"/sw.js"}},'
-    '{"not":{"href_matches":"/contact/*"}},'
-    '{"not":{"href_matches":"/fr/contact/*"}}'
-    "]},"
+    f'"where":{{"not":{{"selector_matches":"{_PRERENDER_SKIP}"}}}},'
     '"eagerness":"moderate"'
     "}]}"
     "</script>"

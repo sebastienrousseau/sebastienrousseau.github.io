@@ -1,6 +1,8 @@
 // SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
 // SPDX-License-Identifier: Apache-2.0 OR MIT
 
+import { safeDecodePath } from './crawl-redirects.js';
+
 /**
  * Edge routing helpers for the lang-router Worker: which paths are HTML
  * pages, how those pages are fetched from origin (edge-cached), and the
@@ -116,7 +118,8 @@ export function getArticleLocales(env) {
 
 /** 301 Response when `url` is a renamed path in `map`, else null. */
 export function tryRenamedUrlRedirect(url, map) {
-  let path = url.pathname;
+  // Decoded, so an old slug with non-ASCII letters matches its map key.
+  let path = safeDecodePath(url.pathname);
   if (path.endsWith('/index.html')) path = path.slice(0, -'index.html'.length);
   if (!path.endsWith('/')) path += '/';
   const target = map.get(path);
@@ -323,11 +326,26 @@ function serveHit(hit, request, url, ctx, cache, key, build) {
   return servedCopy(hit, request.method);
 }
 
+/**
+ * GitHub Pages echoes the query on its own redirects (a slashless path, a
+ * moved project site), so `?__build=<id>` came back in Location and every
+ * redirect handed crawlers a new URL. Drop it there.
+ */
+function withoutBuildParam(res, url) {
+  const location = res.headers.get('location');
+  if (!location?.includes('__build=')) return res;
+  const target = new URL(location, url);
+  target.searchParams.delete('__build');
+  const headers = new Headers(res.headers);
+  headers.set('location', target.toString());
+  return new Response(res.body, { status: res.status, headers });
+}
+
 /** Origin fetch for a miss; a copy from an older build is the fallback. */
 async function fetchFresh(request, url, build, fallback) {
   const target = build ? new Request(originUrl(url, build), request) : request;
   try {
-    const res = await fetch(target, { cf: EDGE_HTML_CACHE });
+    const res = withoutBuildParam(await fetch(target, { cf: EDGE_HTML_CACHE }), url);
     return res.status === 200 || !fallback ? res : null;
   } catch (err) {
     if (!fallback) throw err;
