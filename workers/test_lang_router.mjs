@@ -1030,3 +1030,51 @@ test('handler: /api/event delegates to events handler with API security headers'
   assert.equal(res.headers.get('allow'), 'POST');
   assert.equal(passThroughLog.length, 0, '/api/event must not pass through to origin');
 });
+
+// ---------------------------------------------------------------------------
+// Live headline figures: a page served through passThrough shows the
+// profile's figures from profile.json (live-kpi.js), not the build's.
+// ---------------------------------------------------------------------------
+
+test('a page passed through shows the profile figures, not the built ones', async () => {
+  const savedFetch = globalThis.fetch;
+  globalThis.HTMLRewriter = class {
+    on(_selector, handler) {
+      this.handler = handler;
+      return this;
+    }
+
+    transform(response) {
+      const handler = this.handler;
+      const body = new ReadableStream({
+        async start(controller) {
+          const html = await response.text();
+          let value = null;
+          await handler.element({ getAttribute: () => 'packages_published', setInnerContent: (v) => { value = v; } });
+          controller.enqueue(new TextEncoder().encode(html.replace('>200<', `>${value}<`)));
+          controller.close();
+        },
+      });
+      return new Response(body, { status: response.status, headers: response.headers });
+    }
+  };
+  globalThis.fetch = async (input) => {
+    const url = typeof input === 'string' ? input : input.url;
+    if (url.endsWith('/profile.json')) {
+      const display = { all_time_downloads: '54.9M', recent_downloads: '2.6M', github_stars: '760', packages: '201' };
+      return new Response(JSON.stringify({ numbers: { display } }), { status: 200 });
+    }
+    return new Response('<span data-kpi="packages_published">200</span>', {
+      status: 200,
+      headers: { 'content-type': 'text/html; charset=utf-8' },
+    });
+  };
+  try {
+    const res = await callHandler(makeRequest('https://sebastienrousseau.com/projects/'));
+    assert.equal(res.status, 200);
+    assert.equal(await res.text(), '<span data-kpi="packages_published">201</span>');
+  } finally {
+    globalThis.fetch = savedFetch;
+    delete globalThis.HTMLRewriter;
+  }
+});

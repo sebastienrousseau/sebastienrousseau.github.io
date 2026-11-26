@@ -4,7 +4,8 @@
 /**
  * Live wall clock route for the lang-router Worker.
  *
- * Path: `GET /api/clock/hero-<light|dark>.svg`
+ * Paths: `GET /api/clock/hero-<light|dark>.svg` and
+ *        `GET /api/clock/clock-<light|dark>.svg`
  *
  * The GitHub profile README (github.com/sebastienrousseau) shows a hero
  * panel with a wall clock. The committed SVG is static: its hands are
@@ -24,8 +25,15 @@
  * the calendar or the holiday hero falls back to the everyday hero. The
  * `X-Profile-Theme` header names what was served.
  *
+ * The `clock-` paths serve the profile's clock-only panels (the hero's art
+ * without its text or card) for the homepage hero on sebastienrousseau.com,
+ * so the site shows the same clock and the same holiday variations. They
+ * pick their panel from the same calendar. When a clock-only panel cannot
+ * be served the route returns null, and the origin serves the site's own
+ * static copy: the site's CSP does not allow images from GitHub.
+ *
  * Guard rails:
- *   - Only the two fixed theme paths match; nothing from the request
+ *   - Only the four fixed paths match; nothing from the request
  *     reaches an upstream URL.
  *   - A holiday key comes only from the calendar file and must match
  *     KEY_RE; the theme comes only from the route regex.
@@ -37,11 +45,12 @@
  *     SVG so the profile shows a stopped clock rather than a broken image.
  */
 
-const SOURCE = 'https://raw.githubusercontent.com/sebastienrousseau/sebastienrousseau/main/assets/hero-';
+const ASSETS = 'https://raw.githubusercontent.com/sebastienrousseau/sebastienrousseau/main/assets/';
+const SOURCE = `${ASSETS}hero-`;
 const CALENDAR = 'https://raw.githubusercontent.com/sebastienrousseau/sebastienrousseau/main/assets/holidays.json';
 const KEY_RE = /^[a-z0-9-]{1,40}$/;
 const EDGE = { cf: { cacheTtl: 300, cacheEverything: true } };
-const ROUTE_RE = /^\/api\/clock\/hero-(light|dark)\.svg$/;
+const ROUTE_RE = /^\/api\/clock\/(hero|clock)-(light|dark)\.svg$/;
 const MARKER = '/*clock*/';
 const HALF_DAY = 43200;
 
@@ -113,10 +122,10 @@ export async function loadCalendar() {
   }
 }
 
-/** A hero SVG that carries the clock marker, or null. Never throws. */
-async function heroSVG(name) {
+/** A panel SVG that carries the clock marker, or null. Never throws. */
+async function panelSVG(name) {
   try {
-    const res = await fetch(`${SOURCE}${name}.svg`, EDGE);
+    const res = await fetch(`${ASSETS}${name}.svg`, EDGE);
     if (!res.ok) return null;
     const svg = await res.text();
     return svg.includes(MARKER) ? svg : null;
@@ -153,16 +162,16 @@ export async function tryClock(request, now = () => new Date()) {
   if (request.method !== 'GET' && request.method !== 'HEAD') {
     return new Response(null, { status: 405, headers: { Allow: 'GET, HEAD' } });
   }
-  const theme = m[1];
+  const [, kind, theme] = m;
   const at = now();
   const { iso, hour } = londonDay(at);
   const key = pickKey(await loadCalendar(), iso, hour);
   let served = key;
-  let svg = key ? await heroSVG(`${key}-${theme}`) : null;
+  let svg = key ? await panelSVG(`${kind}-${key}-${theme}`) : null;
   if (!svg) {
     served = 'everyday';
-    svg = await heroSVG(theme);
-    if (!svg) return fallback(theme);
+    svg = await panelSVG(`${kind}-${theme}`);
+    if (!svg) return kind === 'hero' ? fallback(theme) : null;
   }
   const body = svg.replace(MARKER, clockCSS(londonSeconds(at)));
   const headers = { ...HEADERS, 'X-Profile-Theme': served };

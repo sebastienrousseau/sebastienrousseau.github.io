@@ -217,3 +217,36 @@ test('nothing from the request reaches an upstream URL', async () => {
   assert.deepEqual(asked, [`${RAW}holidays.json`, `${RAW}hero-christmas-light.svg`]);
   assert.ok(asked.every((url) => !url.includes('evil') && !url.includes('?')));
 });
+
+// The site's homepage hero shows the same clock without the profile's
+// text: /api/clock/clock-<theme>.svg serves the profile's clock-only
+// panels, holiday variations included, from the same calendar.
+test('isClockRoute accepts the clock-only panels', () => {
+  assert.ok(isClockRoute('/api/clock/clock-light.svg'));
+  assert.ok(isClockRoute('/api/clock/clock-dark.svg'));
+  assert.ok(!isClockRoute('/api/clock/clock-blue.svg'));
+  assert.ok(!isClockRoute('/api/clock/face-dark.svg'));
+});
+
+test('tryClock serves the holiday clock-only panel on a holiday', async () => {
+  const asked = serve({ 'holidays.json': calendar({ '2026-12-25': ['christmas'] }), 'clock-christmas-dark.svg': HOLIDAY_SVG });
+  const res = await tryClock(get('/api/clock/clock-dark.svg'), () => XMAS);
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get('X-Profile-Theme'), 'christmas');
+  assert.deepEqual(asked, [`${RAW}holidays.json`, `${RAW}clock-christmas-dark.svg`]);
+  assert.ok((await res.text()).includes('animation-play-state:running'));
+});
+
+test('tryClock serves the everyday clock-only panel on other days', async () => {
+  const asked = serve({ 'holidays.json': calendar({ '2026-12-24': ['christmas'] }), 'clock-light.svg': SVG });
+  const res = await tryClock(get('/api/clock/clock-light.svg'), () => XMAS);
+  assert.equal(res.headers.get('X-Profile-Theme'), 'everyday');
+  assert.deepEqual(asked, [`${RAW}holidays.json`, `${RAW}clock-light.svg`]);
+});
+
+test('a failed clock-only panel falls through to the site copy, not GitHub', async () => {
+  // The site's CSP does not allow raw.githubusercontent.com images, so the
+  // clock route returns null and the origin serves its static copy.
+  serve({});
+  assert.equal(await tryClock(get('/api/clock/clock-dark.svg'), () => XMAS), null);
+});

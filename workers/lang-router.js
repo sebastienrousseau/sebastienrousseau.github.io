@@ -342,6 +342,7 @@ import {
   tryRetiredPdf,
 } from './edge-routes.js';
 import { tryCrawlRedirect } from './crawl-redirects.js';
+import { withLiveFigures } from './live-kpi.js';
 export {
   isHtmlPagePath,
   EDGE_HTML_TTL,
@@ -354,9 +355,10 @@ export {
   trySlugRedirects,
 } from './edge-routes.js';
 
-/** Pass a request through to origin, edge-caching it when it is a page. */
+/** Pass a request through to origin, edge-caching it when it is a page;
+ * pages get the profile's live headline figures (live-kpi.js). */
 async function passThrough(request, url, ctx) {
-  return withSecurityHeaders(await fetchOrigin(request, url, ctx), request);
+  return withSecurityHeaders(withLiveFigures(await fetchOrigin(request, url, ctx)), request);
 }
 
 /**
@@ -397,7 +399,7 @@ async function tryApiRoutes(request, env, ctx) {
   // search. Locale routing doesn't apply (these are API endpoints).
   const mcpResponse = await tryMCP(request);
   if (mcpResponse) return withApiSecurityHeaders(mcpResponse);
-  // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
+  // Profile clock: /api/clock/<hero|clock>-<theme>.svg, uncached so it keeps time.
   const clockResponse = await tryClock(request);
   if (clockResponse) return withApiSecurityHeaders(clockResponse);
   // Conversion & CWV event beacon: POST /api/event -> Analytics Engine.
