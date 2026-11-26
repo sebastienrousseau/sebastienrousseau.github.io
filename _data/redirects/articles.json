@@ -1,5 +1,5 @@
 {
-  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor \u2014 it stays a 404, which is the honest response for deleted content. Also listed: three URLs a translation-pipeline slug mangle or a renamed localised credit-page slug put into published links (undpasanding, and every earlier localised slug of the made-with-static-site-generator credit page, from the made-with-shokunin key onward); Search Console still crawls them as 404s.",
+  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor \u2014 it stays a 404, which is the honest response for deleted content. Also listed: three URLs a translation-pipeline slug mangle or a renamed localised credit-page slug put into published links (undpasanding, and every earlier localised slug of the made-with-static-site-generator credit page, from the made-with-shokunin key onward); Search Console still crawls them as 404s. Also listed, from the 26 Nov 2026 Search Console 404 report: three English URLs a translation pass mangled inside published links (Hindi words or 'bijnaer' in place of English ones), the Spanish slug of the 2026-05-27 article used at the English root, and three links to articles that were never published (an FHE and a QKD article and a draft on static site generators), each sent to the closest published article.",
   "en": {
     "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
     "2023-10-16-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust": "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
@@ -10,7 +10,15 @@
     "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
     "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
     "2026-banking-architecture-whitepaper": "2026-06-21-banking-architecture-whitepaper",
-    "2018-01-09-undpasanding-the-technology-behind-blockchain": "2018-01-09-understanding-the-technology-behind-blockchain"
+    "2018-01-09-undpasanding-the-technology-behind-blockchain": "2018-01-09-understanding-the-technology-behind-blockchain",
+    "2018-01-24-the-erc-20-\u091f\u094b\u0915\u0928-standard": "2018-01-24-the-erc-20-token-standard",
+    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-bijnaer-payment-solution": "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution",
+    "2018-02-04-unveiling-\u0915\u094b-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution",
+    "2023-11-28-kyberlib-\u0915\u094b-rust-powered-shield-against-quantum-threats": "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats",
+    "2026-04-18-qkd-wholesale-banking-physics-grade-keys-2026": "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking",
+    "2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026": "2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026",
+    "2026-05-29-fhe-banking-analytics-confidential-compute-2026": "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era",
+    "2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026": "2023-10-09-the-fastest-rust-based-static-site-generator"
   },
   "ar": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-murajaat-alaam",
