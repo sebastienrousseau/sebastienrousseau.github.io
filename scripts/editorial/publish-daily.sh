@@ -43,7 +43,7 @@ python3 scripts/editorial/translate_post.py "$SLUG"
 # 3. Refresh generators so listing pages pick up the new post.
 #    gen_articles auto-discovers the latest dated post in _posts/ — no
 #    manual ARTICLES[0] edit needed any more.
-python3 scripts/generators/gen_layouts.py
+# _layouts/ comes from the theme (make theme-sync, ADR-0014); never gen_layouts.py.
 python3 scripts/generators/gen_articles.py
 # gen_projects rewrites committed projects.md; intentional here (ADR-0003).
 python3 scripts/generators/gen_projects.py --dir _posts
@@ -67,8 +67,8 @@ echo "  1. List stubs still needing translation:"
 echo "        python3 scripts/editorial/translate_post.py $SLUG --list-stubs"
 echo "  2. For each stub Claude finds, rewrite the body in the target language"
 echo "     (rules in .claude/commands/publish-today.md)"
-echo "  3. Rotate the homepage card grid in _posts/index.md (drop oldest"
-echo "     of 6, prepend today's). build_translations propagates per-locale."
+echo "  3. Nothing to do for the homepage grid: build.sh rebuilds it from"
+echo "     the six newest posts (regen_homepage.py)."
 echo "  4. If the article fits an existing TOPICS cluster, prepend its slug"
 echo "     to that cluster's slugs[] in scripts/generators/build_topics.py"
 echo "  5. Re-run: ./build.sh"

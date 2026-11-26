@@ -60,8 +60,8 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
     _en_home_title = "Sebastien Rousseau · Post-Quantum & ISO 20022 for Banking"
     _en_home_desc = (
         "Open-source ISO 20022 and post-quantum cryptography for banks: "
-        "199 audited packages, 54M+ downloads, and research for wholesale "
-        "payments leaders."
+        "audited, signed packages and research for wholesale payments "
+        "leaders."
     )
     _home_titles = {
         "ar": "سيباستيان روسو: الذكاء الاصطناعي والمدفوعات والتشفير الكمومي",

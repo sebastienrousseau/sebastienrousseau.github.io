@@ -13,7 +13,7 @@ cdn: "https://cloudcdn.pro/clients"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "Open-source ISO 20022 and post-quantum cryptography for banks: 199 audited packages, 54M+ downloads, and research for wholesale payments leaders."
+description: "Open-source ISO 20022 and post-quantum cryptography for banks: audited, signed packages and research for wholesale payments leaders."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -86,7 +86,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Open-source ISO 20022 and post-quantum cryptography for banks: 199 audited packages, 54M+ downloads, and research for wholesale payments leaders."
+twitter_description: "Open-source ISO 20022 and post-quantum cryptography for banks: audited, signed packages and research for wholesale payments leaders."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -334,12 +334,12 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonquantum.com/" title="Banking On Quantum on Medium" aria-label="Banking On Quantum on Medium" rel="noopener">
-<img alt="Two parallel black and white bands curving together" src="https://cloudcdn.pro/stocks/images/alvaro-pinot-6tWCLnsCFfM.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Violet and blue fibre-optic strands glowing against a dark background" src="https://cloudcdn.pro/stocks/images/jeferson-tomaz-buRbhjYpyoI.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonquantum.com/" rel="noopener">Banking On Quantum</a></h3>
-<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 27 articles on Medium</p>
+<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 28 articles on Medium</p>
 <p class="newsroom-excerpt">Post-quantum cryptography, crypto-agility and quantum-safe payments. Every story there links back to its original here.</p>
 </div>
 </article>

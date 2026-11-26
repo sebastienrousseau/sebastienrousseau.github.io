@@ -588,3 +588,30 @@ def test_homepage_package_count_is_filled_from_metrics(monkeypatch):
     monkeypatch.setattr(seo, "_kpi_cache", {"packages_published": "204"})
     assert "Creator of" in line
     assert ">204</span> open-source packages" in seo.inject_kpi_metrics(line)
+
+
+def test_format_metric_prints_like_the_profile():
+    # The profile's numbers panel (tools/metrics.py compact) drops a
+    # trailing ".0": 2,000,000 is "2M", not "2.0M".
+    assert seo._format_metric(2_000_000, "compact") == "2M"
+    assert seo._format_metric(10_000, "compact") == "10K"
+    assert seo._format_metric(54_831_294, "compact") == "54.8M"
+
+
+def test_kpi_metrics_prefers_the_profile_display_string(monkeypatch, tmp_path):
+    # metrics.json carries the profile's printed figure as `display`; the
+    # build prints it verbatim so the page and the profile match byte for byte.
+    path = tmp_path / "metrics.json"
+    path.write_text(
+        '{"stats":[{"key":"downloads_total","value":54831294,"format":"compact","display":"54.8M"},'
+        '{"key":"github_stars","value":1500,"format":"compact","display":"1500"},'
+        '{"key":"articles_signed","value":131,"format":"plain"}]}',
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(seo, "_kpi_cache", None)
+    monkeypatch.setattr(seo, "_METRICS_JSON", path)
+    assert seo._kpi_metrics() == {
+        "downloads_total": "54.8M",
+        "github_stars": "1500",
+        "articles_signed": "131",
+    }

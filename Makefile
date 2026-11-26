@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help bootstrap build demo serve theme-sync regenerate audit audit-external validate test-search-index test-i18n clean test lint typecheck sbom coverage publish-today verify verify-versions
+.PHONY: help bootstrap build demo serve clock-sync theme-sync regenerate audit audit-external validate test-search-index test-i18n clean test lint typecheck sbom coverage publish-today verify verify-versions
 
 # Single source of truth for the ssg pin, parsed straight out of the CI
 # workflow so `make bootstrap` can never install a version CI would reject.
@@ -37,16 +37,21 @@ serve: ## Build and serve public/ on http://127.0.0.1:8000
 # of ssg-themes.github.io; the flattened files are committed here so a build
 # never needs that checkout.
 THEME_DIR ?= ../ssg-themes.github.io/themes/sebastienrousseau
+clock-sync: ## Refresh the stopped fallback copies of the profile's hero clock
+	@for mode in light dark; do \
+	  curl -q -fsSL -o "assets/clock/clock-$$mode.svg" \
+	    "https://raw.githubusercontent.com/sebastienrousseau/sebastienrousseau/main/assets/clock-$$mode.svg"; \
+	done
+	@git --no-pager diff --stat -- assets/clock
+
 theme-sync: ## Synchronize _layouts/ from theme repository
 	@test -d "$(THEME_DIR)/_layouts" || { echo "theme not found at $(THEME_DIR) (set THEME_DIR)"; exit 1; }
 	@python3 "$(THEME_DIR)/tools/flatten.py" --site "$(THEME_DIR)/_layouts" _layouts
 	@git --no-pager diff --stat -- _layouts
 
-# Re-emit generator output (layouts, articles, projects) then rebuild.
-# gen_layouts.py is superseded by `make theme-sync` (ADR-0014).
-regenerate: ## Re-generate layouts, articles, and sitemaps
-	@python3 scripts/generators/gen_layouts.py
-	@perl -i -pe 's|<h4>Sebastien Rousseau</h4>|<h2 class="ap-foot-title">Sebastien Rousseau</h2>|g; s|<h4>Writing</h4>|<h2 class="ap-foot-title">Writing</h2>|g; s|<h4>Work</h4>|<h2 class="ap-foot-title">Work</h2>|g; s|<h4>Reach</h4>|<h2 class="ap-foot-title">Reach</h2>|g' _layouts/*.html
+# Re-emit generator output (articles, projects) then rebuild. _layouts/
+# comes from the theme (`make theme-sync`, ADR-0014), not gen_layouts.py.
+regenerate: ## Re-generate articles and sitemaps
 	@python3 scripts/generators/gen_articles.py
 	@# gen_projects + topic_link rewrite committed files in place; an
 	@# intentional source regeneration passes --dir explicitly (ADR-0003).

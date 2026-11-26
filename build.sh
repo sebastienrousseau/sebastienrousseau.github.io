@@ -240,6 +240,15 @@ if [[ -d .well-known ]]; then
   cp -R .well-known/. public/.well-known/
 fi
 
+# The homepage hero shows the GitHub profile's live clock from
+# /api/clock/clock-<light|dark>.svg, which the lang-router Worker serves
+# (workers/clock.js). Off the edge (local builds, CI's pa11y and
+# Lighthouse) and when the Worker cannot reach the profile, the origin
+# serves these stopped copies of the profile's everyday clock panels.
+# Refresh them with `make clock-sync`.
+mkdir -p public/api/clock
+cp -f assets/clock/clock-light.svg assets/clock/clock-dark.svg public/api/clock/
+
 # Mirror fonts/ (self-hosted Inter + Newsreader + JetBrains Mono variable
 # WOFF2, latin + latin-ext subsets) into public/fonts/. Same hands-off
 # pattern as .well-known — files are static, served as-is, immutable cache.
@@ -589,8 +598,11 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-include='workers/lang-router.js' \
     --test-coverage-include='workers/edge-routes.js' \
     --test-coverage-include='workers/crawl-redirects.js' \
+    --test-coverage-include='workers/live-kpi.js' \
+    --test-coverage-include='workers/clock.js' \
     workers/test_lang_router.mjs workers/test_edge_routes.mjs \
-    workers/test_crawl_redirects.mjs
+    workers/test_crawl_redirects.mjs workers/test_live_kpi.mjs \
+    workers/test_clock.mjs
   # ActivityPub sibling — same 100% line/branch/function coverage gate,
   # tested in isolation so the webfinger / actor / inbox / outbox decision
   # tree stays exhaustively covered as it grows past starter scope.

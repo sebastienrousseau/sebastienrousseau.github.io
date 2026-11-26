@@ -155,3 +155,55 @@ def test_main_keeps_the_snapshot_when_the_profile_is_unreachable(tmp_path, monke
 
 def test_years_active() -> None:
     assert fm._years_active() == "20+"
+
+
+_DISPLAY = {
+    "all_time_downloads": "54.7M",
+    "recent_downloads": "2.5M",
+    "github_stars": "760",
+    "packages": "199",
+}
+
+
+def _run_main_stats(tmp_path, monkeypatch, numbers):
+    _run_main(tmp_path, monkeypatch, numbers)
+    import json
+
+    return {s["key"]: s for s in json.loads((tmp_path / "metrics.json").read_text())["stats"]}
+
+
+def test_main_records_the_profile_display_strings(tmp_path, monkeypatch) -> None:
+    """The profile's printed figures travel with the values, so the build
+    prints exactly what the profile's numbers panel prints."""
+    got = _run_main_stats(tmp_path, monkeypatch, {**_NUMBERS, "display": dict(_DISPLAY)})
+    assert got["downloads_total"]["display"] == "54.7M"
+    assert got["downloads_30d"]["display"] == "2.5M"
+    assert got["github_stars"]["display"] == "760"
+    assert got["packages_published"]["display"] == "199"
+    assert "display" not in got["github_forks"]
+
+
+def test_main_ignores_malformed_display_strings(tmp_path, monkeypatch) -> None:
+    for bad in (
+        None,
+        "54.7M",
+        {**_DISPLAY, "packages": 199},
+        {**_DISPLAY, "github_stars": "<b>760</b>"},
+    ):
+        got = _run_main_stats(tmp_path, monkeypatch, {**_NUMBERS, "display": bad})
+        assert all("display" not in s for s in got.values()), bad
+
+
+def test_main_keeps_the_snapshot_display_when_the_profile_is_unreachable(
+    tmp_path, monkeypatch
+) -> None:
+    _run_main(tmp_path, monkeypatch, {**_NUMBERS, "display": dict(_DISPLAY)})
+    out = tmp_path / "metrics.json"
+    snapshot = out.read_text()
+    monkeypatch.setattr(fm, "_profile_numbers", lambda: None)
+    assert fm.main() == 0
+    import json
+
+    stats = {s["key"]: s for s in json.loads(out.read_text())["stats"]}
+    assert stats["packages_published"]["display"] == "199"
+    assert json.loads(snapshot)["stats"] != []
