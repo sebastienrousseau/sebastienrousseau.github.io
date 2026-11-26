@@ -298,6 +298,10 @@
     "2026-11-24-super-agents-one-session-per-task": {
       "publication": "ai",
       "id": "b6740c7478d6"
+    },
+    "2026-11-25-shor-rsa-2048-cat-qubits": {
+      "publication": "quantum",
+      "id": "512a6a74bbce"
     }
   }
 }
