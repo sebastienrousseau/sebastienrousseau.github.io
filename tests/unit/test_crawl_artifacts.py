@@ -12,18 +12,19 @@ Cloudflare's address-obfuscation endpoint, which no page needs crawled.
 from __future__ import annotations
 
 import json
-import re
 
 from postbuild_lib.content_blocks import SPECULATION_RULES_BLOCK
 from postbuild_lib.output import write_robots
 
-_BODY_RE = re.compile(r"<script[^>]*>(.*)</script>", re.DOTALL)
+_OPEN = '<script type="speculationrules">'
+_CLOSE = "</script>"
 
 
 def _rules() -> dict:
-    match = _BODY_RE.search(SPECULATION_RULES_BLOCK)
-    assert match, "speculation rules block has no <script> body"
-    return json.loads(match.group(1))
+    block = SPECULATION_RULES_BLOCK
+    assert block.startswith(_OPEN), "speculation rules block lost its opening tag"
+    assert block.endswith(_CLOSE), "speculation rules block lost its closing tag"
+    return json.loads(block[len(_OPEN) : -len(_CLOSE)])
 
 
 def _strings(node) -> list[str]:
