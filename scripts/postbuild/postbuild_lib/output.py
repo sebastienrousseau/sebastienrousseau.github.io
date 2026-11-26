@@ -183,6 +183,12 @@ Allow: /
 # Agent API:      https://sebastienrousseau.com/api/agents/index.json
 """
 
+# Cloudflare answers its own endpoints under /cdn-cgi/ (the email
+# obfuscation link /cdn-cgi/l/email-protection reached Search Console as a
+# 404). No page lives there, so every allowing group keeps crawlers out; a
+# crawler obeys only its own group, so the line goes in each one.
+ROBOTS_BODY = ROBOTS_BODY.replace("\nAllow: /\n", "\nAllow: /\nDisallow: /cdn-cgi/\n")
+
 
 # Locales whose news sitemap is advertised in robots.txt. A Google News
 # sitemap only does anything for a property approved in Publisher Center, so
