@@ -45,6 +45,7 @@ from __future__ import annotations
 import datetime as _dt
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -70,6 +71,15 @@ PROFILE_JSON_URL = (
     "profile-data/profile.json"
 )
 PROFILE_KEYS = ("all_time_downloads", "recent_downloads", "github_stars", "packages")
+# metrics.json key -> profile.json numbers key, for the four shared figures.
+PROFILE_PAIRS = {
+    "downloads_total": "all_time_downloads",
+    "downloads_30d": "recent_downloads",
+    "github_stars": "github_stars",
+    "packages_published": "packages",
+}
+# A printed figure from the profile's numbers panel: "54.8M", "2.5M", "758".
+_FIGURE_RE = re.compile(r"^\d{1,9}(\.\d)?[KM]?$")
 GITHUB_USER = "sebastienrousseau"
 
 _TIMEOUT = 10
@@ -169,20 +179,41 @@ def _max_value(key: str, computed: int, fallback: dict) -> int:
     return max(computed, _previous(key, fallback))
 
 
-def _headline_figures(fallback: dict) -> dict[str, int]:
-    """The four profile figures, keyed as metrics.json names them; the
-    committed snapshot's values when profile.json cannot be read."""
-    numbers = _profile_numbers()
-    pairs = {
-        "downloads_total": "all_time_downloads",
-        "downloads_30d": "recent_downloads",
-        "github_stars": "github_stars",
-        "packages_published": "packages",
+def _display_strings(numbers: dict) -> dict[str, str]:
+    """The profile's printed figures (``numbers.display``), keyed as
+    metrics.json names them; {} unless all four look like figures."""
+    display = numbers.get("display")
+    if not isinstance(display, dict):
+        return {}
+    out: dict[str, str] = {}
+    for ours, theirs in PROFILE_PAIRS.items():
+        value = display.get(theirs)
+        if not isinstance(value, str) or not _FIGURE_RE.match(value):
+            return {}
+        out[ours] = value
+    return out
+
+
+def _previous_display(fallback: dict) -> dict[str, str]:
+    """The committed snapshot's printed figures for the shared keys."""
+    return {
+        s["key"]: s["display"]
+        for s in fallback.get("stats", [])
+        if s.get("key") in PROFILE_PAIRS and isinstance(s.get("display"), str)
     }
+
+
+def _headline_figures(fallback: dict) -> tuple[dict[str, int], dict[str, str]]:
+    """The four profile figures and their printed forms, keyed as
+    metrics.json names them; the committed snapshot's when profile.json
+    cannot be read."""
+    numbers = _profile_numbers()
     if numbers is None:
         print("fetch_metrics: profile.json unreadable, keeping the committed figures")
-        return {ours: _previous(ours, fallback) for ours in pairs}
-    return {ours: numbers[theirs] for ours, theirs in pairs.items()}
+        figures = {ours: _previous(ours, fallback) for ours in PROFILE_PAIRS}
+        return figures, _previous_display(fallback)
+    figures = {ours: numbers[theirs] for ours, theirs in PROFILE_PAIRS.items()}
+    return figures, _display_strings(numbers)
 
 
 # Opt out of the network fetch and keep the committed snapshot.
@@ -198,81 +229,94 @@ def _headline_figures(fallback: dict) -> dict[str, int]:
 SKIP_ENV = "SKIP_METRICS_FETCH"
 
 
+_PROFILE_SOURCE = "github.com/sebastienrousseau/sebastienrousseau (profile.json)"
+# key, label, format, source: the order metrics.json lists its stats in.
+_STATS = (
+    (
+        "years_payments",
+        "Years in payments, banking and digital technology",
+        "plain",
+        "_data/profile.yml (experience_phrase)",
+    ),
+    (
+        "articles_signed",
+        "Signed, dated articles published",
+        "plain",
+        "_posts/: every article Sigstore-signed",
+    ),
+    (
+        "downloads_total",
+        "All-time open-source package downloads (crates.io + PyPI + npm)",
+        "compact",
+        _PROFILE_SOURCE,
+    ),
+    (
+        "downloads_30d",
+        "Downloads in the last 30 days (crates.io + PyPI + npm)",
+        "compact",
+        _PROFILE_SOURCE,
+    ),
+    ("github_stars", "GitHub stars across owned repositories", "compact", _PROFILE_SOURCE),
+    (
+        "packages_published",
+        "Packages published across crates.io, PyPI, and npm",
+        "compact",
+        _PROFILE_SOURCE,
+    ),
+    (
+        "github_forks",
+        "GitHub forks across owned repositories",
+        "compact",
+        "api.github.com/users/sebastienrousseau/repos",
+    ),
+)
+
+
+def _stats(values: dict[str, object], display: dict[str, str]) -> list[dict[str, object]]:
+    """metrics.json's stats. The profile's printed form travels with each
+    shared figure, so the build prints exactly what the profile prints."""
+    stats: list[dict[str, object]] = []
+    for key, label, fmt, source in _STATS:
+        stat: dict[str, object] = {
+            "key": key,
+            "label": label,
+            "value": values[key],
+            "format": fmt,
+            "source": source,
+        }
+        if key in display:
+            stat["display"] = display[key]
+        stats.append(stat)
+    return stats
+
+
+def _keep_snapshot() -> int:
+    """SKIP_ENV path: leave the committed snapshot as it is."""
+    existing = _load_existing()
+    if not existing:
+        print(f"fetch_metrics: {SKIP_ENV} set but no committed snapshot, nothing to keep")
+        return 0
+    summary = "  ".join(f"{s['key']}={s['value']}" for s in existing.get("stats", []))
+    print(f"fetch_metrics: {SKIP_ENV} set, keeping committed snapshot  {summary}")
+    return 0
+
+
 def main() -> int:
     if os.environ.get(SKIP_ENV):
-        existing = _load_existing()
-        if not existing:
-            print(f"fetch_metrics: {SKIP_ENV} set but no committed snapshot — nothing to keep")
-            return 0
-        summary = "  ".join(f"{s['key']}={s['value']}" for s in existing.get("stats", []))
-        print(f"fetch_metrics: {SKIP_ENV} set — keeping committed snapshot  {summary}")
-        return 0
+        return _keep_snapshot()
 
     fallback = _load_existing()
-
-    figures = _headline_figures(fallback)
-    downloads_total = figures["downloads_total"]
-    downloads_30d = figures["downloads_30d"]
-    packages_published = figures["packages_published"]
-    stars_total = figures["github_stars"]
-    forks_total = _max_value("github_forks", _github_forks(), fallback)
-
-    articles = _articles_count()
-    years_payments = _years_active()
-
+    figures, display = _headline_figures(fallback)
+    values: dict[str, object] = {
+        **figures,
+        "github_forks": _max_value("github_forks", _github_forks(), fallback),
+        "articles_signed": _articles_count(),
+        "years_payments": _years_active(),
+    }
+    stats = _stats(values, display)
     payload = {
         "$generated_at": _dt.datetime.now(tz=_dt.UTC).isoformat(timespec="seconds"),
-        "stats": [
-            {
-                "key": "years_payments",
-                "label": "Years in payments, banking and digital technology",
-                "value": years_payments,
-                "format": "plain",
-                "source": "_data/profile.yml (experience_phrase)",
-            },
-            {
-                "key": "articles_signed",
-                "label": "Signed, dated articles published",
-                "value": articles,
-                "format": "plain",
-                "source": "_posts/ — every article Sigstore-signed",
-            },
-            {
-                "key": "downloads_total",
-                "label": "All-time open-source package downloads (crates.io + PyPI + npm)",
-                "value": downloads_total,
-                "format": "compact",
-                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
-            },
-            {
-                "key": "downloads_30d",
-                "label": "Downloads in the last 30 days (crates.io + PyPI + npm)",
-                "value": downloads_30d,
-                "format": "compact",
-                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
-            },
-            {
-                "key": "github_stars",
-                "label": "GitHub stars across owned repositories",
-                "value": stars_total,
-                "format": "compact",
-                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
-            },
-            {
-                "key": "packages_published",
-                "label": "Packages published across crates.io, PyPI, and npm",
-                "value": packages_published,
-                "format": "compact",
-                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
-            },
-            {
-                "key": "github_forks",
-                "label": "GitHub forks across owned repositories",
-                "value": forks_total,
-                "format": "compact",
-                "source": "api.github.com/users/sebastienrousseau/repos",
-            },
-        ],
+        "stats": stats,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -280,7 +324,7 @@ def main() -> int:
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    summary = "  ".join(f"{s['key']}={s['value']}" for s in payload["stats"])
+    summary = "  ".join(f"{s['key']}={s['value']}" for s in stats)
     print(f"fetch_metrics: {summary}")
     return 0
 

@@ -942,13 +942,14 @@ def _attr_value(tag: str, name: str) -> str:
 
 
 def _format_metric(value: object, fmt: str) -> str:
+    """A figure as the GitHub profile prints it (tools/metrics.py compact):
+    one decimal, a trailing ".0" dropped, so 2,000,000 is "2M"."""
     if not isinstance(value, (int, float)):
         return str(value)
     if fmt == "compact":
-        if value >= 1_000_000:
-            return f"{value / 1_000_000:.1f}M"
-        if value >= 1_000:
-            return f"{value / 1_000:.1f}K"
+        for size, suffix in ((1_000_000, "M"), (1_000, "K")):
+            if value >= size:
+                return f"{value / size:.1f}".removesuffix(".0") + suffix
     return str(int(value))
 
 
@@ -962,7 +963,14 @@ def _kpi_metrics() -> dict[str, str]:
         for stat in data.get("stats", []):
             key = stat.get("key")
             if key:
-                out[key] = _format_metric(stat.get("value"), stat.get("format", "plain"))
+                # The profile's printed figure wins: the page then matches
+                # the profile byte for byte (fetch_metrics.py records it).
+                shown = stat.get("display")
+                out[key] = (
+                    shown
+                    if isinstance(shown, str)
+                    else _format_metric(stat.get("value"), stat.get("format", "plain"))
+                )
     except (OSError, ValueError):
         out = {}
     _kpi_cache = out
