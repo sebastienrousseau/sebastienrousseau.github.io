@@ -31,3 +31,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/release/check_releases.py
+
+      # pyproject.toml, CITATION.cff and docs/releases/ name the newest
+      # CHANGELOG version. Only `make verify` ran this, so the three sat at
+      # 0.0.40, 0.0.33 and a missing v0.0.44.md for a week unnoticed.
+      - name: Version references agree with the newest CHANGELOG release
+        run: scripts/security/verify-release-versions.sh
