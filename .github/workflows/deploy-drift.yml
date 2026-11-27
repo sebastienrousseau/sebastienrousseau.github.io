@@ -53,12 +53,16 @@ jobs:
           set -euo pipefail
           gh api --paginate "users/${OWNER}/repos?per_page=100&type=owner" \
             --jq '.[] | select(.has_pages) | .name' > "$RUNNER_TEMP/pages-repos.txt"
-          curl -fsS --max-time 60 -o "$RUNNER_TEMP/sitemap.xml" https://sebastienrousseau.com/sitemap.xml
+          # --retry covers one-off 408/429/5xx answers. github.com answered
+          # the sigstore.md request below with a single 503 on 25, 26 and
+          # 27 November (twice), each time turning this alarm red for an
+          # hour with nothing wrong.
+          curl -fsS --retry 3 --retry-delay 5 --max-time 60 -o "$RUNNER_TEMP/sitemap.xml" https://sebastienrousseau.com/sitemap.xml
           python3 scripts/seo_and_audit/check_pages_shadowing.py \
             --repos "$RUNNER_TEMP/pages-repos.txt" \
             --sitemap "$RUNNER_TEMP/sitemap.xml" \
             --self "$SELF"
-          curl -fsSI --max-time 30 https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/docs/sigstore.md >/dev/null
+          curl -fsSI --retry 3 --retry-delay 5 --max-time 30 https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/docs/sigstore.md >/dev/null
           # Content, not status: a 200 kept this green while the edge served
           # a two-day-old hub. Checks hub markers, the design-system layer in
           # the shipped CSS, the proof stamp's age, and that the newest RSS

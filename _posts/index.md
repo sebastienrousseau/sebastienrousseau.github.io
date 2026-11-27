@@ -334,12 +334,12 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonquantum.com/" title="Banking On Quantum on Medium" aria-label="Banking On Quantum on Medium" rel="noopener">
-<img alt="Violet and blue fibre-optic strands glowing against a dark background" src="https://cloudcdn.pro/stocks/images/jeferson-tomaz-buRbhjYpyoI.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="The Milky Way above a dark horizon with an orange glow" src="https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonquantum.com/" rel="noopener">Banking On Quantum</a></h3>
-<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 28 articles on Medium</p>
+<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 29 articles on Medium</p>
 <p class="newsroom-excerpt">Post-quantum cryptography, crypto-agility and quantum-safe payments. Every story there links back to its original here.</p>
 </div>
 </article>
