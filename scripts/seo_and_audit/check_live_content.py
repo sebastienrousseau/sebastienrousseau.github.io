@@ -20,10 +20,13 @@ from __future__ import annotations
 
 import argparse
 import datetime as _dt
+import importlib.util
 import re
 import sys
 import urllib.request
 from collections.abc import Callable
+from pathlib import Path
+from types import ModuleType
 
 BASE = "https://sebastienrousseau.com"
 UA = "sebastienrousseau.com deploy-drift check (+https://github.com/sebastienrousseau)"
@@ -115,15 +118,40 @@ def check_feed_language(rss: str) -> list[str]:
     return [f"rss.xml: {len(stray)} non-English item(s), first /{stray[0]}"]
 
 
-def check_freshness(newest: str | None, home: str, articles: str) -> list[str]:
-    """The newest article must appear on the homepage and the articles index."""
+def check_freshness(newest: str | None, home: str, articles: str, picks: list[str]) -> list[str]:
+    """The newest article must be on the articles index, and the homepage
+    must list the articles its generator picks (``picks``).
+
+    The homepage shows the three newest pillar articles only
+    (scripts/postbuild/regen_homepage.py), so an off-pillar newest article
+    is correctly absent there; requiring it failed every hourly run after
+    the 26 Nov 2026 research article."""
     if not newest:
         return ["rss.xml: no first item"]
     errors = []
-    for name, html in (("/", home), ("/articles/", articles)):
-        if newest not in html:
-            errors.append(f"{name}: newest article {newest} not listed (stale page?)")
+    if newest not in articles:
+        errors.append(f"/articles/: newest article {newest} not listed (stale page?)")
+    if not picks:
+        errors.append("/: no homepage articles expected")
+    errors.extend(
+        f"/: homepage article {path} not listed (stale page?)" for path in picks if path not in home
+    )
     return errors
+
+
+def _load_generator() -> ModuleType:
+    """scripts/postbuild/regen_homepage.py, which picks the homepage articles."""
+    path = Path(__file__).resolve().parents[1] / "postbuild" / "regen_homepage.py"
+    spec = importlib.util.spec_from_file_location("regen_homepage", path)
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def homepage_paths() -> list[str]:
+    """The paths of the articles the homepage should list, from main's posts."""
+    return [f"/{row[0]}" for row in _load_generator()._collect_top_six()]
 
 
 def _fetch(path: str, timeout: int = 30) -> str:
@@ -134,19 +162,24 @@ def _fetch(path: str, timeout: int = 30) -> str:
         return r.read().decode("utf-8", errors="replace")
 
 
-def run(fetch: Callable[[str], str] = _fetch, today: _dt.date | None = None) -> list[str]:
+def run(
+    fetch: Callable[[str], str] = _fetch,
+    today: _dt.date | None = None,
+    home: list[str] | None = None,
+) -> list[str]:
     today = today or _dt.datetime.now(_dt.UTC).date()
-    home = fetch("/")
+    picks = homepage_paths() if home is None else home
+    home_html = fetch("/")
     hub = fetch("/iso20022-mcp/")
     articles = fetch("/articles/")
     rss = fetch("/rss.xml")
-    css = "".join(fetch(u) for u in stylesheet_urls(home))
+    css = "".join(fetch(u) for u in stylesheet_urls(home_html))
     return (
         check_hub(hub)
         + check_design_system(css)
-        + check_stamp(home, today)
+        + check_stamp(home_html, today)
         + check_feed_language(rss)
-        + check_freshness(newest_feed_link(rss), home, articles)
+        + check_freshness(newest_feed_link(rss), home_html, articles, picks)
     )
 
 
