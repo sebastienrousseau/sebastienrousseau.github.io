@@ -66,9 +66,34 @@ def test_freshness() -> None:
     newest = clc.newest_feed_link(rss)
     assert newest == "/2026-10-28-fca"
     home = '<a href="/2026-10-28-fca/index.html">'
-    assert clc.check_freshness(newest, home, home) == []
-    errs = clc.check_freshness(newest, home, '<a href="/2026-10-24-old/">')
+    assert clc.check_freshness(newest, home, home, ["/2026-10-28-fca"]) == []
+    errs = clc.check_freshness(newest, home, '<a href="/2026-10-24-old/">', ["/2026-10-28-fca"])
     assert errs == ["/articles/: newest article /2026-10-28-fca not listed (stale page?)"]
+
+
+def test_freshness_homepage_lists_what_the_generator_picks() -> None:
+    # The homepage shows the three newest pillar articles, so an off-pillar
+    # newest article (26 Nov 2026, celestial holography) is only on /articles/.
+    newest = "/2026-11-26-research"
+    articles = '<a href="/2026-11-26-research/">'
+    home = '<a href="/2026-11-25-shor/"><a href="/2026-11-24-agents/">'
+    picks = ["/2026-11-25-shor", "/2026-11-24-agents"]
+    assert clc.check_freshness(newest, home, articles, picks) == []
+    errs = clc.check_freshness(newest, '<a href="/2026-11-24-agents/">', articles, picks)
+    assert errs == ["/: homepage article /2026-11-25-shor not listed (stale page?)"]
+    assert clc.check_freshness(newest, home, articles, []) == ["/: no homepage articles expected"]
+
+
+def test_homepage_paths_come_from_the_generator(monkeypatch) -> None:
+    fm = {"title": "t"}
+    rows = [("2026-11-25-shor", 2026, 11, 25, fm), ("2026-11-24-agents", 2026, 11, 24, fm)]
+    gen = type("Gen", (), {"_collect_top_six": staticmethod(lambda: rows)})
+    monkeypatch.setattr(clc, "_load_generator", lambda: gen)
+    assert clc.homepage_paths() == ["/2026-11-25-shor", "/2026-11-24-agents"]
+
+
+def test_load_generator_reads_the_real_module() -> None:
+    assert callable(clc._load_generator()._collect_top_six)
 
 
 def test_feed_language_flags_translations() -> None:
@@ -102,13 +127,13 @@ def test_run_wires_every_check() -> None:
         "/rss.xml": "<item><link>https://sebastienrousseau.com/2026-10-28-fca/</link></item>",
         "/_csp/s.css": "@layer legacy{} --fs-display --fs-prose --measure",
     }
-    assert clc.run(fetch=pages.__getitem__, today=TODAY) == []
+    assert clc.run(fetch=pages.__getitem__, today=TODAY, home=["/2026-10-28-fca"]) == []
 
 
 def test_main_exit_code_and_edges(monkeypatch) -> None:
     assert clc.newest_feed_link("<rss></rss>") is None
     assert clc.newest_feed_link("<rss><item><title>x</title></item></rss>") is None
-    assert clc.check_freshness(None, "", "") == ["rss.xml: no first item"]
+    assert clc.check_freshness(None, "", "", ["/x"]) == ["rss.xml: no first item"]
     monkeypatch.setattr(clc, "run", lambda: [])
     assert clc.main([]) == 0
     monkeypatch.setattr(clc, "run", lambda: ["boom"])
