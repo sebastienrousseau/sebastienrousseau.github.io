@@ -92,7 +92,7 @@ commit-signing key is active before committing.
 <summary>Manual setup (without mise)</summary>
 
 ```bash
-cargo install ssg --locked --version 0.0.76  # Rust SSG compiler (pinned in ci.yml: ADR-0002)
+cargo install ssg --locked --version 0.0.77  # Rust SSG compiler (pinned in ci.yml: ADR-0002)
 pip install -r requirements.txt               # Python build dependencies
 ./build.sh                                     # emits public/ across 34 locales
 ```
