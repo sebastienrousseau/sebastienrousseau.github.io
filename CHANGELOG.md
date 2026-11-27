@@ -42,6 +42,7 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 
 ### Fixed
 
+- **One github.com 503 no longer turns deploy-drift red**: the hourly check asks github.com for `docs/sigstore.md`, and four runs (25, 26 and twice on 27 November) failed on a single 503 to that request with nothing wrong on the site. Both `curl` calls in the step now retry up to three times.
 - **The hourly deploy-drift check expects the homepage it is built to show**: from 26 November 2026 it failed every hour because the newest RSS item, the off-pillar celestial holography article, was not on the homepage. The homepage lists only the three newest pillar articles (`regen_homepage.py`), so `check_live_content.py` now expects exactly those three, picked by the same code, and still requires the newest feed item on `/articles/`.
 - **The 26 November article has its tags, pillar link and article navigation**: none of its tags matched a canonical tag, so its 35 pages had no tag badges, no pillar hub link and no related-reading strip. Without the strip, the cluster links landed between the article body and `</main>`, where the prev/next, cite and reuse panels anchor, so those were left out too, and CI failed `test_every_article_links_its_pillar_hub_in_its_locale` and `validate_jsonld`. The article is now tagged `research`; it is the site's first physics article, and no tag covers quantum gravity.
 - **Compact figures print like the profile's**: the build printed 2,000,000 as "2.0M" and 10,000 as "10.0K" where the profile prints "2M" and "10K".
