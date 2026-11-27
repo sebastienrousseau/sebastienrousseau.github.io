@@ -104,15 +104,15 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-11-26-celestial-holography-soft-physics/index.html" title="Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory">
-<img alt="The Milky Way above a dark horizon with an orange glow" src="https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-11-27-uk-regulators-quantum-risk-programme/index.html" title="Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators">
+<img alt="Rows of numbered brass safe deposit box doors, each with its own lock" src="https://cloudcdn.pro/stocks/images/tim-evans-Uf-c4u1usFQ-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Celestial Holography · Quantum Gravity · Soft Theorems</span>
-<h3><a href="/2026-11-26-celestial-holography-soft-physics/index.html" title="Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory">Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory</a></h3>
-<p class="newsroom-meta"><time datetime="2026-11-26">November 26, 2026</time> · Sebastien Rousseau</p>
-<p>Celestial holography proposes that the gravitational S-matrix in flat space is a correlator in a two-dimensional conformal field theory, and the strongest case for taking that proposal seriously is that symmetries, soft theorems and observable memory effects were already telling the same story before anyone wrote the d</p>
-<p><a class="pill ghost" href="/2026-11-26-celestial-holography-soft-physics/index.html" title="Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory">Read the full story</a></p>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pra · Fca</span>
+<h3><a href="/2026-11-27-uk-regulators-quantum-risk-programme/index.html" title="Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators">Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-27">November 27, 2026</time> · Sebastien Rousseau</p>
+<p>UK regulators have set out effective practices for quantum-related cyber risk, and their central message is that managing it involves more than adopting new cryptographic algorithms: it takes an inventory, a plan, accountable owners and a multi-year view.</p>
+<p><a class="pill ghost" href="/2026-11-27-uk-regulators-quantum-risk-programme/index.html" title="Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators">Read the full story</a></p>
 </div>
 </article>
 
@@ -134,12 +134,12 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonquantum.com/" title="Banking On Quantum on Medium" aria-label="Banking On Quantum on Medium" rel="noopener">
-<img alt="Violet and blue fibre-optic strands glowing against a dark background" src="https://cloudcdn.pro/stocks/images/jeferson-tomaz-buRbhjYpyoI.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="The Milky Way above a dark horizon with an orange glow" src="https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonquantum.com/" rel="noopener">Banking On Quantum</a></h3>
-<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 28 articles on Medium</p>
+<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 29 articles on Medium</p>
 <p class="newsroom-excerpt">Post-quantum cryptography, crypto-agility and quantum-safe payments. Every story there links back to its original here.</p>
 </div>
 </article>
@@ -161,6 +161,18 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-26-celestial-holography-soft-physics/index.html" title="Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory" aria-label="Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory">
+<img alt="The Milky Way above a dark horizon with an orange glow" src="https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Research · Celestial Holography · Quantum Gravity</span>
+<h3><a href="/2026-11-26-celestial-holography-soft-physics/index.html" title="Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory">Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-26">November 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Celestial holography proposes that the gravitational S-matrix in flat space is a correlator in a two-dimensional conformal field theory, and the strongest case for taking that proposal seriously is that symmetries, soft theorems and observable memory effects were already telling the same story before anyone wrote the d</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-11-25-shor-rsa-2048-cat-qubits/index.html" title="Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits" aria-label="Shor on Cat Qubits: RSA-2048 in 1.25 Hours on 611,000 Qubits">
