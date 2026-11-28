@@ -16,6 +16,7 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 
 ### Added
 
+- **The 28 November article**: *Proving Signal Correct at the Machine-Code Level with AlphaProof Code*, on Google DeepMind's AlphaProof Code and its machine-checked Lean proofs for libsignal's compiled binary, with 34 translations. It joins the Post-Quantum Cryptography and Generative AI & LLMs topic clusters.
 - **The 27 November article**: *Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators*, on the PRA, FCA and Bank of England effective practices for quantum-related cyber risk (19 November 2026), with 34 translations.
 - **The 27 November article on Medium**: published in Banking On Quantum as *Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators* (story `930fcdfd4837`, canonical link to the article here) and recorded in `_data/medium/publications.json`.
 - **The 26 November article on Medium**: published in Banking On Quantum as *Celestial Holography: Can Flat-Space Gravity Be a 2D Theory?* (story `9657ee0de9d9`, canonical link to the article here) and recorded in `_data/medium/publications.json`.

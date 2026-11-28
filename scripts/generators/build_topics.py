@@ -53,6 +53,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "libraries, and migration playbooks for financial-services security teams."
         ),
         "slugs": [
+            "2026-11-28-alphaproof-code-signal-machine-code-verification",
             "2026-11-23-composite-ml-dsa-rfc-10073",
             "2026-11-16-quantum-safe-readiness-epaa",
             "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude",
@@ -278,6 +279,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "banks can build inside their own data perimeter."
         ),
         "slugs": [
+            "2026-11-28-alphaproof-code-signal-machine-code-verification",
             "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude",
             "2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled",
             "2026-10-10-what-a-machine-learning-textbook-s-contents-page-says-about-the-field",
