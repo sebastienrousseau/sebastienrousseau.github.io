@@ -17,6 +17,7 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 ### Added
 
 - **The 27 November article**: *Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators*, on the PRA, FCA and Bank of England effective practices for quantum-related cyber risk (19 November 2026), with 34 translations.
+- **The 27 November article on Medium**: published in Banking On Quantum as *Quantum Risk Is a Programme, Not an Algorithm Swap, Say UK Regulators* (story `930fcdfd4837`, canonical link to the article here) and recorded in `_data/medium/publications.json`.
 - **The 26 November article on Medium**: published in Banking On Quantum as *Celestial Holography: Can Flat-Space Gravity Be a 2D Theory?* (story `9657ee0de9d9`, canonical link to the article here) and recorded in `_data/medium/publications.json`.
 - **The 26 November article**: *Celestial Holography: Symmetry Turns Soft Physics into a Dual Theory*, with 34 translations. 24 romanisation-lexicon entries (eight each for ja, zh-hans and zh-hant) let the Japanese and Chinese titles derive their slugs; four more (一个, 一個, 把, 变成/變成) were left out because they would change the derived slugs of three published Chinese pages.
 - **Three articles, 22 to 24 November 2026**: *Firms Buy Their Most Material AI and Govern It Through the Vendor*, *Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm* and *Super-agents: why one session per task stops scaling*, each with 34 translations. The 24 November article's reference now links the DeepSeek Harness post it cites.
